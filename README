@@ -70,7 +70,13 @@ Stall betwen 80-90 KIAS (clean)
 RELEASES
 =================================================================
 
-Release 1.4 (in progress)
+Release 1.5 (In progress)
+
+* Project forked by the USA TOUR READY CONSORTIUM
+* Project renamed to EF-Typhoon
+* Dependency to other Aircraft Fixed
+
+Release 1.4
 
 * New hook (more similar to real hook): done
 * Testing new MFD functions: Not working
