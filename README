@@ -1,0 +1,118 @@
+=================================================================
+EFA Typhoon - Eurofighter Typhoon
+EFA Typhoon II (naval version) - Eurofighter Typhoon
+=================================================================
+
+January, 2015: About this version
+
+The Eurofighter Typhoon is being refurbished by the USA TOUR READY CONSORTIUM.
+
+Jabberwocky, Directorial Management and Systems Coding
+Skyboat, Testing and Systems Coding
+IH-COL, Testing and git distribution management
+
+=================================================================
+CHANGELOG
+=================================================================
+* The Aircraft folder has been renamed to EF-Typhoon, to reflect a path different to the original "eurofighter" and different to the FGUK version "EF2000"
+* All paths have been fixed to the new folder name
+* The Aircraft has been isolated: This is, it contains no dependencies to foreign Aircraft. Previously it had dependencies to the sabre and the mosquito, outcommented in the xml files. The files required had been imported and renamed, in spite of being outcommented in the configuration
+* The Filename paths had been changed from typhoon to EF-Typhoon, and all file calls had been fixed recursively
+
+===================================================================
+ORIGINAL README
+===================================================================
+
+LICENSE:
+	This model is released under the terms of the GPLv2
+AUTHORSHIP:
+	Model by Maverick Alex
+	FDM by Detlef Faber, don@sol2500.net
+	On carrier options, FDM fixes, new textures by AlMurSi
+	Nav Lights, MIDS, AP by Algernon
+LIVERIES:
+	Livery Spain from Moron Ala 11
+	Livery Italy from ITAF EF2000 12 Squadron
+COMPATIBILITY:
+	EF-Typhoon load autopilot 2.0 compatible
+	EF-Typhoonb load 1.9.1 compatible
+	EF-Typhoon2 load 1.9.1 compatible
+	EF-Typhoon-2 load autopilot 2.git compatible
+	EF-Typhoon2-2 load 2.0 only compatible
+
+
+=================================================================
+OPERATION
+=================================================================
+
+This Aircraft provides two FDM, one with and one without G-limitations
+
+Afterburners engage when throttle moves past 95%
+"N" expends Speedbrake
+"n" retracts Speedbrake
+"L" launchbar on carrier
+"C" catapult on carrier
+"O" Extend/retract hook
+"f" / "d" Extend/retract slats
+"Delete" Toggle thrust reversers (max. 40% power)
+"Ctrl + d" Toggle canopy
+
+=================================================================
+SPECIFICATIONS
+=================================================================
+
+Max speed Mach 2.0+ reheat / 1.2 without
+Min speed: 130 KIAS (clean)
+Take off: 140-150 KIAS
+Stall betwen 80-90 KIAS (clean)
+
+=================================================================
+RELEASES
+=================================================================
+
+Release 1.4 (in progress)
+
+* New hook (more similar to real hook): done
+* Testing new MFD functions: Not working
+* Little fixes on FDM: done
+* Sounds on development
+* bitmap textures, slats, AP, modeling details, etc.: done
+* Lights: Nav, landing and beacon/strobe flashes (with menu for select)
+* New MIDS screen
+* Canopy animation
+* Reverser engine
+* Slats now working
+* New air intake (flaps key)
+* Added details: FLIR, APU-out
+* Maybe dragchute
+* Maybe fueldoor and refueling
+* Autopilot working: No advanced modes yet
+* Custom Autopilot Dialog: only for 2.0 and higher
+* Cockpit:  Upper Left Panel has working animation and some working buttons
+* Gauges: pedals and stick
+* On ASI vertical speed indicator
+* Status gear lights and others littles changes on cockpit
+* Gear-lock, "l" key, is now active and it disables gear retract
+
+Release 1.3b - Fixed FDM
+
+* Reason of this released: Fixed FDM
+* On release 1.3b animations:  slats, stick, pedals, and hook are only basics
+* Fixing textures, sizes, etc: On development
+* No Flaps: at the moment only by AFCS control
+* Slats seem do nothing:  on development
+* Autopilot only work Wing Leveler, pitch hold and Auto Throttle (without Reheat)
+* No new Livery: under GPL-copyright request
+
+=================================================================
+NOTES (SPANISH VERSION)
+=================================================================
+Hasta que se desarrolle el control automático, recomendamos que se reduzca la sensibilidad del joystick o el ratón para evitar maniobras bruscas. También es muy fácil superar los límites estructurales del avión, y realizar maniobras con 'g' extremadamente altos sin ninguna consecuencia: en última instancia nos remitimos a la pericia de cada piloto para mantener el avión en límites admisibles. Ahora mismo es bastante manejable y flexible, una vez superada la dificultad inicial con la sensibilidad de los controles. Sin embargo, debido a que aún no está disponible el control automático, es posible perder el control y entrar en barrena tras maniobras brucas o debido al estado bastante inicial de algunas funciones del piloto automático: hay que reducir potencia al minimo, extender el speedbrake al máximo (tampoco molesta el tren de aterrizaje y los slats), y palanca/pedal en estado neutro; de ese modo es fácil que se detengan los giros y podamos recuperar el control con facilidad.
+
+Cómo aterrizar en el portaaviones (sin peso adicional):
+
+Lo ideal consiste en aproximarse a 130 KIAS y un AoA -5 y tocar la cubierta con un AoA próximo a +5, tratando de no superar una velocidad vertical (Vsp) de -2500, para evitar que rebotemos sobre la cubierta (el instrumento que muestra la velocidad vertical tiene cierta demora, así que se trata de un valor orientativo). Es posible enganchar el hook a mayor velocidad y que clavemos el morro sobre la cubierta, pero de momento no tiene mayores consecuencias (salvo que realmente sea excesiva y acabemos en el agua).
+
+El actual speedbrake tiene 5 posiciones: 4 y 5 nos frenarán por debajo de 130 KIAS. El speedbrake tiene un efecto secundario bastante acusado sobre nuestro ángulo de ataque. Un truco consiste en aprovechar la reacción de encabritarse tras reducirlo para posarnos sobre la cubierta con un AoA positivo (aprox. +5).
+
+En el caso de ir cargados los márgenes de maniobra se reducen, y necesitaremos más velocidad para conservar la sustentación.

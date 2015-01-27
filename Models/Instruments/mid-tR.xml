@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+  <path>mid-t2.ac</path>
+
+  <animation>
+    <type>texrotate</type>
+    <object-name>throttle</object-name>
+    <property>controls/engines/engine[1]/throttle</property>
+    <factor>280</factor>
+    <step>0.1</step>
+    <center>
+      <x>0.5</x>
+      <y>0.5</y>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>LedAB2</object-name>
+    <condition>
+      <equals>
+	<property>controls/engines/engine[1]/reheat</property>
+	<value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+</PropertyList>
+
+

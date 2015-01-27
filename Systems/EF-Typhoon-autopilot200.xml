@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Eurofighter Typhoon Autopilot for Version 2.0 and previous -->
+<!-- by Algernon -->
+
+<PropertyList>
+
+  <!-- Lookaheads -->
+  <predict-simple>
+    <input>/position/altitude-agl-ft</input>
+    <output>/autopilot/internal/lookahead-altitude-agl-ft</output>
+    <seconds>2.5</seconds>
+    <filter-gain>0.0</filter-gain>
+  </predict-simple>
+
+  <!-- Pitch Hold -->
+  
+  <pid-controller>
+    <name>AP:Elevator Control</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+	<equals>
+          <property>/autopilot/locks/altitude</property>
+          <value>pitch-hold</value>
+        </equals>
+      </condition>
+    </enable>
+    <input>
+      <property>/orientation/pitch-deg</property>
+    </input>
+    <reference>
+      <property>/autopilot/settings/target-pitch-deg</property>
+    </reference>
+    <output>
+      <property>/controls/flight/elevator</property>
+    </output>
+    <config>
+      <Kp>-0.015</Kp>      <!-- proportional gain -->
+      <beta>1.0</beta>    <!-- input value weighing factor -->
+      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
+      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
+      <!-- unfiltered derivative error -->
+      <Ti>1.0</Ti>        <!-- integrator time 1.0 -->
+      <Td>0.00001</Td>    <!-- derivator time  0.00001 -->
+      <u_min>-0.05</u_min> <!-- minimum output clamp -->
+      <u_max>0.05</u_max>  <!-- maximum output clamp -->
+    </config>
+  </pid-controller>
+  
+  <pi-simple-controller>
+    <name>AP:Altitude Hold Computer</name>
+    <debug>false</debug>
+    <enable>
+      <prop>/autopilot/locks/altitude</prop>
+      <value>altitude-hold</value>
+    </enable>
+    <input>
+      <prop>/position/altitude-ft</prop>
+    </input>
+    <reference>
+      <prop>/autopilot/settings/ind-target-altitude-ft</prop>
+    </reference>
+    <output>
+      <prop>/autopilot/internal/target-climb-fps</prop>
+    </output>
+    <config>
+      <Kp>0.2</Kp>          <!-- proportional gain -->
+      <u_min>-200</u_min> <!-- minimum output clamp -16.67-->
+      <u_max>200</u_max>   <!-- maximum output clamp 33.33-->
+    </config>
+  </pi-simple-controller>
+  
+  <pi-simple-controller>
+    <name>AP:GPS Altitude Computer</name>
+    <debug>false</debug>
+    <enable>
+      <prop>/autopilot/locks/altitude</prop>
+      <value>nav-hold</value>
+    </enable>
+    <input>
+      <prop>/position/altitude-ft</prop>
+    </input>
+    <reference>
+      <prop>/autopilot/settings/target-altitude-ft</prop>
+    </reference>
+    <output>
+      <prop>/autopilot/internal/target-climb-fps</prop>
+    </output>
+    <config>
+      <Kp>0.2</Kp>          <!-- proportional gain -->
+      <u_min>-200</u_min> <!-- minimum output clamp -16.67-->
+      <u_max>200</u_max>   <!-- maximum output clamp 33.33-->
+    </config>
+  </pi-simple-controller>
+  
+  <pi-simple-controller>
+    <name>TFR Computer</name>
+    <debug>false</debug>
+    <enable>
+      <prop>/autopilot/locks/altitude</prop>
+      <value>agl-hold</value>
+    </enable>
+    <input>
+      <property>/autopilot/internal/lookahead-altitude-agl-ft</property>
+    </input>
+    <reference>
+      <property>/autopilot/settings/target-agl-ft</property>
+    </reference>
+    <output>
+      <property>autopilot/internal/target-climb-fps</property>
+    </output>
+    <config>
+      <Kp>0.75</Kp>          <!-- proportional gain -->
+      <u_min>-200</u_min> <!-- minimum output clamp -16.67-->
+      <u_max>200</u_max>   <!-- maximum output clamp 33.33-->
+    </config>
+  </pi-simple-controller>
+  
+  <!-- Stage 3 - Elevator Drives -->
+  
+  <pid-controller>
+    <name>AP:Elevator Control</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+	<and>
+	  <not-equals>
+            <property>/autopilot/locks/altitude</property>
+            <value/>
+          </not-equals>
+	  <not-equals>
+            <property>/autopilot/locks/altitude</property>
+            <value>pitch-hold</value>
+          </not-equals>
+	</and>
+      </condition>
+    </enable>
+    <input>
+      <property>/velocities/vertical-speed-fps</property>
+    </input>
+    <reference>
+      <property>/autopilot/internal/target-climb-fps</property>
+    </reference>
+    <output>
+      <property>/controls/flight/elevator</property>
+    </output>
+    <config>
+      <Kp>-0.00075</Kp>      <!-- proportional gain -0.01 -->
+      <beta>1.0</beta>    <!-- input value weighing factor -->
+      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
+      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
+      <!-- unfiltered derivative error -->
+      <Ti>10.0</Ti>       <!-- integrator time  10.0 -->
+      <Td>0.00001</Td>    <!-- derivator time -->
+      <u_min>-0.175</u_min> <!-- minimum output clamp -->
+      <u_max>0.175</u_max>
+    </config>
+  </pid-controller>
+  
+  <!-- ===================================================== -->
+  <!-- =================== ROLL  AXIS ====================== -->
+  <!-- ===================================================== -->
+  
+  <!--  Stage 1 - Determine Offset -->
+  
+  <pi-simple-controller>
+    <name>AP:Heading Offset Computer</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+        <equals>
+          <property>/autopilot/locks/heading</property>
+          <value>dg-heading-hold</value>
+        </equals>
+      </condition>
+    </enable>
+    <input>
+      <property>/orientation/heading-deg</property>
+    </input>
+    <reference>
+      <property>/autopilot/settings/heading-bug-deg</property>
+    </reference>
+    <output>
+      <property>/autopilot/internal/target-offset-deg</property>
+    </output>
+    <config> <!-- just build the delta, no integration -->
+      <Kp>1.0</Kp>
+      <u_min>-180.0</u_min>
+      <u_max>180.0</u_max>
+    </config>
+  </pi-simple-controller>
+  
+  <pi-simple-controller>
+    <name>AP:Track Offset Computer</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+	<equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value>true-heading-hold</value>
+	</equals>
+      </condition>
+    </enable>
+    <input>
+      <property>/orientation/track-deg</property>
+    </input>
+    <reference>
+      <property>autopilot/settings/true-heading-deg</property>
+    </reference>
+    <output>
+      <property>/autopilot/internal/target-offset-deg</property>
+    </output>
+    <config> <!-- just build the delta, no integration -->
+      <Kp>1.0</Kp>
+      <u_min>-180.0</u_min>
+      <u_max>180.0</u_max>
+    </config>
+  </pi-simple-controller>
+  
+  <pi-simple-controller>
+    <name>AP:TACAN Offset Computer</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+        <equals>
+          <property>/autopilot/locks/heading/</property>
+          <value>tacan-hold</value>
+        </equals>
+      </condition>
+    </enable>
+    <input>
+      <property>/orientation/heading-deg</property>
+    </input>
+    <reference>
+      <property>/instrumentation/tacan/indicated-bearing-true-deg</property>
+    </reference>
+    <output>
+      <property>/autopilot/internal/target-offset-deg</property>
+    </output>
+    <config> <!-- just build the delta, no integration -->
+      <Kp>1.0</Kp>
+      <u_min>-180.0</u_min>
+      <u_max>180.0</u_max>
+    </config>
+  </pi-simple-controller>
+  
+  <pi-simple-controller>
+    <name>AP:NAV Offset Computer</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+        <equals>
+          <property>/autopilot/locks/heading/</property>
+          <value>nav-hold</value>
+        </equals>
+      </condition>
+    </enable>
+    <input>
+      <property>/orientation/heading-deg</property>
+    </input>
+    <reference>
+      <property>/instrumentation/nav/heading-deg</property>
+    </reference>
+    <output>
+      <property>/autopilot/internal/target-offset-deg</property>
+    </output>
+    <config> <!-- just build the delta, no integration -->
+      <Kp>1.0</Kp>
+      <u_min>-180.0</u_min>
+      <u_max>180.0</u_max>
+    </config>
+  </pi-simple-controller>
+  
+  <!-- Stage 2 - Roll Computers -->
+  
+  <filter>
+    <name>AP:Roll Hold Computer</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+	<equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value>roll-hold</value>
+	</equals>
+      </condition>
+    </enable>
+    <type>gain</type>
+    <input>
+      <property>/autopilot/settings/target-roll-deg</property>
+    </input>
+    <output>
+      <property>/autopilot/internal/target-roll-deg</property>
+    </output>
+    <gain>1.0</gain>
+    <u_min>-180.0</u_min>
+    <u_max>180.0</u_max>
+  </filter>
+  
+  <pi-simple-controller>
+    <name>AP:Roll Computer</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+	<or>
+	  <equals>
+            <property>/autopilot/locks/heading/</property>
+            <value/>
+          </equals>
+	  <not-equals>
+            <property>/autopilot/locks/heading/</property>
+            <value>roll-hold</value>
+          </not-equals>
+	</or>
+      </condition>
+    </enable>
+    <input>
+      <property>/autopilot/internal/target-offset-deg</property>
+    </input>
+    <reference>
+      0.0
+    </reference>
+    <output>
+      <property>/autopilot/internal/target-roll-deg</property>
+    </output>
+    <config> <!-- just build the delta, no integration -->
+      <Kp>-7.5</Kp>
+      <u_min>-40.0</u_min>
+      <u_max>40.0</u_max>
+    </config>
+  </pi-simple-controller>
+  
+  <!-- Stage 3 - Aileron Drive -->
+  
+  <pid-controller>
+    <name>AP:Roll Control</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+        <not-equals>
+          <property>/autopilot/locks/heading</property>
+          <value/>
+        </not-equals>
+      </condition>
+    </enable>
+    <input>
+      <property>orientation/roll-deg</property>
+    </input>
+    <reference>
+      <property>/autopilot/internal/target-roll-deg</property>
+    </reference>
+    <output>
+      <property>/controls/flight/aileron</property>
+    </output>
+    <config>
+      <Kp>0.0025</Kp>        <!-- proportional gain -->
+      <beta>1.0</beta>     <!-- input value weighing factor -->
+      <alpha>0.1</alpha>   <!-- low pass filter weighing factor -->
+      <gamma>0.0</gamma>   <!-- input value weighing factor for -->
+      <!-- unfiltered derivative error -->
+      <Ti>5.0</Ti>        <!-- integrator time -->
+      <Td>0.00001</Td>     <!-- derivator time -->
+      <u_min>-0.75</u_min> <!-- minimum output clamp -->
+      <u_max>0.75</u_max>  <!-- maximum output clamp -->
+    </config>
+  </pid-controller>
+  
+  <!-- ####################
+       ##  SPEED MODES   ##
+       #################### -->
+  
+  <!-- Auto throttle KTS --> 
+  <pid-controller>
+    <name>AP: Auto Throttle KTS</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+	<and>
+	  <equals>
+	    <property>/autopilot/locks/speed</property>
+            <value>speed-with-throttle</value>
+	  </equals>
+	  <equals>
+	    <property>/autopilot/settings/kts-mach-select</property>
+	    <value>kts</value>
+	  </equals>
+	</and>
+      </condition>
+    </enable>
+    <input>
+      <prop>/velocities/airspeed-kt</prop>
+    </input>
+    <reference>
+      <prop>/autopilot/settings/target-speed-kt</prop>
+    </reference>
+    <output>
+      <prop>/controls/engines/engine[0]/throttle</prop>
+      <prop>/controls/engines/engine[1]/throttle</prop>
+    </output>
+    <config>
+      <Kp>0.025</Kp>        <!-- proportional gain -->
+      <beta>1.0</beta>    <!-- input value weighing factor -->
+      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
+      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
+      <!-- unfiltered derivative error -->
+      <Ti>20.0</Ti>       <!-- integrator time -->
+      <Td>0.00001</Td>    <!-- derivator time -->
+      <u_min>0.0</u_min>  <!-- minimum output clamp -->
+      <u_max>
+	<condition>
+	  <equals>
+	    <property>/autopilot/settings/allow-reheat</property>
+	    <value>0</value>
+	  </equals>
+	</condition>
+	<value>0.94</value>
+      </u_max>  <!-- maximum output clamp -->
+      <u_max>
+	<condition>
+	  <equals>
+	    <property>/autopilot/settings/allow-reheat</property>
+	    <value>1</value>
+	  </equals>
+	</condition>
+	<value>1.0</value>
+      </u_max>  <!-- maximum output clamp -->
+    </config>
+  </pid-controller>
+  
+  <!-- Auto throttle Mach --> 
+  <pid-controller>
+    <name>AP: Auto Throttle Mach</name>
+    <debug>false</debug>
+    <enable>
+      <condition> 
+	<and>
+	  <equals>
+	    <property>/autopilot/locks/speed</property>
+            <value>speed-with-throttle</value>
+	  </equals>
+	  <equals>
+	    <property>/autopilot/settings/kts-mach-select</property>
+	    <value>mach</value>
+	  </equals>
+	</and>
+      </condition>
+    </enable>
+    <input>
+      <prop>/velocities/mach</prop>
+    </input>
+    <reference>
+      <prop>/autopilot/settings/target-speed-mach</prop>
+    </reference>
+    <output>
+      <prop>/controls/engines/engine[0]/throttle</prop>
+      <prop>/controls/engines/engine[1]/throttle</prop>
+    </output>
+    <config>
+      <Kp>2.0</Kp>        <!-- proportional gain -->
+      <beta>5.0</beta>    <!-- input value weighing factor -->
+      <alpha>0.25</alpha>  <!-- low pass filter weighing factor -->
+      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
+      <!-- unfiltered derivative error -->
+      <Ti>1.0</Ti>       <!-- integrator time -->
+      <Td>0.00001</Td>    <!-- derivator time -->
+      <u_min>0.0</u_min>  <!-- minimum output clamp -->
+      <u_max>  <!-- maximum output clamp, no reheat -->
+	<condition>
+	  <equals>
+	    <property>/autopilot/settings/allow-reheat</property>
+	    <value>0</value>
+	  </equals>
+	</condition>
+	<value>0.94</value>
+      </u_max>
+      <u_max>  <!-- maximum output clamp with reheat -->
+	<condition>
+	  <equals>
+	    <property>/autopilot/settings/allow-reheat</property>
+	    <value>1</value>
+	  </equals>
+	</condition>
+	<value>1.0</value>
+      </u_max>  
+    </config>
+  </pid-controller>
+  
+</PropertyList>

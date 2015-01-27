@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <!-- Until do cockpits buttons -->
+  <name>menuradar</name>
+  <modal>false</modal>
+  <draggable>true</draggable>
+  <layout>vbox</layout>
+  <x>5</x>
+  <y>-40</y>
+
+  <group>
+    <padding>2</padding>
+    <layout>hbox</layout>
+
+    <text>
+      <halign>left</halign>
+      <label>Radar StandBy, Hud markets and IDT frec</label>
+    </text>
+
+    <button>
+      <halign>right</halign>
+      <pref-width>20</pref-width>
+      <pref-height>20</pref-height>
+      <legend>X</legend>
+      <key>Esc</key>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+
+  </group>
+
+  <hrule/>
+
+  <group>
+    <layout>hbox</layout>
+
+    <text>
+      <label>Name  </label>
+    </text>
+
+    <text>
+      <label>State/IDT </label>
+    </text>
+
+  </group>
+
+  <hrule/>
+
+
+  <!-- -->
+
+
+  <group>
+    <layout>table</layout>
+
+    <text>
+      <row>0</row>
+      <col>0</col>
+      <label>Hud Markets</label>
+    </text>
+
+    <text>
+      <row>0</row>
+      <col>1</col>
+      <label>(Still no enabled changes)</label>
+    </text>
+
+    <hrule/>
+
+    <text>
+      <row>1</row>
+      <col>0</col>
+      <label>Radar StandBy</label>
+    </text>
+
+    <checkbox>
+      <row>1</row>
+      <col>1</col>
+      <property>instrumentation/radar/radar-standby</property>
+      <binding>
+	<command>dialog-apply</command>
+      </binding>
+    </checkbox>
+
+    <text>
+      <row>2</row>
+      <col>0</col>
+      <label>Nav 1 ident</label>
+    </text>
+
+    <checkbox>
+      <row>2</row>
+      <col>1</col>
+      <property>/instrumentation/nav/ident</property>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+    </checkbox>
+
+
+    <text>
+      <row>3</row>
+      <col>0</col>
+      <label>Nav 2 ident</label>
+    </text>
+
+    <checkbox>
+      <row>3</row>
+      <col>1</col>
+      <property>/instrumentation/nav[1]/ident</property>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+    </checkbox>
+
+    <text>
+      <row>4</row>
+      <col>0</col>
+      <label>ADF ident</label>
+    </text>
+
+    <checkbox>
+      <row>4</row>
+      <col>1</col>
+      <property>/instrumentation/adf/ident-audible</property>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+    </checkbox>
+
+
+  </group>
+
+  <hrule/>
+
+  <group>
+    <layout>hbox</layout>
+    <default-padding>10</default-padding>
+    <empty><stretch>true</stretch></empty>
+
+    <!--button>
+	<legend>Apply</legend>
+	<equal>true</equal>
+	<binding>
+        <command>dialog-apply</command>
+	</binding>
+	</button>
+
+<empty><stretch>true</stretch></empty-->
+
+    <button>
+      <legend>Close</legend>
+      <equal>true</equal>
+      <key>Esc</key>
+      <default>true</default>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+
+  </group>
+
+</PropertyList>

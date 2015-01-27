@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<PropertyList> 
+  <MFD>
+    <page-selected type="string">enav</page-selected>
+    <menu-selected type="string">norm</menu-selected>
+    <situana>
+      <grid-scale type="int">0</grid-scale>
+      <map-selected type="bool">false</map-selected>
+      <tracking type="bool">1</tracking>
+    </situana>
+  </MFD>
+  <MFD>
+    <page-selected type="string">engman</page-selected>
+    <menu-selected type="string">norm</menu-selected>
+  </MFD>
+  <MFD>
+    <page-selected type="string">radar</page-selected>
+    <menu-selected type="string">norm</menu-selected>
+  </MFD>
+
+  <enav n="0">
+    <selected type="int">3</selected>
+  </enav>
+  <radar>
+    <range type="int" archive="y">20</range>
+    <range-factor type="double" archive="n">0.001888</range-factor>
+    <minimized type="bool" archive="y">false</minimized>
+    <selected type="int">2</selected>
+
+    <!-- inicio en pruebas -->
+    <enabled type="bool">true</enabled>
+    <az-field type="double">120</az-field>
+    <range type="double">150</range>
+    <range-selected type="double">50</range-selected>
+    <radar2-range type="double">150</radar2-range>
+    <display-rdr type="bool">true</display-rdr>
+    <radar-standby type="int">1</radar-standby>
+    <mode>
+      <rws type="bool">true</rws>
+      <tws-auto type="bool">false</tws-auto>
+    </mode>
+
+  </radar>
+
+  <radar2>
+    <sweep-width-m type="double">0.0844</sweep-width-m>
+    <range-width-m type="double">0.0846</range-width-m>
+    <radius-ppi-display-m type="double">0.0846</radius-ppi-display-m>
+    <hud-eye-dist-m type="double">0.6705</hud-eye-dist-m>
+    <hud-radius-m type="double">0.071</hud-radius-m>
+  </radar2>
+
+  <radar-awg-9>
+    <ccm-mode-spl type="bool">false</ccm-mode-spl>
+    <ccm-mode-alt-dhf type="bool">false</ccm-mode-alt-dhf>
+    <ccm-mode-trs type="bool">false</ccm-mode-trs>
+    <display-rdr type="bool">true</display-rdr>
+    <display-ir type="bool">false</display-ir>
+    <display-iff type="bool">false</display-iff>
+    <mode type="string">PDS</mode> <!-- PDS, RWS, TWS, PDSTT, PSTT, VSL -->
+    <ant-trk-light type="bool">false</ant-trk-light>
+    <rd-rot-light type="bool">false</rd-rot-light>
+    <jat-light type="bool">false</jat-light>
+    <irot-light type="bool">false</irot-light>
+  </radar-awg-9>
+  <!--en pruebas fin -->
+
+  <magnetic-compass>
+    <bookmark-heading-deg type="double">43.0</bookmark-heading-deg>
+  </magnetic-compass>
+
+</PropertyList>

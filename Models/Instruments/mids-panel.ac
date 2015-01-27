@@ -1,0 +1,259 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "button.002" rgb 0.2 0.2 0.2 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "button1.004" rgb 0.18 0.18 0.18 amb 0.2 0.2 0.2 emis 0.02 0.02 0.02 spec 0.2 0.2 0.2 shi 128 trans 0
+MATERIAL "button1.005" rgb 0.063479 0.736272 0.235535 amb 0.2 0.2 0.2 emis 0.02 0.02 0.02 spec 0.2 0.2 0.2 shi 128 trans 0
+MATERIAL "button1.006" rgb 0.018448 0.78327 0.178095 amb 0.2 0.2 0.2 emis 0.02 0.02 0.02 spec 0.2 0.2 0.2 shi 128 trans 0
+OBJECT world
+kids 5
+OBJECT group
+name "fuselage.004"
+kids 7
+OBJECT poly
+name "midsbutt.1"
+data 21
+Mesh153 Model_out.014
+crease 30.000000
+numvert 4
+3.667732 1.107728 0.039573
+3.667732 1.107727 0.055965
+3.675896 1.122684 0.039573
+3.675895 1.122684 0.055965
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+0 1.0 0.0
+2 0.0 0.0
+3 0.0 1.0
+1 1.0 1.0
+kids 0
+OBJECT poly
+name "midsbutt.2"
+data 21
+Mesh153 Model_out.016
+crease 30.000000
+numvert 4
+3.666453 1.105178 0.039573
+3.666453 1.105177 0.055965
+3.659654 1.092449 0.039573
+3.659653 1.092448 0.055965
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+0 1.0 0.0
+1 1.0 1.0
+3 0.0 1.0
+2 0.0 0.0
+kids 0
+OBJECT poly
+name "midsbutt.3"
+data 21
+Mesh153 Model_out.017
+crease 30.000000
+numvert 4
+3.658622 1.090639 0.039573
+3.658621 1.090638 0.055965
+3.65051 1.075212 0.039573
+3.650509 1.075211 0.055965
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+0 1.0 0.0
+1 1.0 1.0
+3 0.0 1.0
+2 0.0 0.0
+kids 0
+OBJECT poly
+name "midsbutt.4"
+data 21
+Mesh153 Model_out.018
+crease 30.000000
+numvert 4
+3.667732 1.107729 -0.039574
+3.667732 1.107729 -0.055966
+3.675897 1.122685 -0.039574
+3.675898 1.122685 -0.055966
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+0 1.0 0.0
+1 1.0 1.0
+3 0.0 1.0
+2 0.0 0.0
+kids 0
+OBJECT poly
+name "midsbutt.5"
+data 21
+Mesh153 Model_out.019
+crease 30.000000
+numvert 4
+3.666453 1.105179 -0.055966
+3.666453 1.105179 -0.039574
+3.659655 1.09245 -0.039574
+3.659656 1.092451 -0.055966
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+3 0.0 1.0
+0 1.0 1.0
+1 1.0 0.0
+2 0.0 0.0
+kids 0
+OBJECT poly
+name "midsbutt.6"
+data 21
+Mesh153 Model_out.020
+crease 30.000000
+numvert 4
+3.658624 1.09064 -0.039574
+3.658625 1.090641 -0.055966
+3.650512 1.075213 -0.039574
+3.650513 1.075214 -0.055966
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+0 1.0 0.0
+2 0.0 0.0
+3 0.0 1.0
+1 1.0 1.0
+kids 0
+OBJECT poly
+name "midsscreen"
+data 21
+Mesh153 Model_out.021
+crease 30.000000
+numvert 6
+3.648401 1.07604 -0.035419
+3.648401 1.07604 0.035418
+3.648401 1.07604 -1e-06
+3.672902 1.121857 -0.03542
+3.672901 1.121857 0.035418
+3.672901 1.121857 -1e-06
+numsurf 4
+SURF 0x00
+mat 1
+refs 3
+5 0.0 0.0
+0 1.0 0.0
+3 0.0 1.0
+SURF 0x00
+mat 1
+refs 3
+2 0.0 0.0
+0 1.0 0.0
+5 0.0 1.0
+SURF 0x00
+mat 1
+refs 3
+5 0.0 1.0
+4 0.0 0.0
+2 1.0 0.0
+SURF 0x00
+mat 1
+refs 3
+4 0.0 1.0
+1 0.0 0.0
+2 1.0 0.0
+kids 0
+OBJECT poly
+name "comselind.1"
+data 8
+Mesh.049
+crease 30.000000
+numvert 4
+3.672665 1.120214 0.028637
+3.665722 1.107233 0.032566
+3.672665 1.120214 0.032437
+3.665722 1.107233 0.028766
+numsurf 2
+SURF 0x30
+mat 3
+refs 3
+3 0.0 0.0
+0 0.0 0.0
+2 0.0 0.0
+SURF 0x30
+mat 3
+refs 3
+3 0.0 0.0
+2 0.0 0.0
+1 0.0 0.0
+kids 0
+OBJECT poly
+name "comselind.2"
+data 8
+Mesh.050
+crease 30.000000
+numvert 4
+3.665882 1.10753 -0.032505
+3.672824 1.120511 -0.028834
+3.665882 1.10753 -0.028705
+3.672824 1.120511 -0.032634
+numsurf 2
+SURF 0x30
+mat 4
+refs 3
+0 0.0 0.0
+1 0.0 0.0
+2 0.0 0.0
+SURF 0x30
+mat 4
+refs 3
+1 0.0 0.0
+0 0.0 0.0
+3 0.0 0.0
+kids 0
+OBJECT poly
+name "txind.1"
+data 8
+Mesh.051
+crease 30.000000
+numvert 4
+3.670921 1.11695 0.026406
+3.672532 1.119967 0.020448
+3.672532 1.119967 0.026406
+3.670921 1.11695 0.020448
+numsurf 2
+SURF 0x30
+mat 2
+refs 3
+0 0.0 0.0
+1 0.0 0.0
+2 0.0 0.0
+SURF 0x30
+mat 2
+refs 3
+1 0.0 0.0
+0 0.0 0.0
+3 0.0 0.0
+kids 0
+OBJECT poly
+name "txind.2"
+data 8
+Mesh.052
+crease 30.000000
+numvert 4
+3.671004 1.11711 -0.020155
+3.672615 1.120123 -0.026615
+3.672615 1.120123 -0.020155
+3.671004 1.11711 -0.026615
+numsurf 2
+SURF 0x30
+mat 2
+refs 3
+0 0.0 0.0
+1 0.0 0.0
+2 0.0 0.0
+SURF 0x30
+mat 2
+refs 3
+1 0.0 0.0
+0 0.0 0.0
+3 0.0 0.0
+kids 0

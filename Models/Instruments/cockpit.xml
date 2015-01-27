@@ -1,0 +1,1205 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <path>cockpit.ac</path> <!-- cockpit.ac with ulp, from cockpit3.ac -->
+  <!-- MID -->
+
+  <model>
+    <name>MIDS Panel</name>
+    <path>Aircraft/EF-Typhoon/Models/Instruments/mids-panel.xml</path>
+  </model>
+
+
+  <!-- ASI - VII  --> 
+  <model>
+    <name>Vertical Speed Indicator</name>
+    <path>Aircraft/EF-Typhoon/Models/Instruments/vii.xml</path>
+  </model>
+
+  <!-- Upper Left Panel
+       Numbers are now .001.on to .034.on  and  .001.off to .034.off 
+       ** Master warning
+       leftpButns.001 Master Caution		leftpButns.002 Shoot
+       ** AP
+       leftpButns.003 AP on			leftpButns.003b AP autothottle
+       leftpButns.004 AP Heading		leftpButns.005 AP Altitude Track
+       leftpButns.006 AP Altitude selector	leftpButns.007 AP follow terrain
+       ** SYS1
+       leftpButns.008 Laser power		leftpButns.009 Attack button, Master Arm
+       leftpButns.010 AP master toggle
+       ** RWR
+       leftpButns.011 RWR priority		leftpButns.012 RWR naval
+       leftpButns.013 RWR selection		leftpButns.014 RWR hand-off
+       leftpButns.015 RWR unknown selection	leftpButns.016 RWR Target separation
+       leftpButns.017 RWR search power		leftpButns.018 RWR altitude selection
+       ** CM
+       leftpButns.019 CM - Chaff on		leftpButns.020 CM - Fares on
+       leftpButns.021 CM - Program		leftpButns.022 CM - Modes
+       ** SYS2
+       leftpButns.023 MIDS on			leftpButns.024 NAV selection
+       leftpButns.025 DASS (AIDS)		leftpButns.026 NIS (IFF)
+       leftpButns.027 Interrogator (IFF)	leftpButns.028 DASS (transponder)
+       leftpButns.029 ECM jammer		leftpButns.030 UHF [com1]
+       leftpButns.031 UHF [com2]		leftpButns.032 DASS (DAS) on
+       ** OTHERS
+       leftpButns.033 MISC			leftpButns.034 A/S
+  -->
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>leftpButns.off</object-name>
+    <object-name>leftpButns.on</object-name>
+  </animation>
+
+  <!-- lighting;	ORDER (FIFO) very important -->
+  
+  <animation>
+    <object-name>leftpButns.off</object-name>
+    <type>material</type>
+    <emission>
+      <factor-prop>controls/ULP/brightness</factor-prop>
+      <red>0.25</red>
+      <green>0.25</green>
+      <blue>0.25</blue>
+      <!--red>0.3</red>
+	  <green>0.3</green>
+	  <blue>0.3</blue-->
+    </emission>
+  </animation>
+
+  <animation>
+    <object-name>leftpButns.on</object-name>
+    <type>material</type>
+    <emission>
+      <factor-prop>controls/ULP/brightness</factor-prop>
+      <red>0.1</red>
+      <green>0.9</green>
+      <blue>0.1</blue>
+      <!--red>0.0</red>
+	  <green>0.9</green>
+	  <blue>0.0</blue-->
+    </emission>
+  </animation>
+
+  <animation> <!-- link electrical system: disable all picks -->
+    <type>select</type>
+    <object-name>leftpButns.on</object-name>
+    <object-name>leftpButns.off</object-name>
+    <condition>
+      <greater-than>
+	<property>systems/electrical/outputs/avionics/ULP</property>
+	<value>1</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>leftpButns.003.off</object-name>
+    <!-- out when FALSE -->
+    <condition>
+      <or>  <!-- 1 for or work fine -->
+	<equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value type="string"></value>
+	</equals>
+      </or>
+      <or>
+	<equals>
+	  <property>/autopilot/locks/altitude</property>
+	  <value type="string"></value>
+	</equals>
+      </or>
+      <!--or>
+	  <equals>
+	  <property>/autopilot/locks/speed</property>
+	  <value type="string"></value>
+	  </equals>
+	  </or-->
+    </condition>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>leftpButns.003.on</object-name>
+    <object-name>leftpButns.003.off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>nasal</command>
+	<script>autopilot.apCancel();</script>
+      </binding>
+    </action>
+  </animation> 
+
+  <!--animation>
+      <type>pick</type>
+      <object-name>leftpButns.003.on</object-name>
+      <object-name>leftpButns.003.off</object-name>
+      <action>
+      <button>0</button>
+      <binding>
+      <command>nasal</command>
+      <script>typhoon.SetAp();</script>
+      </binding>
+      </action>
+      </animation--> 
+
+  <animation>
+    <type>select</type>
+    <object-name>leftpButns.003b.off</object-name>
+    <!-- out when FALSE -->
+    <condition>
+      <equals>
+	<property>/autopilot/locks/speed</property>
+	<value type="string"></value>
+      </equals>
+    </condition>
+  </animation>
+
+
+  <animation>
+    <type>pick</type>
+    <object-name>leftpButns.003b.on</object-name>
+    <object-name>leftpButns.003b.off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/speed</property>
+	<value type="string">speed-with-throttle</value>
+	<value type="string"></value>
+      </binding>
+    </action>
+  </animation>
+  
+
+  <animation>
+    <type>pick</type>
+    <object-name>leftpButns.004.on</object-name>
+    <object-name>leftpButns.004.off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/heading</property>
+	<value type="string">dg-heading-hold</value>
+	<!--value type="string">true-heading-hold</value>
+	    <value type="string">nav1-hold</value>
+	    <value type="string">wing-leveler</value-->
+	<value type="string"></value>
+	<!-- ["dg-heading-hold", "wing-leveler", "true-heading-hold", "nav1-hold" -->
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>leftpButns.004.off</object-name>
+    <!-- out when FALSE -->
+    <condition>
+      <not>
+	<equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value type="string">dg-heading-hold</value>
+	</equals>
+      </not>
+      <!--not>
+	  <equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value type="string">true-heading-hold</value>
+	  </equals>
+	  </not>
+	  <not>
+	  <equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value type="string">nav1-hold</value>
+	  </equals>
+	  </not>
+	  <not>
+	  <equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value type="string">wing-leveler</value>
+	  </equals>
+	  </not-->
+    </condition>
+  </animation>
+
+  <!-- True heading hold (fixed change) -->
+  
+  <animation>
+    <type>pick</type>
+    <object-name>leftpButns.005.on</object-name>
+    <object-name>leftpButns.005.off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/heading</property>
+	<value type="string">true-heading-hold</value>
+	<value type="string"></value>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>leftpButns.005.off</object-name>
+    <condition>
+      <not>
+	<equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value type="string">true-heading-hold</value>
+	</equals>
+      </not>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>leftpButns.006.on</object-name>
+    <object-name>leftpButns.006.off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/altitude</property>
+	<value type="string">altitude-hold</value>
+	<!--value type="string">climb-hold</value-->
+	<value type="string"></value>
+	<!-- "altitude-hold", "vertical-speed-hold", "pitch-hold",
+             "aoa-hold", "agl-hold", "gs1-hold"]); -->
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>leftpButns.006.off</object-name>
+    <!-- out when FALSE -->
+    <condition>
+      <not>
+	<equals>
+	  <property>/autopilot/locks/altitude</property>
+	  <value type="string">altitude-hold</value>
+	</equals>
+      </not>
+      <!--not>
+	  <equals>
+	  <property>/autopilot/locks/altitude</property>
+	  <value type="string">climb-hold</value>
+	  </equals>
+	  </not-->
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>leftpButns.007.on</object-name>
+    <object-name>leftpButns.007.off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/altitude</property>
+	<value type="string">agl-hold</value>
+	<value type="string"></value>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>leftpButns.007.off</object-name>
+    <!-- out when FALSE -->
+    <condition>
+      <not>
+	<equals>
+	  <property>/autopilot/locks/altitude</property>
+	  <value type="string">agl-hold</value>
+	</equals>
+      </not>
+    </condition>
+  </animation>
+  
+
+  <animation>
+    <type>pick</type>
+    <object-name>leftpButns.008.on</object-name>
+    <object-name>leftpButns.008.off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/altitude</property>
+	<value type="string">auto-climb</value>
+	<value type="string"></value>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>leftpButns.008.off</object-name>
+    <!-- out when FALSE -->
+    <condition>
+      <not>
+	<equals>
+	  <property>/autopilot/locks/altitude</property>
+	  <value type="string">auto-climb</value>
+	</equals>
+      </not>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>leftpButns.023.on</object-name>
+    <object-name>leftpButns.023.off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-toggle</command>
+	<property>/controls/buttons/MIDS-power</property>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>leftpButns.023.off</object-name>
+    <!-- out when FALSE -->
+    <condition>
+      <not>
+	<equals>
+	  <property>/controls/buttons/MIDS-power</property>
+	  <value>1</value>
+	</equals>
+      </not>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>leftpButns.024.on</object-name>
+    <object-name>leftpButns.024.off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/heading</property>
+	<value type="string">nav-hold</value>
+	<value type="string"></value>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>leftpButns.024.off</object-name>
+    <!-- out when FALSE -->
+    <condition>
+      <not>
+	<equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value>nav-hold</value>
+	</equals>
+      </not>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>leftpButns.026.on</object-name>
+    <object-name>leftpButns.026.off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/heading</property>
+	<value type="string">tacan-hold</value>
+	<value type="string"></value>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>leftpButns.026.off</object-name>
+    <!-- out when FALSE -->
+    <condition>
+      <not>
+	<equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value>tacan-hold</value>
+	</equals>
+      </not>
+    </condition>
+  </animation>
+
+
+  <!--animation>
+      <type>pick</type>
+      <object-name>ulpButns.clm</object-name>
+      <action>
+      <button>0</button>
+      <binding>
+      <command>nasal</command>
+      <script>autopilot.aclmSelect();</script>     
+      </binding>
+      </action>
+      </animation-->
+  
+
+
+  <!-- Universal adi-->
+  <animation>
+    <type>texmultiple</type>
+    <object-name>asi.1</object-name>
+    <transform>
+      <property>orientation/pitch-deg</property>
+      <subtype>textranslate</subtype>
+      <factor>0.00452</factor>
+      <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+      </axis>
+    </transform>
+    <transform>
+      <property>orientation/roll-deg</property>
+      <subtype>texrotate</subtype>
+      <center>
+        <x>0.25</x>
+        <y>0.50</y>
+      </center>
+      <axis>
+        <x>0</x>
+        <y>0</y>
+        <z>-1</z>
+      </axis>
+    </transform>
+  </animation>
+  <animation>
+    <type>texrotate</type>
+    <object-name>asi.2</object-name>
+    <property>orientation/heading-magnetic-deg</property>
+    <center>
+      <x>0.75</x>
+      <y>0.25</y>
+      <z>0.0</z>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+  </animation>
+  <!-- Waypoint distance from route manager and GPS
+       todo fix 1.9.1 - 2.0 with nasal
+       si wp/dist == "" usamos el otro -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>wpt0</object-name>
+    <!--On 2.0, and 1.9.1 with fine configuración of gps -->
+    <property>instrumentation/gps/wp/wp[1]/distance-nm</property>
+    <!--Only 1.9.1: -->
+    <!--property>autopilot/route-manager/wp/dist</property-->
+    <factor>0.0001</factor>
+    <step>1000.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>wpt1</object-name>
+    <!--On 2.0, and 1.9.1 with fine configuración of gps -->
+    <property>instrumentation/gps/wp/wp[1]/distance-nm</property>
+    <!--Only 1.9.1: -->
+    <!--property>autopilot/route-manager/wp/dist</property-->
+    <factor>0.001</factor>
+    <step>100.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>wpt2</object-name>
+    <!--On 2.0, and 1.9.1 with fine configuración of gps -->
+    <property>instrumentation/gps/wp/wp[1]/distance-nm</property>
+    <!--Only 1.9.1: -->
+    <!--property>autopilot/route-manager/wp/dist</property-->
+    <factor>0.01</factor>
+    <step>10.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>wpt3</object-name>
+    <!--On 2.0, and 1.9.1 with fine configuración of gps -->
+    <property>instrumentation/gps/wp/wp[1]/distance-nm</property>
+    <!--Only 1.9.1: -->
+    <!--property>autopilot/route-manager/wp/dist</property-->
+    <factor>0.1</factor>
+    <step>1.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <!-- Waypoint heading from route manager (object stbasi0 unsed)
+       todo fix 1.9.1 - 2.0 with nasal -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>stbasi1</object-name>
+    <!--property>instrumentation/gps/wp/wp[1]/bearing-mag-deg</property-->
+    <!--On 2.0: -->
+    <!--property>instrumentation/gps/wp/leg-true-course-deg</property-->
+    <!--On 1.9.1/2.0 on route manager -->
+    <property>autopilot/settings/true-heading-deg</property>
+    <factor>0.001</factor>
+    <step>100.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>stbasi2</object-name>
+    <!--property>instrumentation/gps/wp/wp[1]/bearing-mag-deg</property-->
+    <!--On 2.0: -->
+    <!--property>instrumentation/gps/wp/leg-true-course-deg</property-->
+    <!--On 1.9.1/2.0 on route manager -->
+    <property>autopilot/settings/true-heading-deg</property>
+    <factor>0.01</factor>
+    <step>10.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>stbasi3</object-name>
+    <!--property>instrumentation/gps/wp/wp[1]/bearing-mag-deg</property-->
+    <!--On 2.0: -->
+    <!--property>instrumentation/gps/wp/leg-true-course-deg</property-->
+    <!--On 1.9.1/2.0 on route manager -->
+    <property>autopilot/settings/true-heading-deg</property>
+    <factor>0.1</factor>
+    <step>1.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <!-- ASI end -->
+
+
+  <model>
+    <name>mid-tL</name>
+    <path>Aircraft/EF-Typhoon/Models/Instruments/mid-tL.xml</path>
+    <offsets>
+      <x-m>3.598</x-m>
+      <y-m>-0.034</y-m>
+      <z-m>1.034</z-m>
+      <pitch-deg>24.0</pitch-deg>
+    </offsets>
+  </model>	
+  <model>
+    <name>mid-tR</name>
+    <path>Aircraft/EF-Typhoon/Models/Instruments/mid-tR.xml</path>
+    <offsets>
+      <x-m>3.598</x-m>
+      <y-m>0.034</y-m>
+      <z-m>1.034</z-m>
+      <pitch-deg>24.0</pitch-deg>
+
+    </offsets>
+  </model>	
+
+
+  <!-- TODO: new order fuel front, rear, total on .AC !!! file (with simple rename) -->
+
+  <!-- total fuel -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>fueltot.0</object-name>
+    <property>consumables/fuel/total-fuel-lbs</property>
+    <factor>0.0001</factor>
+    <step>1000.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>fueltot.1</object-name>
+    <property>consumables/fuel/total-fuel-lbs</property>
+    <factor>0.001</factor>
+    <step>100.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>fueltot.2</object-name>
+    <property>consumables/fuel/total-fuel-lbs</property>
+    <factor>0.01</factor>
+    <step>10.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>fueltot.3</object-name>
+    <property>consumables/fuel/total-fuel-lbs</property>
+    <factor>0.1</factor>
+    <step>1.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <!-- forward fuselage fuel tank -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>fuelf.0</object-name>
+    <property>consumables/fuel/tank[0]/level-lbs</property>
+    <factor>0.0001</factor>
+    <step>1000.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>fuelf.1</object-name>
+    <property>consumables/fuel/tank[0]/level-lbs</property>
+    <factor>0.001</factor>
+    <step>100.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>fuelf.2</object-name>
+    <property>consumables/fuel/tank[0]/level-lbs</property>
+    <factor>0.01</factor>
+    <step>10.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>fuelf.3</object-name>
+    <property>consumables/fuel/tank[0]/level-lbs</property>
+    <factor>0.1</factor>
+    <step>1.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <!-- rear fuselage fuel tank -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>fuelr.0</object-name>
+    <property>consumables/fuel/tank[1]/level-lbs</property>
+    <factor>0.0001</factor>
+    <step>1000.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>fuelr.1</object-name>
+    <property>consumables/fuel/tank[1]/level-lbs</property>
+    <factor>0.001</factor>
+    <step>100.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>fuelr.2</object-name>
+    <property>consumables/fuel/tank[1]/level-lbs</property>
+    <factor>0.01</factor>
+    <step>10.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>fuelr.3</object-name>
+    <property>consumables/fuel/tank[1]/level-lbs</property>
+    <factor>0.1</factor>
+    <step>1.0</step>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <!-- rotate "Caja.R", analogic instruments backup 
+       Instrumentos analógicos:
+       Caja.R (rotándola deben aparecer)
+  -->
+
+  <!-- Vertex 0: 3.543201 0.385403 0.837183 -->
+  <!-- Vertex 1: 3.517499 0.376791 0.975008 -->
+  <!--min-deg>0</min-deg-->
+  <!--max-deg>360</max-deg-->
+  <!--factor>1</factor-->
+  <!--animation>
+      <type>rotate</type>
+      <object-name>Caja.R</object-name>
+      <property>null</property>
+      <center>
+      <x-m>3.531951</x-m>
+      <y-m>0.380886</y-m>
+      <z-m>0.906511</z-m>
+      </center>
+      <axis>
+      <x>-0.025702</x>
+      <y>-0.008612</y>
+      <z>0.137825</z>
+      </axis>
+      </animation-->
+
+
+  <!-- SWITCHES ************************************************** -->
+
+
+  <!-- Ilumination for first switches -->
+  <animation>
+    <object-name>Hook_1</object-name>
+    <object-name>Ladder_1</object-name>
+    <object-name>Fire.L_1</object-name>
+    <object-name>Fire.R_1</object-name>
+    <object-name>FCScont_1</object-name>
+    <type>material</type>
+    <condition>
+      <greater-than>
+	<property>sim/time/sun-angle-rad</property>
+	<value>1.32</value>
+      </greater-than>
+    </condition>
+    <emission>
+      <factor-prop>controls/ULP/brightness</factor-prop>
+      <red>0.4</red>
+      <green>0.1</green>
+      <blue>0.1</blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <object-name>Hook.on</object-name>
+    <!--object-name>Ladder.on</object-name-->
+    <!--object-name>Fire.R.on</object-name>
+	<object-name>Fire.L.on</object-name>
+	<object-name>FCScont.on</object-name-->
+    <type>material</type>
+    <condition>
+      <greater-than>
+	<property>sim/time/sun-angle-rad</property>
+	<value>1.32</value>
+      </greater-than>
+    </condition>
+    <emission>
+      <factor-prop>controls/ULP/brightness</factor-prop>
+      <red>0.9</red>
+      <green>0.1</green>
+      <blue>0.1</blue>
+    </emission>
+  </animation>
+
+
+  <!-- Fire warning (still unused) -->
+
+  <animation>
+    <type>select</type>
+    <object-name>Fire.R.on</object-name>
+  </animation>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>Fire.L.on</object-name>
+  </animation>
+
+  <!-- Ladder and canopy switch -->
+
+  <animation>
+    <type>select</type>
+    <object-name>Ladder.on</object-name>
+    <condition>
+      <greater-than>
+	<property>/controls/canopy/position-norm</property>
+	<value>0.01</value>
+      </greater-than>
+      <!--greater-than>
+	  <property>controls/canopy/position-norm</property>
+	  <value>0</value>
+	  </greater-than-->
+    </condition>
+  </animation>
+
+  <!-- show transit -->
+  <animation>
+    <type>material</type>
+    <object-name>Ladder.on</object-name>
+    <emission>
+      <red>1.0</red>
+      <green>0.3</green>
+      <blue>0.3</blue>
+      <factor-prop>/controls/canopy/position-norm</factor-prop>
+    </emission>
+  </animation>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>Ladder_1</object-name>
+    <condition>
+      <!--less-than>
+	  <property>/controls/canopy/position-norm</property>
+	  <value>1</value>
+	  </less-than-->
+      <equals>
+	<property>controls/canopy/position-norm</property>
+	<value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>Ladder.on</object-name>
+    <object-name>Ladder_1</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>nasal</command>
+	<script>typhoon.canopy.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- FCScont (still unused): AFCS start/warning? -->
+
+  <animation>
+    <type>select</type>
+    <object-name>FCScont.on</object-name>
+  </animation>
+
+  <!-- Hook switch -->
+
+  <animation>
+    <type>select</type>
+    <object-name>Hook.on</object-name>
+    <condition>
+      <greater-than>
+	<property>controls/tailhook/position-norm</property>
+	<value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Hook_1</object-name>
+    <condition>
+      <equals>
+	<property>controls/tailhook/position-norm</property>
+	<value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>Hook.on</object-name>
+    <object-name>Hook_1</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>nasal</command>
+	<script>typhoon.setHook();</script>
+      </binding>
+    </action>
+  </animation>
+  
+
+  <!-- "GearStick" 
+       Nombres de los objetos:
+       Gear.stick (palanca y botones que se mueven)
+       GearStick.off.1  con bloqueo
+       GearStick.off.2
+       GearStick.on.1   sin bloqueo
+       GearStick.on.2
+  -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Gear.stick</object-name>
+    <property>controls/gear/gear-down</property>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> 30 </dep></entry>
+      <entry><ind> 0 </ind><dep> 0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>3.631805</x-m>
+      <y-m>-0.34639</y-m>
+      <z-m>0.714156</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>Gear.stick.1</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<!--command>property-toggle</command>
+	    <property>controls/gear/gear-down</property-->
+	<command>nasal</command>
+	<script>typhoon.gearDownClick();</script>
+      </binding>
+    </action>
+  </animation>
+  
+
+
+  <!-- tailwheel-lock status -->
+  <animation>
+    <type>select</type>
+    <object-name>Gear.stick.off.1</object-name>
+    <object-name>Gear.stick.off.2</object-name>
+    <condition>
+      <property>controls/gear/tailwheel-lock</property>
+      <value>0</value>
+    </condition>
+  </animation>
+  <animation>
+    <type>select</type>
+    <object-name>Gear.stick.on.1</object-name>
+    <object-name>Gear.stick.on.2</object-name>
+    <condition>
+      <not>
+	<property>controls/gear/tailwheel-lock</property>
+	<value>0</value>
+      </not>
+    </condition>
+  </animation>
+
+  <!--
+      Estados del tren:
+      Gear.status.off.N (N=nose) Gear.status.off.R Gear.status.off.L
+      Gear.status.on.N Gear.status.on.R Gear.status.on.L
+      Botón bloqueo:
+      Gear.lock.in (es el botón sin presionar, más largo)
+      Gear.lock.out (casi debería llamarse base, en vez de out)
+  -->
+
+
+  <animation>
+    <type>select</type>
+    <object-name>Gear.status.off.N</object-name>
+    <condition>
+      <less-than>
+	<property>gear/gear/position-norm</property>
+	<value>1</value>
+      </less-than>
+    </condition>
+  </animation>
+  <animation>
+    <type>select</type>
+    <object-name>Gear.status.off.R</object-name>
+    <condition>
+      <less-than>
+	<property>gear/gear[2]/position-norm</property>
+	<value>1</value>
+      </less-than>
+    </condition>
+  </animation>
+  <animation>
+    <type>select</type>
+    <object-name>Gear.status.off.L</object-name>
+    <condition>
+      <less-than>
+	<property>gear/gear[1]/position-norm</property>
+	<value>1</value>
+      </less-than>
+    </condition>
+  </animation>
+  <animation>
+    <type>select</type>
+    <object-name>Gear.status.on.N</object-name>
+    <condition>
+      <property>gear/gear[0]/position-norm</property>
+      <value>1</value>
+    </condition>
+  </animation>
+  <animation>
+    <type>select</type>
+    <object-name>Gear.status.on.R</object-name>
+    <condition>
+      <property>gear/gear[2]/position-norm</property>
+      <value>1</value>
+    </condition>
+  </animation>
+  <animation>
+    <type>select</type>
+    <object-name>Gear.status.on.L</object-name>
+    <condition>
+      <property>gear/gear[1]/position-norm</property>
+      <value>1</value>
+    </condition>
+  </animation>
+
+  <!-- tailwheel-lock switch -->
+  <animation>
+    <type>select</type>
+    <object-name>Gear.lock.out</object-name>
+    <condition>
+      <not>
+	<property>controls/gear/tailwheel-lock</property>
+	<value>0</value>
+      </not>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>Gear.lock.out</object-name>
+    <object-name>Gear.lock.in</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/gear/tailwheel-lock</property>
+      </binding>
+    </action>
+  </animation>
+  
+  <!-- Ilumination for gear stick/status/switches -->
+  <animation>
+    <object-name>Gear.stick.1</object-name>
+    <object-name>Gear.lock.in</object-name>
+    <object-name>Gear.lock.out</object-name>
+    <type>material</type>
+    <condition>
+      <greater-than>
+	<property>sim/time/sun-angle-rad</property>
+	<value>1.32</value>
+      </greater-than>
+    </condition>
+    <emission>
+      <factor-prop>controls/ULP/brightness</factor-prop>
+      <red>0.4</red>
+      <green>0.4</green>
+      <blue>0.4</blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <object-name>Gear.status.off.N</object-name>
+    <object-name>Gear.status.off.R</object-name>
+    <object-name>Gear.status.off.L</object-name>
+    <object-name>Gear.stick.off.1</object-name>
+    <object-name>Gear.stick.off.2</object-name>
+    <type>material</type>
+    <condition>
+      <greater-than>
+	<property>sim/time/sun-angle-rad</property>
+	<value>1.32</value>
+      </greater-than>
+    </condition>
+    <emission>
+      <factor-prop>controls/ULP/brightness</factor-prop>
+      <red>0.9</red>
+      <green>0.1</green>
+      <blue>0.1</blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <object-name>Gear.status.on.N</object-name>
+    <object-name>Gear.status.on.R</object-name>
+    <object-name>Gear.status.on.L</object-name>
+    <object-name>Gear.stick.on.1</object-name>
+    <object-name>Gear.stick.on.2</object-name>
+    <type>material</type>
+    <condition>
+      <greater-than>
+	<property>sim/time/sun-angle-rad</property>
+	<value>1.32</value>
+      </greater-than>
+    </condition>
+    <emission>
+      <factor-prop>controls/ULP/brightness</factor-prop>
+      <red>0.1</red>
+      <green>0.9</green>
+      <blue>0.1</blue>
+    </emission>
+  </animation>
+
+</PropertyList>

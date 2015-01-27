@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+ <name>MIDS Screen</name>
+ <background>Aircraft/EF-Typhoon/Models/Instruments/MIDS/mids-screen.png</background>
+ <w>1100</w>
+ <h>600</h>
+
+ <instruments>
+ 
+ <instrument>
+  <name>Com1 Display</name>
+  <background>Aircraft/EF-Typhoon/Models/Instruments/MIDS/transparent.png</background>
+  <w-base>1000</w-base>            <!-- required width spec-->
+  <h-base>350</h-base>            <!-- required height spec-->
+   <x>0</x>                 <!-- required horizontal placement -->
+   <y>420</y>                 <!-- required vertical placement -->
+   
+   <layers>
+    
+	<layer>                               <!-- switch layer -->
+    <name>Com1 Selected Freq</name>
+    <type>text</type>
+	<font>lucida</font>                     <!-- type == text -->
+    <point-size>90</point-size>           <!-- font size -->
+    <color>                               <!-- specify rgb values to color text -->
+     <red>0.25</red>
+     <green>0.9</green>
+     <blue>0.25</blue>
+    </color>                            <!-- close color section -->
+    <chunks>                              <!-- sections of text are referred to as chunks -->
+     <chunk>                              <!-- first chunk of text -->
+      <type>number-value</type>           <!-- value defines it as dynamic -->
+      <property>/instrumentation/comm/frequencies/selected-mhz</property>      <!-- ties it to a property -->
+      <format>%3.2lf</format>              <!-- define format -->
+     </chunk>
+    </chunks>
+	<transformations>
+     <transformation>
+      <type>x-shift</type>
+      <offset>80</offset>
+     </transformation>
+     <transformation>
+      <type>y-shift</type>
+      <offset>0</offset>
+     </transformation>
+    </transformations>
+   </layer>  
+
+    <layer>                               <!-- switch layer -->
+    <name>Com1 Standby Freq</name>
+    <type>text</type>
+	<font>lucida</font>                     <!-- type == text -->
+    <point-size>80</point-size>           <!-- font size -->
+    <color>                               <!-- specify rgb values to color text -->
+     <red>0.25</red>
+     <green>0.9</green>
+     <blue>0.25</blue>
+    </color>                            <!-- close color section -->
+    <chunks>                              <!-- sections of text are referred to as chunks -->
+     <chunk>                              <!-- first chunk of text -->
+      <type>number-value</type>           <!-- value defines it as dynamic -->
+      <property>/instrumentation/comm/frequencies/standby-mhz</property>      <!-- ties it to a property -->
+      <format>%3.2lf</format>              <!-- define format -->
+     </chunk>
+    </chunks>
+	<transformations>
+     <transformation>
+      <type>x-shift</type>
+      <offset>100</offset>
+     </transformation>
+     <transformation>
+      <type>y-shift</type>
+      <offset>-100</offset>
+     </transformation>
+    </transformations>
+   </layer>  
+  </layers>
+ </instrument>
+ 
+ <instrument>
+  <name>Com2 Display</name>
+  <background>Aircraft/EF-Typhoon/Models/Instruments/MIDS/transparent.png</background>
+  <w-base>1100</w-base>            <!-- required width spec-->
+  <h-base>350</h-base>            <!-- required height spec-->
+   <x>620</x>                 <!-- required horizontal placement -->
+   <y>420</y>                 <!-- required vertical placement -->
+   
+   <layers>
+	
+	<layer>                               <!-- switch layer -->
+    <name>Com2 Selected Freq</name>
+    <type>text</type> 
+	<font>lucida</font>                    <!-- type == text -->
+    <point-size>85</point-size>           <!-- font size -->
+    <color>                               <!-- specify rgb values to color text -->
+     <red>0.25</red>
+     <green>0.9</green>
+     <blue>0.25</blue>
+    </color>                            <!-- close color section -->
+    <chunks>                              <!-- sections of text are referred to as chunks -->
+     <chunk>                              <!-- first chunk of text -->
+      <type>number-value</type>           <!-- value defines it as dynamic -->
+      <property>/instrumentation/comm[1]/frequencies/selected-mhz</property>      <!-- ties it to a property -->
+      <format>%3.2lf</format>              <!-- define format -->
+     </chunk>
+    </chunks>
+    <transformations>
+     <transformation>
+      <type>x-shift</type>
+      <offset>40</offset>
+     </transformation>
+     <transformation>
+      <type>y-shift</type>
+      <offset>0</offset>
+     </transformation>
+    </transformations>
+   </layer>  
+   
+   <layer>                               <!-- switch layer -->
+    <name>Com2 Standby Freq</name>
+    <type>text</type>                     <!-- type == text -->
+    <point-size>75</point-size> 
+	<font>lucida</font>          <!-- font size -->
+    <color>                               <!-- specify rgb values to color text -->
+     <red>0.25</red>
+     <green>0.9</green>
+     <blue>0.25</blue>
+    </color>                            <!-- close color section -->
+    <chunks>                              <!-- sections of text are referred to as chunks -->
+     <chunk>                              <!-- first chunk of text -->
+      <type>number-value</type>           <!-- value defines it as dynamic -->
+      <property>/instrumentation/comm[1]/frequencies/standby-mhz</property>      <!-- ties it to a property -->
+      
+      <format>%3.2lf</format>              <!-- define format -->
+     </chunk>
+    </chunks>
+	<transformations>
+     <transformation>
+      <type>x-shift</type>
+      <offset>60</offset>
+     </transformation>
+     <transformation>
+      <type>y-shift</type>
+      <offset>-100</offset>
+     </transformation>
+    </transformations>
+   </layer>  
+   
+   </layers>
+  
+  </instrument>
+  
+  <instrument>
+  <name>Multi-Information Display</name>
+  <background>Aircraft/EF-Typhoon/Models/Instruments/MIDS/transparent.png</background>
+  <w-base>2000</w-base>            <!-- required width spec-->
+  <h-base>400</h-base>            <!-- required height spec-->
+   <x>80</x>                 <!-- required horizontal placement -->
+   <y>170</y>                 <!-- required vertical placement -->
+   <layers>
+    <layer>                               <!-- switch layer -->
+    <name>Waypoint ID</name>
+    <type>text</type>                     <!-- type == text -->
+    <point-size>80</point-size>           <!-- font size -->
+    <color>                               <!-- specify rgb values to color text -->
+     <red>0.25</red>
+     <green>0.9</green>
+     <blue>0.25</blue>
+    </color>                            <!-- close color section -->
+    <chunks>                              <!-- sections of text are referred to as chunks -->
+     <chunk>                              <!-- first chunk of text -->
+      <type>text-value</type>           <!-- value defines it as dynamic -->
+      <property>/instrumentation/gps/wp/wp[1]/ID</property>      <!-- ties it to a property -->
+      
+      <format>%s</format>              <!-- define format -->
+     </chunk>
+    </chunks>
+   </layer>  
+   
+    <layer>                               <!-- switch layer -->
+    <name>Waypoint ETA</name>
+    <type>text</type>                     <!-- type == text -->
+    <point-size>85</point-size>           <!-- font size -->
+    <color>                               <!-- specify rgb values to color text -->
+     <red>0.25</red>
+     <green>0.9</green>
+     <blue>0.25</blue>
+    </color>                            <!-- close color section -->
+    <chunks>                              <!-- sections of text are referred to as chunks -->
+     <chunk>                              <!-- first chunk of text -->
+      <type>text-value</type>           <!-- value defines it as dynamic -->
+      <property>/instrumentation/gps/wp/wp[1]/TTW</property>      <!-- ties it to a property -->
+     </chunk>
+    </chunks>
+	<transformations>
+     <transformation>
+      <type>x-shift</type>
+      <offset>600</offset>
+     </transformation>
+     <transformation>
+      <type>y-shift</type>
+      <offset>0</offset>
+     </transformation>
+    </transformations>
+   </layer>  
+   
+    <layer>                               <!-- switch layer -->
+    <name>Wpt Lat</name>
+    <type>text</type>                     <!-- type == text -->
+    <point-size>85</point-size>           <!-- font size -->
+    <color>                               <!-- specify rgb values to color text -->
+     <red>0.25</red>
+     <green>0.9</green>
+     <blue>0.25</blue>
+    </color>                            <!-- close color section -->
+    <chunks>                              <!-- sections of text are referred to as chunks -->
+     <chunk>                              <!-- first chunk of text -->
+      <type>number-value</type>           <!-- value defines it as dynamic -->
+      <property>/instrumentation/gps/wp/wp[1]/latitude-deg</property>      <!-- ties it to a property -->
+      <format>%2.4lf</format>              <!-- define format -->
+     </chunk>
+    </chunks>
+	<transformations>
+     <transformation>
+      <type>x-shift</type>
+      <offset>0</offset>
+     </transformation>
+     <transformation>
+      <type>y-shift</type>
+      <offset>-85</offset>
+     </transformation>
+    </transformations>
+   </layer>  
+   
+    <layer>                               <!-- switch layer -->
+    <name>Wpt Lon</name>
+    <type>text</type>                     <!-- type == text -->
+	<point-size>85</point-size>           <!-- font size -->
+    <color>                               <!-- specify rgb values to color text -->
+     <red>0.25</red>
+     <green>0.9</green>
+     <blue>0.25</blue>
+    </color>                            <!-- close color section -->
+    <chunks>                              <!-- sections of text are referred to as chunks -->
+     <chunk>                              <!-- first chunk of text -->
+      <type>number-value</type>           <!-- value defines it as dynamic -->
+      <property>/instrumentation/gps/wp/wp[1]/longitude-deg</property>      <!-- ties it to a property -->
+      <format>%2.4lf</format>              <!-- define format -->
+     </chunk>
+    </chunks>
+	<transformations>
+     <transformation>
+      <type>x-shift</type>
+      <offset>600</offset>
+     </transformation>
+     <transformation>
+      <type>y-shift</type>
+      <offset>-85</offset>
+     </transformation>
+    </transformations>
+   </layer>  
+   
+   </layers>
+  
+  </instrument>
+  
+  
+ </instruments>
+ 
+</PropertyList>

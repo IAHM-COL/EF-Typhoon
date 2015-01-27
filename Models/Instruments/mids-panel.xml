@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<PropertyList> 
+  <path>mids-panel.ac</path>
+  
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>20</max-m>
+  </animation>
+  
+  <!-- Buttons -->
+  
+  <animation>
+    <type>pick</type>
+    <object-name>midsbutt.1</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>nasal</command>
+	<script>fgcom.radio.select_radio(0);</script>    
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>midsbutt.2</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-swap</command>
+	<property>/instrumentation/comm/frequencies/selected-mhz</property>
+	<property>/instrumentation/comm/frequencies/standby-mhz</property>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>midsbutt.4</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>nasal</command>
+	<script>fgcom.radio.select_radio(1);</script>    
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>midsbutt.5</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+	<command>property-swap</command>
+	<property>/instrumentation/comm[1]/frequencies/selected-mhz</property>
+	<property>/instrumentation/comm[1]/frequencies/standby-mhz</property>
+      </binding>
+    </action>
+  </animation>
+  
+  <!-- Screen -->
+  
+  <panel>
+    <path>Aircraft/EF-Typhoon/Models/Instruments/MIDS/mids-screen.xml</path>
+    <bottom-left>
+      <x-m>-0.452</x-m>
+      <y-m>-0.315</y-m>
+      <z-m>-0.37</z-m>
+    </bottom-left>
+    <bottom-right>
+      <x-m>-0.452</x-m>
+      <y-m>0.315</y-m>
+      <z-m>-0.37</z-m>
+    </bottom-right>
+    <top-left>
+      <x-m>-0.155</x-m>
+      <y-m>-0.312</y-m>
+      <z-m>0.05</z-m>
+    </top-left>
+  </panel>
+  
+</PropertyList>

@@ -1,0 +1,155 @@
+\<?xml version="1.0"?>
+
+<PropertyList>
+    <!-- Until do cockpits buttons -->
+    <name>menuluces</name>
+    <modal>false</modal>
+    <draggable>true</draggable>
+    <layout>vbox</layout>
+    <x>5</x>
+    <y>-40</y>
+
+    <group>
+        <padding>2</padding>
+        <layout>hbox</layout>
+
+        <text>
+            <halign>left</halign>
+            <label>Lights settins</label>
+        </text>
+
+        <button>
+            <halign>right</halign>
+            <pref-width>20</pref-width>
+            <pref-height>20</pref-height>
+            <legend>X</legend>
+            <key>Esc</key>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+
+    </group>
+
+    <hrule/>
+
+    <group>
+        <layout>hbox</layout>
+
+        <text>
+            <label>Name  </label>
+        </text>
+
+        <text>
+            <label>State </label>
+        </text>
+
+    </group>
+
+    <hrule/>
+
+
+<!-- -->
+
+
+    <group>
+         <layout>table</layout>
+
+        <text>
+            <row>0</row>
+            <col>0</col>
+            <label>NavLights</label>
+        </text>
+
+        <checkbox>
+            <row>0</row>
+            <col>1</col>
+		<!-- todo best property select-->
+            <property>/systems/electrical/outputs/nav-lights/state</property>
+        </checkbox>
+
+
+        <text>
+            <row>1</row>
+            <col>0</col>
+            <label>Beacon (Red flash)</label>
+        </text>
+
+        <checkbox>
+            <row>1</row>
+            <col>1</col>
+            <property>sim/model/livery/beacon</property>
+        </checkbox>
+
+
+        <text>
+            <row>2</row>
+            <col>0</col>
+            <label>Strobe (White flash)</label>
+        </text>
+
+        <checkbox>
+            <row>2</row>
+            <col>1</col>
+            <property>sim/model/livery/strobe</property>
+        </checkbox>
+
+
+        <text>
+            <row>3</row>
+            <col>0</col>
+            <label>Landing Lights</label>
+        </text>
+
+        <checkbox>
+            <row>3</row>
+            <col>1</col>
+		<!-- todo best property select-->
+            <property>/systems/electrical/outputs/landing-lights/state</property>
+        </checkbox>
+
+        <text>
+            <row>4</row>
+            <col>0</col>
+            <label>Right bottom lights (RAF)</label>
+        </text>
+
+        <checkbox>
+            <row>4</row>
+            <col>1</col>
+            <property>sim/model/livery/RAFlights</property>
+        </checkbox>
+
+
+    </group>
+
+    <hrule/>
+
+    <group>
+    <layout>hbox</layout>
+    <default-padding>10</default-padding>
+    <empty><stretch>true</stretch></empty>
+
+    <button>
+      <legend>Apply</legend>
+      <equal>true</equal>
+      <default>true</default>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+    </button>
+
+    <empty><stretch>true</stretch></empty>
+
+    <button>
+      <legend>Close</legend>
+      <equal>true</equal>
+      <key>Esc</key>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+
+    </group>
+
+</PropertyList>

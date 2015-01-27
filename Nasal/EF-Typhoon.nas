@@ -1,0 +1,237 @@
+#### Typhonn systems	
+#### from many sources...
+#### and also, almursi and algernon work
+
+# need be read again every test
+var WOW = getprop ("/gear/gear[1]/wow") or getprop ("/gear/gear[2]/wow");
+var ReverseStatus0 = 0;
+var ReverseStatus1 = 0;
+var ToggleAp = 0;
+#var false = 0;
+#var true = 1;
+#var TrueHeading = false; # false
+
+#var Reverse_on1 = getprop("/controls/engines/engine[0]/reverser");
+#var Reverse_on2 = getppro("/controls/engines/engine[1]/reverser");
+
+var setHook = func() {
+  var NoDosVeces=getprop("/controls/tailhook/position-norm");
+  if (NoDosVeces!=1) {
+	setprop("/controls/tailhook/position-norm", 1);
+  	setprop("/controls/gear/tailhook", 1);
+	# screen.log.write("HOOK extended"); 
+	}
+    else { 
+	setprop("/controls/tailhook/position-norm", 0);
+  	setprop("/controls/gear/tailhook", 0);
+	# screen.log.write("Hook retracted"); 
+	}
+};
+
+
+# GearDown Control from f14b gear.nas 
+# ----------------
+# Hijacked Gear handling so we have a Weight on Wheel security to prevent
+# undercarriage retraction when on ground.
+# added toggle off launchbar and catapult commands,
+#   and not retraction when tailwheel-lock enabled
+
+controls.gearDown = func(v) {
+    WOW =getprop ("/gear/gear[1]/wow") or getprop ("/gear/gear[2]/wow");
+    if (v < 0 and ! WOW) {
+        # if tailwhell-lock do nothing
+	WOW = getprop("/controls/gear/tailwheel-lock");
+	if ( !WOW ) {
+		setprop("/controls/gear/gear-down", 0); }
+    } elsif (v > 0) {
+      setprop("/controls/gear/gear-down", 1);
+      setprop("/controls/gear/catapult-launch-cmd", 0);
+      setprop("/controls/gear/launchbar", 0);
+      # setprop("/controls/gear/tailwheel-lock", 0);
+    }
+}
+
+# Cockpit switch
+gearDownClick = func() {
+    var OldValue = getprop ("/controls/gear/gear-down");
+    # ChangeValue 1, cierto si está abajo y 0, falso si está arriba
+    WOW = getprop ("/gear/gear[1]/wow") or getprop ("/gear/gear[2]/wow");
+    if (OldValue and ! WOW) {
+        # if tailwhell-lock do nothing
+	WOW = getprop("/controls/gear/tailwheel-lock");
+	if ( !WOW ) {
+		setprop("/controls/gear/gear-down", 0); }
+    } elsif (!OldValue) {
+      setprop("/controls/gear/gear-down", 1);
+      setprop("/controls/gear/catapult-launch-cmd", 0);
+      setprop("/controls/gear/launchbar", 0);
+      # setprop("/controls/gear/tailwheel-lock", 0);
+    }
+}
+
+
+
+#### Afterburner
+# prevent reheat and throttle > 30 with reverser
+setlistener("/controls/engines/engine[0]/throttle", func(n) {
+    if ( getprop("/controls/engines/engine[0]/reverser") == 0 ) {
+         setprop("/controls/engines/engine[0]/reheat", ( n.getValue() >= 0.95 ) ); }
+	else {
+		if ( n.getValue() >= 0.30) { n.setValue(0.30) };
+		setprop("/controls/engines/engine[0]/reheat", 0 );
+	};
+},1);
+
+
+setlistener("/controls/engines/engine[1]/throttle", func(n) {
+    if ( getprop("/controls/engines/engine[1]/reverser") == 0 ) {
+         setprop("/controls/engines/engine[1]/reheat", ( n.getValue() >= 0.95 ) ); }
+	else {
+		if ( n.getValue() >= 0.30) { n.setValue(0.30) };
+		setprop("/controls/engines/engine[1]/reheat", 0 );
+	};
+},1);
+
+#### Reverver on test
+## If throttle > 0 not change: animations work fine
+setlistener("/controls/engines/engine[0]/reverser", func(n) {
+	ReverseStatus0 = n.getValue();
+	if ( getprop("/controls/engines/engine[0]/throttle") > 0 ) {
+		n.setValue( !ReverseStatus0 );
+		}
+},1);
+
+setlistener("/controls/engines/engine[1]/reverser", func(n) {
+	ReverseStatus1 = n.getValue();
+	if ( getprop("/controls/engines/engine[1]/throttle") > 0 ) {
+		n.setValue( !ReverseStatus1 );
+		}
+},1);
+
+# turn off hud in external views
+setlistener("/sim/current-view/view-number", func(n) { setprop("/sim/hud/visibility[1]", n.getValue() == 0) },1);
+
+#### Canopy ####
+# command typhoon.canopy.toggle();
+var canopy = aircraft.door.new ("/controls/canopy/", 3);
+
+## Usefull for future message warning
+setprop("/controls/canopy/open",0);
+
+setlistener("/controls/canopy/position-norm", func(n) {
+	setprop("/controls/canopy/open", ( n.getValue() > 0.01 ) );
+},1);
+
+
+aircraft.livery.init("Aircraft/EF-Typhoon/Models/Liveries");
+
+
+## Launch bar animation f14b
+
+var listen_launchbar = nil;
+listen_launchbar = setlistener( "gear/launchbar/state", func { settimer(update_launchbar, 0.05) },0 ,0 );
+
+var update_launchbar = func() {
+	WOW =getprop ("/gear/gear[1]/wow") or getprop ("/gear/gear[2]/wow");
+	if ( getprop("gear/launchbar/position-norm") == 1 and ! WOW ) {
+		removelistener( listen_launchbar );
+		setprop("controls/gear/launchbar", "false");
+		setprop("controls/gear/launchbar", "true");
+		settimer(reset_launchbar_listener, 1);
+	}
+}
+
+var reset_launchbar_listener = func() {
+	setprop("controls/gear/launchbar", "false");
+	listen_launchbar = setlistener( "gear/launchbar/state", func { settimer(update_launchbar, 0.05) },0 ,0 );
+}
+
+# ## From seahawk (Disabled due unused)
+# 
+# var tailwheel_lock = props.globals.getNode("/controls/gear/tailwheel-lock", 1);
+# var launchbar_state = props.globals.getNode("/gear/launchbar/state", 1);
+# 
+# tailwheel_lock.setDoubleValue(0);
+# launchbar_state.setValue("Disengaged");  
+# 
+# var updateTailwheelLock = func {
+# 	var lock = tailwheel_lock.getValue(); 
+# 	var state = launchbar_state.getValue() ;
+# 
+# 	if ( state != "Disengaged" ) {   
+# 		lock = 0;
+# 	} else {
+# 		lock = 1;
+# 	}
+# 
+# 	tailwheel_lock.setDoubleValue(lock);
+# 
+# #print("tail-wheel-lock " , lock , " state " , state);
+# 
+# } #end func updateTailwheelLock()
+# 
+# setlistener( launchbar_state , updateTailwheelLock,0,0 );
+
+
+### Stall warning: ToDo
+### #var s_warning_state = getprop("/sim/alarms/stall-warning");
+
+######### lights
+
+# default all on
+setprop("systems/electrical/outputs/beacon/state",1);
+setprop("systems/electrical/outputs/strobe/state",1);
+setprop("systems/electrical/outputs/nav-lights/state",1);
+setprop("systems/electrical/outputs/landing-lights/state",1);
+
+# still not used
+# setprop("controls/lighting/instrument-lights",1);
+# setprop("controls/lighting/nav-lights",1);
+# setprop("controls/lighting/beacon",1);
+# setprop("controls/lighting/strobe",1);
+
+
+# Strobe Lights
+strobe_switch = props.globals.getNode("sim/model/livery/strobe", 1);
+aircraft.light.new("systems/electrical/outputs/strobe", [0.025, 1.05], strobe_switch);
+## work fine
+#strobe_switch = props.globals.getNode("controls/lighting/strobe", 1);
+#aircraft.light.new("systems/electrical/outputs/strobe", [0.025, 1.05], strobe_switch);
+# tests
+#strobe_switch = props.globals.getNode("/controls/switches/strobe-lights", 1);
+#aircraft.light.new("/sim/model/typhoon/strobe-bottom", [0.025, 1.6], strobe_switch);
+
+# Beacons
+beacon_switch = props.globals.getNode("sim/model/livery/beacon", 1);
+aircraft.light.new("systems/electrical/outputs/beacon", [0.025, 1.05], beacon_switch);
+## work fine
+#beacon_switch = props.globals.getNode("controls/lighting/beacon", 1);
+#aircraft.light.new("systems/electrical/outputs/beacon", [0.025, 1.05], beacon_switch);
+# tests
+#beacon_switch = props.globals.getNode("controls/switches/beacon", 1);
+#aircraft.light.new("/sim/model/typhoon/beacon-top", [0.025, 1.05], beacon_switch);
+# beacon_switch = props.globals.getNode("controls/switches/beacon", 1);
+# aircraft.light.new("/sim/model/typhoon/beacon-bottom", [0.025, 1.5], beacon_switch);
+
+## Menu dialog Nav Lights
+var Luces = gui.Dialog.new("/sim/gui/dialogs/luces/dialog", "Aircraft/EF-Typhoon/Systems/menu/menulights.xml");
+## Menu dialog RadarStandBy, Hud (ToDo), IDT radios
+var RadarStop = gui.Dialog.new("/sim/gui/dialogs/radarstop/dialog", "Aircraft/EF-Typhoon/Systems/menu/menuradar.xml");
+var APdialog = gui.Dialog.new("/sim/gui/dialogs/ap-dialog/dialog", "Aircraft/EF-Typhoon/Systems/EF-Typhoon-apdialog.xml");
+
+# ------------------------ Unused now (see autopilot.nas)
+### SetupDefaultAutopilot, what is better?
+# disabled picks
+#var SetAp = func() {
+#	if (!ToggleAp) {
+#	setprop("/autopilot/locks/heading", "true-heading-hold");
+#	setprop("/autopilot/locks/altitude", "altitude-hold");
+#	ToggleAp = 1;
+#	} else {
+#		setprop("/autopilot/locks/heading", "");
+#		setprop("/autopilot/locks/altitude", "");
+#		ToggleAp = 0;
+#		}
+#};
+
+
