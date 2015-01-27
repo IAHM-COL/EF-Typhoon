@@ -233,5 +233,3 @@ var APdialog = gui.Dialog.new("/sim/gui/dialogs/ap-dialog/dialog", "Aircraft/EF-
 #		ToggleAp = 0;
 #		}
 #};
-
-

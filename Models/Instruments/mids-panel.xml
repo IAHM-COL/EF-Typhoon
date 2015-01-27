@@ -10,7 +10,6 @@
   </animation>
   
   <!-- Buttons -->
-  
   <animation>
     <type>pick</type>
     <object-name>midsbutt.1</object-name>
@@ -62,7 +61,6 @@
   </animation>
   
   <!-- Screen -->
-  
   <panel>
     <path>Aircraft/EF-Typhoon/Models/Instruments/MIDS/mids-screen.xml</path>
     <bottom-left>

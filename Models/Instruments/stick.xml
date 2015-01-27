@@ -42,8 +42,6 @@
     <type>noshadow</type>
   </animation>
 
-
-
   <animation>
     <type>range</type>
     <min-m>0</min-m>

@@ -15,7 +15,6 @@
   <animation>
     <type>scale</type>
     <object-name>enav</object-name>
-
     <x-factor>1.0</x-factor>
     <x-offset>1.0</x-offset>
     <y-factor>1.0</y-factor>
@@ -44,6 +43,7 @@
     <type type="string">literal</type>
     <text type="string">NORM</text>
   </text>
+
   <text>
     <name>fuel</name>
     <font>lcd.txf</font>
@@ -59,6 +59,7 @@
     <type type="string">literal</type>
     <text type="string">FUEL</text>
   </text>
+
   <text>
     <name>engine</name>
     <font>lcd.txf</font>
@@ -73,8 +74,8 @@
     </offsets>
     <type type="string">literal</type>
     <text type="string">ENG</text>
-
   </text>
+
   <text>
     <name>hydraulic</name>
     <font>lcd.txf</font>
@@ -90,6 +91,7 @@
     <type type="string">literal</type>
     <text type="string">HYD</text>
   </text>
+
   <text>
     <name>waypoint</name>
     <font>lcd.txf</font>
@@ -107,7 +109,6 @@
     <text type="string">WPT</text>
   </text>
 
-
   <text>
     <name>frequency</name>
     <font>lcd.txf</font>
@@ -122,9 +123,7 @@
     </offsets>
     <type type="string">literal</type>
     <text type="string">FREQ</text>
-
   </text>
-
 
   <animation>
     <type>material</type>
@@ -148,5 +147,3 @@
   </animation>
 
 </PropertyList>
-
-

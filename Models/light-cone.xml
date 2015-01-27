@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <!-- example fron 106-dart with a "fix" for display on 2.Git -->
+  <!-- example taken from 106-dart with a "fix" for display on 2.0 git -->
   <path>light-cone2.ac</path>
 
   <effect>

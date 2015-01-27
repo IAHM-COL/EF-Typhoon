@@ -13,6 +13,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>maplayer</object-name>
@@ -29,6 +30,7 @@
       </and>
     </condition>
   </animation>
+
   <animation>
     <type>texmultiple</type>
     <object-name>maplayerfix</object-name>
@@ -83,6 +85,7 @@
       </and>
     </condition>
   </animation>
+
   <animation>
     <type>texmultiple</type>
     <object-name>maplayer</object-name>
@@ -107,6 +110,7 @@
       </axis>
     </transform>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>ownacfix</object-name>
@@ -117,6 +121,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>ownac</object-name>
@@ -127,6 +132,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>radarrangefix</object-name>
@@ -143,6 +149,7 @@
       </and>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>radarrange</object-name>
@@ -193,6 +200,7 @@
     <type type="string">literal</type>
     <text type="string">MAG</text>
   </text>
+
   <text>
     <name>trackmode</name>
     <font>lcd.txf</font>
@@ -208,6 +216,7 @@
     <type type="string">literal</type>
     <text type="string">TRK</text>
   </text>
+
   <text>
     <name>mapmode</name>
     <font>lcd.txf</font>
@@ -223,6 +232,7 @@
     <type type="string">literal</type>
     <text type="string">MAP</text>
   </text>
+
   <text>
     <name>norm</name>
     <font>lcd.txf</font>
@@ -238,6 +248,7 @@
     <type type="string">literal</type>
     <text type="string">NORM</text>
   </text>
+
   <text>
     <name>fuel</name>
     <font>lcd.txf</font>
@@ -253,6 +264,7 @@
     <type type="string">literal</type>
     <text type="string">FUEL</text>
   </text>
+
   <text>
     <name>engine</name>
     <font>lcd.txf</font>
@@ -269,6 +281,7 @@
     <text type="string">ENG</text>
     <draw-boundingbox type="bool">true</draw-boundingbox>
   </text>
+
   <text>
     <name>hydraulic</name>
     <font>lcd.txf</font>
@@ -284,6 +297,7 @@
     <type type="string">literal</type>
     <text type="string">HYD</text>
   </text>
+
   <text>
     <name>waypoint</name>
     <font>lcd.txf</font>
@@ -300,7 +314,6 @@
     <text type="string">WPT</text>
   </text>
 
-
   <text>
     <name>frequency</name>
     <font>lcd.txf</font>
@@ -315,9 +328,7 @@
     </offsets>
     <type type="string">literal</type>
     <text type="string">FREQ</text>
-
   </text>
-
 
   <animation>
     <type>material</type>
@@ -342,6 +353,7 @@
       <factor-prop>/controls/lighting/instruments-norm</factor-prop>
     </emission>
   </animation>
+
   <animation>
     <type>material</type>
     <object-name>gridlayer</object-name>
@@ -358,4 +370,5 @@
       <blue>1.0</blue>
     </emission>
   </animation>
+
 </PropertyList>

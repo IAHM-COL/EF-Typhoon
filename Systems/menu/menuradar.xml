@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-  <!-- Until do cockpits buttons -->
+
+  <!-- Until cockpits buttons are done -->
   <name>menuradar</name>
   <modal>false</modal>
   <draggable>true</draggable>
@@ -28,7 +29,6 @@
         <command>dialog-close</command>
       </binding>
     </button>
-
   </group>
 
   <hrule/>
@@ -43,14 +43,9 @@
     <text>
       <label>State/IDT </label>
     </text>
-
   </group>
 
   <hrule/>
-
-
-  <!-- -->
-
 
   <group>
     <layout>table</layout>
@@ -99,7 +94,6 @@
       </binding>
     </checkbox>
 
-
     <text>
       <row>3</row>
       <col>0</col>
@@ -129,8 +123,6 @@
         <command>dialog-apply</command>
       </binding>
     </checkbox>
-
-
   </group>
 
   <hrule/>
@@ -140,15 +132,18 @@
     <default-padding>10</default-padding>
     <empty><stretch>true</stretch></empty>
 
-    <!--button>
-	<legend>Apply</legend>
-	<equal>true</equal>
-	<binding>
-        <command>dialog-apply</command>
-	</binding>
+    <!--
+	<button>
+	   <legend>Apply</legend>
+	   <equal>true</equal>
+	   <binding>
+           <command>dialog-apply</command>
+	   </binding>
 	</button>
-
-<empty><stretch>true</stretch></empty-->
+        <empty>
+	   <stretch>true</stretch>
+	</empty>
+    -->
 
     <button>
       <legend>Close</legend>
@@ -159,7 +154,6 @@
         <command>dialog-close</command>
       </binding>
     </button>
-
   </group>
 
 </PropertyList>

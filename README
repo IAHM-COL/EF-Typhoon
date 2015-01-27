@@ -105,14 +105,15 @@ Release 1.3b - Fixed FDM
 * No new Livery: under GPL-copyright request
 
 =================================================================
-NOTES (SPANISH VERSION)
+NOTES (TRANSLATED FROM THE SPANISH VERSION BY IH-COL: JAN 2015)
 =================================================================
-Hasta que se desarrolle el control automático, recomendamos que se reduzca la sensibilidad del joystick o el ratón para evitar maniobras bruscas. También es muy fácil superar los límites estructurales del avión, y realizar maniobras con 'g' extremadamente altos sin ninguna consecuencia: en última instancia nos remitimos a la pericia de cada piloto para mantener el avión en límites admisibles. Ahora mismo es bastante manejable y flexible, una vez superada la dificultad inicial con la sensibilidad de los controles. Sin embargo, debido a que aún no está disponible el control automático, es posible perder el control y entrar en barrena tras maniobras brucas o debido al estado bastante inicial de algunas funciones del piloto automático: hay que reducir potencia al minimo, extender el speedbrake al máximo (tampoco molesta el tren de aterrizaje y los slats), y palanca/pedal en estado neutro; de ese modo es fácil que se detengan los giros y podamos recuperar el control con facilidad.
+We strongly advise to reduce sensitivity of the joystick or mouse to avoid strong maneuvers, until the Automatic Pilot is further developed. It is also rather easy to exceed the structural limits of this aircraft, and perform ultra high-'G' maneuvers without a consequence: as a last resort we remmit to the skills of each pilot to keep the aircraft within admissible limitations. Currently, the aircraft is very maneuverable and flexible, once the difficulty posed by the controls overresponse is overcome. Nonetheless, since there is a lack of features on the automatic pilot, it is still feasible to loss control, and enter on spinning after strong handling, or due to the primitive state of such functions in the current status of the Automatic Pilot.  It is advised to reduce thrust to a minimum, extend speedbrake to maximum (landing gear and slats deployment won't hurt), and position stick in neutral; this to increase the likelihood of stopping spinning and of easing recovery of the aircraft's control.
 
-Cómo aterrizar en el portaaviones (sin peso adicional):
+HOWTO land in an aircraft carrier (without extra loads):
+Ideally on an approach at 130 KIAS and AoA -5, and touching the plattform at an AoA near +5, while attempting to keep a vertical speed (Vsp) not superior to -2500, to avoid bouncing over the plattform (the instrument to read vertical speed has a certain delay, thus this is an orientation value).
+It is possible to arrest the hook to a higher speed, causing the bow to dig on the plattform, but currently this phenomena has no major consequences (except this happens with an excess and the aircraft ends floating on the water).
 
-Lo ideal consiste en aproximarse a 130 KIAS y un AoA -5 y tocar la cubierta con un AoA próximo a +5, tratando de no superar una velocidad vertical (Vsp) de -2500, para evitar que rebotemos sobre la cubierta (el instrumento que muestra la velocidad vertical tiene cierta demora, así que se trata de un valor orientativo). Es posible enganchar el hook a mayor velocidad y que clavemos el morro sobre la cubierta, pero de momento no tiene mayores consecuencias (salvo que realmente sea excesiva y acabemos en el agua).
+The current speedbrake has 5 positions: 4 and 5 will brake below 130 KIAS. Speedbrake has a very accused secondary effect on the Angle of Attack. A trick consists in making the most of this reaction of prancing to softly land the plattform with a positive AoA (approx. +5)
 
-El actual speedbrake tiene 5 posiciones: 4 y 5 nos frenarán por debajo de 130 KIAS. El speedbrake tiene un efecto secundario bastante acusado sobre nuestro ángulo de ataque. Un truco consiste en aprovechar la reacción de encabritarse tras reducirlo para posarnos sobre la cubierta con un AoA positivo (aprox. +5).
-
-En el caso de ir cargados los márgenes de maniobra se reducen, y necesitaremos más velocidad para conservar la sustentación.
+HOWTO land in an aircraft carrier (with extra loads):
+In case of carrying load the maneuvering margins are reduce, and it is necessary to keep higher speeds to conserve the lift.

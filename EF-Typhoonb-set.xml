@@ -1,10 +1,15 @@
 <?xml version="1.0"?>
-<!--
-************************************************************************
-Eurofighter Typhoon simulation config.
 
-By MaverickAlex, D. Faber, AlMurSi & Algernon
-************************************************************************
+<!--
+
+   ===============================================
+   Eurofighter Typhoon simulation config.
+   
+   By MaverickAlex, D. Faber, AlMurSi & Algernon
+
+   Modified by the USA TOUR READY CONSORTIUM
+   By JWOCKY, Skyboat, and IH-COL
+   ==============================================
 -->
 
 <PropertyList>
@@ -12,9 +17,9 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
   <sim>
 
     <description>EFA Typhoon: AP 1.9.1 compatible</description>
-    <author>Maverick Alex and others</author>
+    <author>USA TOUR READY CONSORTIUM</author>
     <status>development</status>
-    <aircraft-version>1.4</aircraft-version>
+    <aircraft-version>1.5</aircraft-version>
     
     <flight-model>yasim</flight-model>
     <!-- Stable version with G-limitatios:
@@ -41,22 +46,25 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
       </autopilot> 
       <!-- Autopilot for stable FGFS 2.0 
 	   <autopilot>
-           <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot200v2.xml</path>
+              <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot200v2.xml</path>
 	   </autopilot> -->
       <!-- Autopilot for use on development FGFS 2.Git
 	   <autopilot>
-           <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv2.xml</path>
-	   </autopilot>  --> 
+              <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv2.xml</path>
+	   </autopilot>
+      --> 
     </systems> 
     
-    <!--systems>
-	<electrical>
-        <path>Aircraft/Generic/generic-electrical.xml</path>
-	</electrical>
-	<autopilot>
-        <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot.xml</path>
-	</autopilot>
-	</systems--> 
+    <!--
+	<systems>
+	   <electrical>
+              <path>Aircraft/Generic/generic-electrical.xml</path>
+	   </electrical>
+	   <autopilot>
+              <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot.xml</path>
+	   </autopilot>
+	   </systems>
+    --> 
     
     <virtual-cockpit archive="y">true</virtual-cockpit>
     <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
@@ -64,10 +72,11 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
     <sound>
       <path>Aircraft/EF-Typhoon/Sounds/EF-Typhoon-sound.xml</path>
     </sound>
+    
     <!--
 	<submodels> 
-	<serviceable type="bool">true</serviceable>
-	<path>Aircraft/EF-Typhoon/Models/submodels.xml</path>
+  	   <serviceable type="bool">true</serviceable>
+	   <path>Aircraft/EF-Typhoon/Models/submodels.xml</path>
 	</submodels>
     -->
 
@@ -119,11 +128,12 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
       <line>* Stall: near 90 Kt (clean)</line>
     </help>
 
-
-    <!--panel>
-	<path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
-	<visibility>false</visibility>
-	</panel-->
+    <!--
+	<panel>
+	   <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
+	   <visibility>false</visibility>
+        </panel>
+    -->
 
     <model>
       <path>Aircraft/EF-Typhoon/Models/EF-Typhoon.xml</path>
@@ -135,20 +145,23 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<!--
             <texture>Liveries/spain.png</texture>
             <rudder>
-            <texture>Liveries/moron.png</texture>
+                <texture>Liveries/moron.png</texture>
             </rudder>
 	    <RAFlights type="bool">false</RAFlights>
 	    <beacon type="bool">true</beacon>
 	    <strobe type="bool">false</strobe>
-	    </livery-->
+	    </livery>
+	-->
       </livery>
       <typhoon>
-	<dragchute type="bool">false</dragchute> <!-- por ahora -->
-	<wingmounts type="bool">false</wingmounts> <!-- dejamos de verlos? -->
-        <!-- aquí se puden incluir estos, pero cambian todos los nombres de propiedades !!!:
-	     controls hud instrumentation lighting modeling systems
+	<dragchute type="bool">false</dragchute> <!-- meanwhile -->
+	<wingmounts type="bool">false</wingmounts> <!-- why stop seeing these?  -->
+        <!--
+	    Here we can include these, but all property names are changed!!!:
+	    controls hud instrumentation lighting modeling systems
 	--> 
       </typhoon>
+      
     </model> 
     <multiplay>
       <generic>
@@ -164,18 +177,20 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
       </generic>
     </multiplay>
 
-    <!--autopilot>
-	<config>
-	<min-climb-speed-kt type="float">170.0</min-climb-speed-kt>
-	<best-climb-speed-kt type="float">300.0</best-climb-speed-kt>
-	<target-climb-rate-fpm type="float">1500.0</target-climb-rate-fpm>
-	<target-descent-rate-fpm type="float">2000.0</target-descent-rate-fpm>
-	<elevator-adj-factor type="float">4000.0</elevator-adj-factor>
-	<integral-contribution type="float">0.0001</integral-contribution>
-	<zero-pitch-throttle type="float">0.45</zero-pitch-throttle>
-	<zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle>
-	</config>
-	</autopilot-->
+    <!--
+	<autopilot>
+	   <config>
+	      <min-climb-speed-kt type="float">170.0</min-climb-speed-kt>
+	      <best-climb-speed-kt type="float">300.0</best-climb-speed-kt>
+	      <target-climb-rate-fpm type="float">1500.0</target-climb-rate-fpm>
+	      <target-descent-rate-fpm type="float">2000.0</target-descent-rate-fpm>
+	      <elevator-adj-factor type="float">4000.0</elevator-adj-factor>
+	      <integral-contribution type="float">0.0001</integral-contribution>
+	      <zero-pitch-throttle type="float">0.45</zero-pitch-throttle>
+	      <zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle>
+	   </config>
+	</autopilot>
+    -->
 
     <view n="0">
       <internal archive="y">true</internal>
@@ -210,11 +225,13 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<target-z-offset-m archive="y" type="double">9.0</target-z-offset-m>
       </config>
     </view>
+
     <view n="5">
       <config>
 	<target-z-offset-m archive="y" type="double">9.0</target-z-offset-m>
       </config>
     </view>
+
     <view n="6">
       <config>
 	<target-z-offset-m archive="y" type="double">9.0</target-z-offset-m>
@@ -235,6 +252,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<brightness type="float">1.0</brightness>
 	<alpha type="float">0.70</alpha>
       </color>
+
       <palette>
 	<color n="0">
 	  <red type="float">0.50</red>
@@ -262,6 +280,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<lbs>190.0</lbs>
       </opt>
     </weight>
+
     <weight n="1">
       <name>Pylon left 2</name>
       <weight-lb>0</weight-lb>
@@ -287,6 +306,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<lbs>1094.0</lbs>
       </opt>
     </weight>
+
     <weight n="2">
       <name>Pylon left 3</name>
       <tank>6</tank>
@@ -323,6 +343,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<lbs>1094.0</lbs>
       </opt>
     </weight>
+
     <weight n="3">
       <name>Pylon left 4</name>
       <weight-lb>0</weight-lb>
@@ -364,6 +385,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<gals>211</gals>
       </opt>
     </weight>
+
     <weight n="5">
       <name>Pylon right 4</name>
       <weight-lb>0</weight-lb>
@@ -389,6 +411,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<lbs>1094.0</lbs>
       </opt>
     </weight>
+
     <weight n="6">
       <name>Pylon right 3</name>
       <tank>7</tank>
@@ -425,6 +448,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<lbs>1094.0</lbs>
       </opt>
     </weight>
+
     <weight n="7">
       <name>Pylon right 2</name>
       <weight-lb>0</weight-lb>
@@ -450,6 +474,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<lbs>1094.0</lbs>
       </opt>
     </weight>
+
     <weight n="8">
       <name>Pylon right 1</name>
       <weight-lb>0</weight-lb>
@@ -463,6 +488,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<lbs>190.0</lbs>
       </opt>
     </weight>
+
     <weight n="9">
       <name>Fuselage left 1</name>
       <weight-lb>0</weight-lb>
@@ -476,6 +502,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<lbs>330.0</lbs>
       </opt>
     </weight>
+
     <weight n="10">
       <name>Fuselage left 2</name>
       <weight-lb>0</weight-lb>
@@ -489,6 +516,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<lbs>330.0</lbs>
       </opt>
     </weight>
+
     <weight n="11">
       <name>Fuselage right 1</name>
       <weight-lb>0</weight-lb>
@@ -502,6 +530,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<lbs>330.0</lbs>
       </opt>
     </weight>
+
     <weight n="12">
       <name>Fuselage right 2</name>
       <weight-lb>0</weight-lb>
@@ -515,6 +544,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<lbs>330.0</lbs>
       </opt>
     </weight>
+
     <menubar>
       <default>
 	<menu n="10">
@@ -555,34 +585,42 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<kill-when-empty type="bool">false</kill-when-empty>
 	<level-gal_us archive="y">500</level-gal_us>
       </tank>
+
       <tank n="1">
 	<name>rear fuselage Tank</name>
 	<selected type="bool">true</selected>
       </tank>
+
       <tank n="2">
 	<name>forward left wing Tank</name>
 	<selected type="bool">true</selected>
       </tank>
+
       <tank n="3">
 	<name>rear left wing Tank</name>
 	<selected type="bool">true</selected>
       </tank>
+
       <tank n="4">
 	<name>forward right wing Tank</name>
 	<selected type="bool">true</selected>
       </tank>
+
       <tank n="5">
 	<name>rear right wing Tank</name>
 	<selected type="bool">true</selected>
       </tank>
+
       <tank n="6">
 	<name>left wing Droptank</name>
 	<selected type="bool">false</selected>
       </tank>
+
       <tank n="7">
 	<name>right wing Droptank</name>
 	<selected type="bool">false</selected>
       </tank>
+
       <tank n="8">
 	<name>centerline Droptank</name>
 	<selected type="bool">false</selected>
@@ -595,16 +633,17 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
       <!--rpm type="double">700</rpm-->
       <running>true</running>
     </engine>
+
     <engine n="1">
       <!--rpm type="double">700</rpm-->
       <running>true</running>
     </engine>
+
     <engine n="2">
       <!--rpm type="double">700</rpm-->
       <n2 type="double">0.0</n2>
     </engine>
   </engines>
-
 
   <instrumentation include="Models/Instruments/instrumentation.xml">
   </instrumentation>
@@ -614,14 +653,17 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
     <testing>
       <None type="string"></None>
     </testing>
+
     <ULP>
       <brightness type="double">1</brightness>
       <on-off type="bool">0</on-off>
     </ULP>
+
     <HSD>
       <brightness type="double">1</brightness>
       <on-off type="bool">0</on-off>
     </HSD>
+
     <pilots-displays>
       <mode>
 	<to-bt type="bool">false</to-bt>
@@ -630,6 +672,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<ag-bt type="bool">false</ag-bt>
 	<ldg-bt type="bool">false</ldg-bt>
       </mode>
+
       <steer>
 	<man-bt type="bool">false</man-bt>
 	<tacan-bt type="bool">true</tacan-bt>
@@ -637,21 +680,26 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<dest-bt type="bool">false</dest-bt>
 	<vec-bt type="bool">false</vec-bt>
       </steer>
+
       <hsd-mode-nav type="int">1</hsd-mode-nav><!-- 1=NAV, 0=TID, -1=ECM -->
     </pilots-displays>
+
     <radar-awg-9>
       <on-off type="bool">false</on-off>
       <brightness type="double">1</brightness>
     </radar-awg-9>
+
     <VDI>
       <brightness type="double">1</brightness>
       <contrast type="double">0.6</contrast>
       <on-off type="bool">0</on-off>
     </VDI>
+
     <TID>
       <on-off type="bool">false</on-off>
       <brightness type="double">1</brightness>
     </TID>
+
     <armament>
       <station n="0">
 	<release type="bool">false</release>
@@ -693,22 +741,30 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
 	<release type="bool">false</release>
       </station>
     </armament>
+
     <gear>
       <brake-parking>1</brake-parking>
       <tailwheel-lock type="bool">false</tailwheel-lock>
     </gear>
+
     <tailhook>
       <position-norm type="double">0</position-norm>
     </tailhook>
-    <!--canopy>
-	<position-norm type="float">1.0</position-norm>
-	</canopy-->
+
+    <!--
+	<canopy>
+	    <position-norm type="float">1.0</position-norm>
+        </canopy>
+    -->
     
-    <!--SAS>
-	<pitch type="bool">true</pitch>
-	<roll type="bool">true</roll>
-	<yaw type="bool">true</yaw>
-	</SAS-->
+    <!--
+	<SAS>
+	   <pitch type="bool">true</pitch>
+	   <roll type="bool">true</roll>
+	   <yaw type="bool">true</yaw>
+        </SAS>
+    -->
+
     <switches>
       <voice type="bool">true</voice>
     </switches>
@@ -732,6 +788,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
           <property>/controls/gear/launchbar</property>
         </binding>
       </key>
+
       <key n="79"> 
         <name>O</name>
         <desc>Hook down.</desc>
@@ -752,6 +809,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
           <property>/controls/gear/catapult-launch-cmd</property>
         </binding>
       </key>
+
       <key n="4">
 	<name>Ctrl-d</name>
 	<desc>Toggle Canopy</desc>
@@ -772,6 +830,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
           <max type="double">1</max>
         </binding>
       </key>
+
       <key n="110"> 
         <name>n</name>
         <desc>Retract Speedbrakes</desc>
@@ -795,6 +854,7 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
           <max type="double">1</max>
 	</binding>
       </key>
+
       <key n="102">
 	<name>f</name>
 	<desc>Extend Slats</desc>
@@ -823,49 +883,46 @@ By MaverickAlex, D. Faber, AlMurSi & Algernon
     </keyboard>
   </input>
 
-
-
   <!-- Nasal files/scripts -->
   <nasal>
     <typhoon>
       <file>Aircraft/EF-Typhoon/Nasal/EF-Typhoon.nas</file>
       <!--file>Aircraft/EF-Typhoon/Nasal/SAS.nas</file-->
     </typhoon>
+
     <enav>
       <file>Aircraft/EF-Typhoon/Nasal/enav.nas</file>
     </enav>
+
     <radar>
       <file>Aircraft/EF-Typhoon/Nasal/radar.nas</file>
     </radar>
+
     <autopilot>
       <file>Aircraft/EF-Typhoon/Nasal/autopilot.nas</file>
     </autopilot>
 
-    <!--en pruebas	-->
-    <!--en pruebas
+    <!--IN DEVELOPMENT
 	<radar2>
-	<file>Aircraft/EF-Typhoon/Nasal/radar2.nas</file>
-	</radar2>
+	   <file>Aircraft/EF-Typhoon/Nasal/radar2.nas</file>
+	   </radar2>
+	   
 	<rwr>
-	<file>Aircraft/EF-Typhoon/Nasal/rwr.nas</file>
-	</rwr>
+	   <file>Aircraft/EF-Typhoon/Nasal/rwr.nas</file>
+	   </rwr>
+	   
 	<radardist>
-	<file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+	   <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+	</radardist>
+
+        <radar2>
+	   <file>Aircraft/EF-Typhoon/Models/Instruments/radar2.nas</file>
+	</radar2>
+	
+	<radardist>
+   	   <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
 	</radardist>
     -->
-
-    <!--en pruebas
-	<radar2>
-	<file>Aircraft/EF-Typhoon/Models/Instruments/radar2.nas</file>
-	</radar2>
-	<radardist>
-	<file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
-	</radardist> -->
-
   </nasal>
 
 </PropertyList>
-
-
-
-

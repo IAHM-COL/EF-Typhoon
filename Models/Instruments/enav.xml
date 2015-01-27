@@ -70,6 +70,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>gsarrow2</object-name>
@@ -85,6 +86,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>arrow4</object-name>
@@ -96,6 +98,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>tacanetadot</object-name>
@@ -111,6 +114,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>arrow5</object-name>
@@ -231,6 +235,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow5</object-name>
@@ -242,6 +247,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow5</object-name>
@@ -252,6 +258,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacandme1</object-name>
@@ -303,6 +310,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacaneta1</object-name>
@@ -354,6 +362,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid1</object-name>
@@ -367,6 +376,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid2</object-name>
@@ -380,6 +390,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid3</object-name>
@@ -393,6 +404,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid4</object-name>
@@ -406,6 +418,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid5</object-name>
@@ -419,6 +432,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid6</object-name>
@@ -432,6 +446,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid7</object-name>
@@ -445,6 +460,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid8</object-name>
@@ -458,6 +474,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid9</object-name>
@@ -471,6 +488,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid10</object-name>
@@ -484,6 +502,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid11</object-name>
@@ -497,6 +516,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid12</object-name>
@@ -510,6 +530,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid13</object-name>
@@ -523,6 +544,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid14</object-name>
@@ -536,6 +558,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>tacanid15</object-name>
@@ -560,6 +583,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow42</object-name>
@@ -570,6 +594,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow4</object-name>
@@ -580,6 +605,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow42</object-name>
@@ -601,6 +627,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow1</object-name>
@@ -611,6 +638,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow2</object-name>
@@ -621,6 +649,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow3</object-name>
@@ -631,6 +660,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>bug</object-name>
@@ -641,6 +671,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>locindex</object-name>
@@ -651,6 +682,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow1</object-name>
@@ -661,6 +693,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow2</object-name>
@@ -671,6 +704,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow3</object-name>
@@ -681,6 +715,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>arrow2</object-name>
@@ -706,6 +741,7 @@
       <z>1</z>
     </axis>
   </animation>
+  
   <!--+++++++++++++++ NAV2 ++++++++++++++++++++ -->
   <animation>
     <type>rotate</type>
@@ -717,6 +753,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow12</object-name>
@@ -727,6 +764,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow22</object-name>
@@ -737,6 +775,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow32</object-name>
@@ -747,6 +786,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>locindex2</object-name>
@@ -757,6 +797,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow12</object-name>
@@ -767,6 +808,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow22</object-name>
@@ -777,6 +819,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>arrow32</object-name>
@@ -787,6 +830,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>arrow22</object-name>
@@ -814,8 +858,7 @@
   </animation>
   
   <!-- +++++++++++++ DME ++++++++++++-->
-  
-  <animation>
+    <animation>
     <type>textranslate</type>
     <object-name>dmel1</object-name>
     <property>instrumentation/dme[0]/indicated-distance-nm</property>
@@ -1046,6 +1089,5 @@
       <blue>0.0</blue>
     </emission>
   </animation>
-
 
 </PropertyList>

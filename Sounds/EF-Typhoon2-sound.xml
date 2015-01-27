@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
+
 <!--
-This is a hacked copy of the A-4 sound file.
-The samples called are copies of the A-4 samples.
+    This is a hacked copy of the A-4 sound file.
+    The samples called are copies of the A-4 samples.
 -->
+
 <PropertyList>
   <fx>
     <engine>
@@ -18,6 +20,7 @@ The samples called are copies of the A-4 samples.
 	<max>0.75</max>
       </volume>
     </engine>
+
     <engine>
       <name>whine</name>
       <path>Aircraft/EF-Typhoon/Sounds/Samples/whine.wav</path>
@@ -36,6 +39,7 @@ The samples called are copies of the A-4 samples.
 	<max>0.75</max>
       </volume>
     </engine>
+
     <rumble>
       <name>rumble</name>
       <mode>looped</mode>
@@ -54,6 +58,7 @@ The samples called are copies of the A-4 samples.
 	<max>1.0</max>
       </volume>
     </rumble>
+
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
@@ -65,6 +70,7 @@ The samples called are copies of the A-4 samples.
 	<factor>-0.001</factor>
       </pitch>
     </gear>
+
     <gear>
       <name>gear-lock</name>
       <path>Aircraft/EF-Typhoon/Sounds/Samples/gear-lck.wav</path>
@@ -75,6 +81,7 @@ The samples called are copies of the A-4 samples.
 	</equals>
       </condition>
     </gear>
+
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
@@ -86,6 +93,7 @@ The samples called are copies of the A-4 samples.
 	<factor>-0.001</factor>
       </pitch>
     </gear>
+
     <gear>
       <name>gear-lock</name>
       <path>Aircraft/EF-Typhoon/Sounds/Samples/gear-lck.wav</path>
@@ -96,6 +104,7 @@ The samples called are copies of the A-4 samples.
 	</equals>
       </condition>
     </gear>
+
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
@@ -107,6 +116,7 @@ The samples called are copies of the A-4 samples.
 	<factor>-0.001</factor>
       </pitch>
     </gear>
+
     <gear>
       <name>gear-lock</name>
       <path>Aircraft/EF-Typhoon/Sounds/Samples/gear-lck.wav</path>
@@ -117,6 +127,7 @@ The samples called are copies of the A-4 samples.
 	</equals>
       </condition>
     </gear>
+
     <squeal>
       <name>squeal</name>
       <path>Aircraft/EF-Typhoon/Sounds/Samples/squeal.wav</path>
@@ -147,6 +158,7 @@ The samples called are copies of the A-4 samples.
 	<offset>1.2</offset>
       </pitch>
     </squeal>
+
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
@@ -159,6 +171,7 @@ The samples called are copies of the A-4 samples.
 	<max>0.9</max>
       </volume>
     </flap>
+
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
@@ -171,6 +184,7 @@ The samples called are copies of the A-4 samples.
 	<max>0.9</max>
       </volume>
     </flap>
+
     <speedbrake>
       <name>speedbrake</name>
       <mode>in-transit</mode>
@@ -181,6 +195,7 @@ The samples called are copies of the A-4 samples.
 	<max>0.9</max>
       </volume>
     </speedbrake>
+
     <speedbrake>
       <name>speedbrake</name>
       <mode>in-transit</mode>
@@ -191,6 +206,7 @@ The samples called are copies of the A-4 samples.
 	<max>0.9</max>
       </volume>
     </speedbrake>
+
     <slat>
       <name>slats</name>
       <mode>in-transit</mode>
@@ -201,6 +217,7 @@ The samples called are copies of the A-4 samples.
 	<max>0.9</max>
       </volume>
     </slat>
+
     <slat>
       <name>slats</name>
       <mode>in-transit</mode>
@@ -211,6 +228,7 @@ The samples called are copies of the A-4 samples.
 	<max>0.9</max>
       </volume>
     </slat>
+
     <wind>
       <name>wind</name>
       <mode>looped</mode>
@@ -235,6 +253,7 @@ The samples called are copies of the A-4 samples.
 	<offset>1.25</offset>
       </pitch>
     </wind>
+
     <!-- no binding yet? -->
     <stall>
       <name>stall</name>
@@ -245,6 +264,7 @@ The samples called are copies of the A-4 samples.
 	<min>30.0</min>
       </volume>
     </stall>
+
     <click>
       <name>hook click down</name>
       <path>Aircraft/EF-Typhoon/Sounds/Samples/click.wav</path>
@@ -255,6 +275,7 @@ The samples called are copies of the A-4 samples.
 	<factor>1.0</factor>
       </volume>
     </click>
+
     <click>
       <name>hook click up</name>
       <path>Aircraft/EF-Typhoon/Sounds/Samples/click.wav</path>
@@ -267,6 +288,7 @@ The samples called are copies of the A-4 samples.
 	<factor>1.0</factor>
       </volume>
     </click>
+
     <guns>
       <name>gunfire</name>
       <mode>looped</mode>
@@ -284,4 +306,5 @@ The samples called are copies of the A-4 samples.
       </pitch>
     </guns>
   </fx>
+  
 </PropertyList>

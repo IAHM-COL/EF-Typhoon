@@ -15,9 +15,8 @@
   <h-base>350</h-base>            <!-- required height spec-->
    <x>0</x>                 <!-- required horizontal placement -->
    <y>420</y>                 <!-- required vertical placement -->
-   
+
    <layers>
-    
 	<layer>                               <!-- switch layer -->
     <name>Com1 Selected Freq</name>
     <type>text</type>
@@ -262,10 +261,7 @@
    </layer>  
    
    </layers>
-  
   </instrument>
-  
-  
  </instruments>
  
 </PropertyList>

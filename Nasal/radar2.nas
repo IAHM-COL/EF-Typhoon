@@ -571,5 +571,3 @@ var Target = {
 	},
 	list : [],
 };
-
-

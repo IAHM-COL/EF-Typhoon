@@ -6,8 +6,6 @@
 
   <path>radar-screen.ac</path>
 
-
-
   <animation>
     <type>select</type>
     <object-name>stand-by</object-name>
@@ -15,6 +13,7 @@
       <property>instrumentation/radar/radar-standby</property>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>pulse-srch</object-name>
@@ -22,6 +21,7 @@
       <property>instrumentation/radar2/wcs-mode/pulse-srch</property>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>tws-auto</object-name>
@@ -29,6 +29,7 @@
       <property>instrumentation/radar2/wcs-mode/tws-auto</property>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>az-field-120</object-name>
@@ -39,6 +40,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>az-field-60</object-name>
@@ -50,9 +52,6 @@
     </condition>
   </animation>
 
-
-
-
   <animation>
     <type>textranslate</type>
     <object-name>miles-drum-1</object-name>
@@ -63,6 +62,7 @@
     <axis>
     <x>0</x><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>miles-drum-2</object-name>
@@ -73,6 +73,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>miles-drum-3</object-name>
@@ -83,7 +84,6 @@
       </greater-than>
     </condition>
   </animation>
-
 
   <!--Group MP1 -->
   <MP1>
@@ -111,6 +111,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP1/group-name"/>
@@ -121,6 +122,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP1/group-name"/>
@@ -128,6 +130,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP1/group-name"/>
@@ -138,6 +141,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP1/group-name"/>
@@ -145,6 +149,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP1/group-name"/>
@@ -155,6 +160,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP1 Heading -->
     <type>select</type>
     <object-name alias="../../MP1/hdg-name"/>
@@ -165,6 +171,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP1/hdg-name"/>
@@ -175,6 +182,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP1/hdg-name"/>
@@ -182,6 +190,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!--MP1 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP1/alt0-name"/>
@@ -196,6 +205,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP1/alt0-name"/>
@@ -208,6 +218,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP1 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP1/alt1-name"/>
@@ -218,6 +229,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP1/alt2-name"/>
@@ -228,6 +240,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP1/alt1-name"/>
@@ -241,6 +254,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP1/alt2-name"/>
@@ -253,6 +267,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP1/symb-carrier-name"/>
@@ -263,8 +278,6 @@
       </equals>
     </condition>
   </animation>
-
-
 
   <MP2> <!--Group MP2 -->
     <group-name>MP2</group-name>
@@ -291,6 +304,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP2/group-name"/>
@@ -301,6 +315,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP2/group-name"/>
@@ -308,6 +323,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP2/group-name"/>
@@ -318,6 +334,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP2/group-name"/>
@@ -325,6 +342,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP2/group-name"/>
@@ -335,6 +353,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP2 Heading -->
     <type>select</type>
     <object-name alias="../../MP2/hdg-name"/>
@@ -345,6 +364,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP2/hdg-name"/>
@@ -355,6 +375,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP2/hdg-name"/>
@@ -362,6 +383,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP2 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP2/alt0-name"/>
@@ -376,6 +398,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP2/alt0-name"/>
@@ -388,6 +411,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP2 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP2/alt1-name"/>
@@ -398,6 +422,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP2/alt2-name"/>
@@ -408,6 +433,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP2/alt1-name"/>
@@ -421,6 +447,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP2/alt2-name"/>
@@ -433,6 +460,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP2/symb-carrier-name"/>
@@ -443,8 +471,6 @@
       </equals>
     </condition>
   </animation>
-
-
 
   <MP3> <!--Group MP3 -->
     <group-name>MP3</group-name>
@@ -471,6 +497,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP3/group-name"/>
@@ -481,6 +508,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP3/group-name"/>
@@ -488,6 +516,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP3/group-name"/>
@@ -498,6 +527,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP3/group-name"/>
@@ -505,6 +535,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP3/group-name"/>
@@ -515,6 +546,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP3 Heading -->
     <type>select</type>
     <object-name alias="../../MP3/hdg-name"/>
@@ -525,6 +557,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP3/hdg-name"/>
@@ -535,6 +568,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP3/hdg-name"/>
@@ -542,6 +576,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP3 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP3/alt0-name"/>
@@ -556,6 +591,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP3/alt0-name"/>
@@ -568,6 +604,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP3 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP3/alt1-name"/>
@@ -578,6 +615,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP3/alt2-name"/>
@@ -588,6 +626,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP3/alt1-name"/>
@@ -601,6 +640,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP3/alt2-name"/>
@@ -613,6 +653,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP3/symb-carrier-name"/>
@@ -623,9 +664,6 @@
       </equals>
     </condition>
   </animation>
-
-
-
 
   <MP4> <!--Group MP4 -->
     <group-name>MP4</group-name>
@@ -652,6 +690,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP4/group-name"/>
@@ -662,6 +701,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP4/group-name"/>
@@ -669,6 +709,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP4/group-name"/>
@@ -679,6 +720,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP4/group-name"/>
@@ -686,6 +728,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP4/group-name"/>
@@ -696,6 +739,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP4 Heading -->
     <type>select</type>
     <object-name alias="../../MP4/hdg-name"/>
@@ -706,6 +750,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP4/hdg-name"/>
@@ -716,6 +761,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP4/hdg-name"/>
@@ -723,6 +769,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP4 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP4/alt0-name"/>
@@ -737,6 +784,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP4/alt0-name"/>
@@ -749,6 +797,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP4 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP4/alt1-name"/>
@@ -759,6 +808,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP4/alt2-name"/>
@@ -769,6 +819,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP4/alt1-name"/>
@@ -782,6 +833,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP4/alt2-name"/>
@@ -794,6 +846,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP4/symb-carrier-name"/>
@@ -804,10 +857,6 @@
       </equals>
     </condition>
   </animation>
-
-
-
-
 
   <MP5> <!--Group MP5 -->
     <group-name>MP5</group-name>
@@ -834,6 +883,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP5/group-name"/>
@@ -844,6 +894,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP5/group-name"/>
@@ -851,6 +902,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP5/group-name"/>
@@ -861,6 +913,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP5/group-name"/>
@@ -868,6 +921,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP5/group-name"/>
@@ -878,6 +932,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP5 Heading -->
     <type>select</type>
     <object-name alias="../../MP5/hdg-name"/>
@@ -888,6 +943,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP5/hdg-name"/>
@@ -898,6 +954,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP5/hdg-name"/>
@@ -905,6 +962,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP5 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP5/alt0-name"/>
@@ -919,6 +977,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP5/alt0-name"/>
@@ -931,6 +990,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP5 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP5/alt1-name"/>
@@ -941,6 +1001,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP5/alt2-name"/>
@@ -951,6 +1012,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP5/alt1-name"/>
@@ -964,6 +1026,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP5/alt2-name"/>
@@ -976,6 +1039,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP5/symb-carrier-name"/>
@@ -986,10 +1050,6 @@
       </equals>
     </condition>
   </animation>
-
-
-
-
 
   <MP6> <!--Group MP6 -->
     <group-name>MP6</group-name>
@@ -1016,6 +1076,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP6/group-name"/>
@@ -1026,6 +1087,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP6/group-name"/>
@@ -1033,6 +1095,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP6/group-name"/>
@@ -1043,6 +1106,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP6/group-name"/>
@@ -1050,6 +1114,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP6/group-name"/>
@@ -1060,6 +1125,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP6 Heading -->
     <type>select</type>
     <object-name alias="../../MP6/hdg-name"/>
@@ -1070,6 +1136,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP6/hdg-name"/>
@@ -1080,6 +1147,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP6/hdg-name"/>
@@ -1087,6 +1155,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP6 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP6/alt0-name"/>
@@ -1101,6 +1170,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP6/alt0-name"/>
@@ -1113,6 +1183,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP6 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP6/alt1-name"/>
@@ -1123,6 +1194,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP6/alt2-name"/>
@@ -1133,6 +1205,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP6/alt1-name"/>
@@ -1146,6 +1219,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP6/alt2-name"/>
@@ -1158,6 +1232,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP6/symb-carrier-name"/>
@@ -1168,9 +1243,6 @@
       </equals>
     </condition>
   </animation>
-
-
-
 
   <MP7> <!--Group MP7 -->
     <group-name>MP7</group-name>
@@ -1197,6 +1269,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP7/group-name"/>
@@ -1207,6 +1280,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP7/group-name"/>
@@ -1214,6 +1288,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP7/group-name"/>
@@ -1224,6 +1299,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP7/group-name"/>
@@ -1231,6 +1307,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP7/group-name"/>
@@ -1241,6 +1318,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP7 Heading -->
     <type>select</type>
     <object-name alias="../../MP7/hdg-name"/>
@@ -1251,6 +1329,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP7/hdg-name"/>
@@ -1261,6 +1340,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP7/hdg-name"/>
@@ -1268,6 +1348,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP7 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP7/alt0-name"/>
@@ -1282,6 +1363,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP7/alt0-name"/>
@@ -1294,6 +1376,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP7 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP7/alt1-name"/>
@@ -1304,6 +1387,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP7/alt2-name"/>
@@ -1314,6 +1398,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP7/alt1-name"/>
@@ -1327,6 +1412,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP7/alt2-name"/>
@@ -1339,6 +1425,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP7/symb-carrier-name"/>
@@ -1349,9 +1436,6 @@
       </equals>
     </condition>
   </animation>
-
-
-
 
   <MP8> <!--Group MP8 -->
     <group-name>MP8</group-name>
@@ -1378,6 +1462,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP8/group-name"/>
@@ -1388,6 +1473,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP8/group-name"/>
@@ -1395,6 +1481,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP8/group-name"/>
@@ -1405,6 +1492,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP8/group-name"/>
@@ -1412,6 +1500,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP8/group-name"/>
@@ -1422,6 +1511,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP8 Heading -->
     <type>select</type>
     <object-name alias="../../MP8/hdg-name"/>
@@ -1432,6 +1522,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP8/hdg-name"/>
@@ -1442,6 +1533,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP8/hdg-name"/>
@@ -1449,6 +1541,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP8 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP8/alt0-name"/>
@@ -1463,6 +1556,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP8/alt0-name"/>
@@ -1475,6 +1569,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP8 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP8/alt1-name"/>
@@ -1485,6 +1580,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP8/alt2-name"/>
@@ -1495,6 +1591,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP8/alt1-name"/>
@@ -1508,6 +1605,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP8/alt2-name"/>
@@ -1520,6 +1618,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP8/symb-carrier-name"/>
@@ -1530,10 +1629,6 @@
       </equals>
     </condition>
   </animation>
-
-
-
-
 
   <MP9> <!--Group MP9 -->
     <group-name>MP9</group-name>
@@ -1560,6 +1655,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP9/group-name"/>
@@ -1570,6 +1666,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP9/group-name"/>
@@ -1577,6 +1674,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP9/group-name"/>
@@ -1587,6 +1685,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP9/group-name"/>
@@ -1594,6 +1693,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP9/group-name"/>
@@ -1604,6 +1704,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP9 Heading -->
     <type>select</type>
     <object-name alias="../../MP9/hdg-name"/>
@@ -1614,6 +1715,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP9/hdg-name"/>
@@ -1624,6 +1726,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP9/hdg-name"/>
@@ -1631,6 +1734,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP9 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP9/alt0-name"/>
@@ -1645,6 +1749,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP9/alt0-name"/>
@@ -1657,6 +1762,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP9 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP9/alt1-name"/>
@@ -1667,6 +1773,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP9/alt2-name"/>
@@ -1677,6 +1784,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP9/alt1-name"/>
@@ -1690,6 +1798,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP9/alt2-name"/>
@@ -1702,6 +1811,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP9/symb-carrier-name"/>
@@ -1712,9 +1822,6 @@
       </equals>
     </condition>
   </animation>
-
-
-
 
   <MP10> <!--Group MP10 -->
     <group-name>MP10</group-name>
@@ -1741,6 +1848,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP10/group-name"/>
@@ -1751,6 +1859,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP10/group-name"/>
@@ -1758,6 +1867,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP10/group-name"/>
@@ -1768,6 +1878,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP10/group-name"/>
@@ -1775,6 +1886,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP10/group-name"/>
@@ -1785,6 +1897,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP10 Heading -->
     <type>select</type>
     <object-name alias="../../MP10/hdg-name"/>
@@ -1795,6 +1908,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP10/hdg-name"/>
@@ -1805,6 +1919,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP10/hdg-name"/>
@@ -1812,6 +1927,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP10 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP10/alt0-name"/>
@@ -1826,6 +1942,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP10/alt0-name"/>
@@ -1838,6 +1955,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP10 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP10/alt1-name"/>
@@ -1848,6 +1966,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP10/alt2-name"/>
@@ -1858,6 +1977,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP10/alt1-name"/>
@@ -1871,6 +1991,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP10/alt2-name"/>
@@ -1883,6 +2004,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP10/symb-carrier-name"/>
@@ -1893,10 +2015,6 @@
       </equals>
     </condition>
   </animation>
-
-
-
-
 
   <MP11> <!--Group MP11 -->
     <group-name>MP11</group-name>
@@ -1923,6 +2041,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP11/group-name"/>
@@ -1933,6 +2052,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP11/group-name"/>
@@ -1940,6 +2060,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP11/group-name"/>
@@ -1950,6 +2071,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP11/group-name"/>
@@ -1957,6 +2079,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP11/group-name"/>
@@ -1967,6 +2090,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP11 Heading -->
     <type>select</type>
     <object-name alias="../../MP11/hdg-name"/>
@@ -1977,6 +2101,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP11/hdg-name"/>
@@ -1987,6 +2112,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP11/hdg-name"/>
@@ -1994,6 +2120,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP11 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP11/alt0-name"/>
@@ -2008,6 +2135,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP11/alt0-name"/>
@@ -2020,6 +2148,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP11 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP11/alt1-name"/>
@@ -2030,6 +2159,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP11/alt2-name"/>
@@ -2040,6 +2170,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP11/alt1-name"/>
@@ -2053,6 +2184,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP11/alt2-name"/>
@@ -2065,6 +2197,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP11/symb-carrier-name"/>
@@ -2075,10 +2208,6 @@
       </equals>
     </condition>
   </animation>
-
-
-
-
 
   <MP12> <!--Group MP12 -->
     <group-name>MP12</group-name>
@@ -2105,6 +2234,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP12/group-name"/>
@@ -2115,6 +2245,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP12/group-name"/>
@@ -2122,6 +2253,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP12/group-name"/>
@@ -2132,6 +2264,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP12/group-name"/>
@@ -2139,6 +2272,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP12/group-name"/>
@@ -2149,6 +2283,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP12 Heading -->
     <type>select</type>
     <object-name alias="../../MP12/hdg-name"/>
@@ -2159,6 +2294,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP12/hdg-name"/>
@@ -2169,6 +2305,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP12/hdg-name"/>
@@ -2176,6 +2313,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP12 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP12/alt0-name"/>
@@ -2190,6 +2328,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP12/alt0-name"/>
@@ -2202,6 +2341,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP12 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP12/alt1-name"/>
@@ -2212,6 +2352,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP12/alt2-name"/>
@@ -2222,6 +2363,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP12/alt1-name"/>
@@ -2235,6 +2377,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP12/alt2-name"/>
@@ -2247,6 +2390,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP12/symb-carrier-name"/>
@@ -2257,9 +2401,6 @@
       </equals>
     </condition>
   </animation>
-
-
-
 
   <MP13> <!--Group MP13 -->
     <group-name>MP13</group-name>
@@ -2286,6 +2427,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP13/group-name"/>
@@ -2296,6 +2438,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP13/group-name"/>
@@ -2303,6 +2446,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP13/group-name"/>
@@ -2313,6 +2457,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP13/group-name"/>
@@ -2320,6 +2465,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP13/group-name"/>
@@ -2330,6 +2476,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP13 Heading -->
     <type>select</type>
     <object-name alias="../../MP13/hdg-name"/>
@@ -2340,6 +2487,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP13/hdg-name"/>
@@ -2350,6 +2498,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP13/hdg-name"/>
@@ -2357,6 +2506,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP13 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP13/alt0-name"/>
@@ -2371,6 +2521,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP13/alt0-name"/>
@@ -2383,6 +2534,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP13 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP13/alt1-name"/>
@@ -2393,6 +2545,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP13/alt2-name"/>
@@ -2403,6 +2556,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP13/alt1-name"/>
@@ -2416,6 +2570,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP13/alt2-name"/>
@@ -2428,6 +2583,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP13/symb-carrier-name"/>
@@ -2438,7 +2594,6 @@
       </equals>
     </condition>
   </animation>
-
 
   <MP14> <!--Group MP14 -->
     <group-name>MP14</group-name>
@@ -2465,6 +2620,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP14/group-name"/>
@@ -2475,6 +2631,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP14/group-name"/>
@@ -2482,6 +2639,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP14/group-name"/>
@@ -2492,6 +2650,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP14/group-name"/>
@@ -2499,6 +2658,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP14/group-name"/>
@@ -2509,6 +2669,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP14 Heading -->
     <type>select</type>
     <object-name alias="../../MP14/hdg-name"/>
@@ -2519,6 +2680,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP14/hdg-name"/>
@@ -2529,6 +2691,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP14/hdg-name"/>
@@ -2536,6 +2699,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP14 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP14/alt0-name"/>
@@ -2550,6 +2714,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP14/alt0-name"/>
@@ -2562,6 +2727,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP14 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP14/alt1-name"/>
@@ -2572,6 +2738,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP14/alt2-name"/>
@@ -2582,6 +2749,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP14/alt1-name"/>
@@ -2595,6 +2763,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP14/alt2-name"/>
@@ -2607,6 +2776,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP14/symb-carrier-name"/>
@@ -2617,8 +2787,6 @@
       </equals>
     </condition>
   </animation>
-
-
 
   <MP15> <!--Group MP15 -->
     <group-name>MP15</group-name>
@@ -2645,6 +2813,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP15/group-name"/>
@@ -2655,6 +2824,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP15/group-name"/>
@@ -2662,6 +2832,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP15/group-name"/>
@@ -2672,6 +2843,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP15/group-name"/>
@@ -2679,6 +2851,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP15/group-name"/>
@@ -2689,6 +2862,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP15 Heading -->
     <type>select</type>
     <object-name alias="../../MP15/hdg-name"/>
@@ -2699,6 +2873,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP15/hdg-name"/>
@@ -2709,6 +2884,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP15/hdg-name"/>
@@ -2716,6 +2892,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP15 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP15/alt0-name"/>
@@ -2730,6 +2907,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP15/alt0-name"/>
@@ -2742,6 +2920,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP15 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP15/alt1-name"/>
@@ -2752,6 +2931,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP15/alt2-name"/>
@@ -2762,6 +2942,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP15/alt1-name"/>
@@ -2775,6 +2956,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP15/alt2-name"/>
@@ -2787,6 +2969,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP15/symb-carrier-name"/>
@@ -2797,8 +2980,6 @@
       </equals>
     </condition>
   </animation>
-
-
 
   <MP16> <!--Group MP16 -->
     <group-name>MP16</group-name>
@@ -2825,6 +3006,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP16/group-name"/>
@@ -2835,6 +3017,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP16/group-name"/>
@@ -2842,6 +3025,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP16/group-name"/>
@@ -2852,6 +3036,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP16/group-name"/>
@@ -2859,6 +3044,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP16/group-name"/>
@@ -2869,6 +3055,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP16 Heading -->
     <type>select</type>
     <object-name alias="../../MP16/hdg-name"/>
@@ -2879,6 +3066,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP16/hdg-name"/>
@@ -2889,6 +3077,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP16/hdg-name"/>
@@ -2896,6 +3085,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP16 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP16/alt0-name"/>
@@ -2910,6 +3100,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP16/alt0-name"/>
@@ -2922,6 +3113,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP16 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP16/alt1-name"/>
@@ -2932,6 +3124,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP16/alt2-name"/>
@@ -2942,6 +3135,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP16/alt1-name"/>
@@ -2955,6 +3149,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP16/alt2-name"/>
@@ -2967,6 +3162,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP16/symb-carrier-name"/>
@@ -2977,8 +3173,6 @@
       </equals>
     </condition>
   </animation>
-
-
 
   <MP17> <!--Group MP17 -->
     <group-name>MP17</group-name>
@@ -3005,6 +3199,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP17/group-name"/>
@@ -3015,6 +3210,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP17/group-name"/>
@@ -3022,6 +3218,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP17/group-name"/>
@@ -3032,6 +3229,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP17/group-name"/>
@@ -3039,6 +3237,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP17/group-name"/>
@@ -3049,6 +3248,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP17 Heading -->
     <type>select</type>
     <object-name alias="../../MP17/hdg-name"/>
@@ -3059,6 +3259,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP17/hdg-name"/>
@@ -3069,6 +3270,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP17/hdg-name"/>
@@ -3076,6 +3278,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP17 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP17/alt0-name"/>
@@ -3090,6 +3293,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP17/alt0-name"/>
@@ -3102,6 +3306,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP17 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP17/alt1-name"/>
@@ -3112,6 +3317,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP17/alt2-name"/>
@@ -3122,6 +3328,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP17/alt1-name"/>
@@ -3135,6 +3342,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP17/alt2-name"/>
@@ -3147,6 +3355,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP17/symb-carrier-name"/>
@@ -3157,8 +3366,6 @@
       </equals>
     </condition>
   </animation>
-
-
 
   <MP18> <!--Group MP18 -->
     <group-name>MP18</group-name>
@@ -3185,6 +3392,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP18/group-name"/>
@@ -3195,6 +3403,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP18/group-name"/>
@@ -3202,6 +3411,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP18/group-name"/>
@@ -3212,6 +3422,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP18/group-name"/>
@@ -3219,6 +3430,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP18/group-name"/>
@@ -3229,6 +3441,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP18 Heading -->
     <type>select</type>
     <object-name alias="../../MP18/hdg-name"/>
@@ -3239,6 +3452,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP18/hdg-name"/>
@@ -3249,6 +3463,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP18/hdg-name"/>
@@ -3256,6 +3471,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP18 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP18/alt0-name"/>
@@ -3270,6 +3486,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP18/alt0-name"/>
@@ -3282,6 +3499,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP18 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP18/alt1-name"/>
@@ -3292,6 +3510,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP18/alt2-name"/>
@@ -3302,6 +3521,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP18/alt1-name"/>
@@ -3315,6 +3535,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP18/alt2-name"/>
@@ -3327,6 +3548,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP18/symb-carrier-name"/>
@@ -3337,8 +3559,6 @@
       </equals>
     </condition>
   </animation>
-
-
 
   <MP19> <!--Group MP19 -->
     <group-name>MP19</group-name>
@@ -3365,6 +3585,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP19/group-name"/>
@@ -3375,6 +3596,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP19/group-name"/>
@@ -3382,6 +3604,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../MP19/group-name"/>
@@ -3392,6 +3615,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP19/group-name"/>
@@ -3399,6 +3623,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../MP19/group-name"/>
@@ -3409,6 +3634,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- MP19 Heading -->
     <type>select</type>
     <object-name alias="../../MP19/hdg-name"/>
@@ -3419,6 +3645,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP19/hdg-name"/>
@@ -3429,6 +3656,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../MP19/hdg-name"/>
@@ -3436,6 +3664,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--MP19 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../MP19/alt0-name"/>
@@ -3450,6 +3679,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP19/alt0-name"/>
@@ -3462,6 +3692,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--MP19 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../MP19/alt1-name"/>
@@ -3472,6 +3703,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../MP19/alt2-name"/>
@@ -3482,6 +3714,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP19/alt1-name"/>
@@ -3495,6 +3728,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../MP19/alt2-name"/>
@@ -3507,6 +3741,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation><!-- carrier symbol -->
     <type>select</type>
     <object-name alias="../../MP19/symb-carrier-name"/>
@@ -3517,11 +3752,6 @@
       </equals>
     </condition>
   </animation>
-
-
-
-
-
 
   <TK1> <!--Group TK1 -->
     <group-name>TK1</group-name>
@@ -3546,6 +3776,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../TK1/group-name"/>
@@ -3556,6 +3787,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK1/group-name"/>
@@ -3563,6 +3795,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../TK1/group-name"/>
@@ -3573,6 +3806,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK1/group-name"/>
@@ -3580,6 +3814,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK1/group-name"/>
@@ -3590,6 +3825,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- TK1 Heading -->
     <type>rotate</type>
     <object-name alias="../../TK1/hdg-name"/>
@@ -3600,6 +3836,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../TK1/hdg-name"/>
@@ -3607,6 +3844,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--TK1 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../TK1/alt0-name"/>
@@ -3617,6 +3855,7 @@
       </less-than>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK1/alt0-name"/>
@@ -3629,6 +3868,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--TK1 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../TK1/alt1-name"/>
@@ -3639,6 +3879,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../TK1/alt2-name"/>
@@ -3649,6 +3890,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK1/alt1-name"/>
@@ -3662,6 +3904,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK1/alt2-name"/>
@@ -3674,10 +3917,6 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
-
-
-
-
 
   <TK2> <!--Group TK2 -->
     <group-name>TK2</group-name>
@@ -3702,6 +3941,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../TK2/group-name"/>
@@ -3712,6 +3952,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK2/group-name"/>
@@ -3719,6 +3960,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../TK2/group-name"/>
@@ -3729,6 +3971,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK2/group-name"/>
@@ -3736,6 +3979,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK2/group-name"/>
@@ -3746,6 +3990,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- TK2 Heading -->
     <type>rotate</type>
     <object-name alias="../../TK2/hdg-name"/>
@@ -3756,6 +4001,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../TK2/hdg-name"/>
@@ -3763,6 +4009,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--TK2 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../TK2/alt0-name"/>
@@ -3773,6 +4020,7 @@
       </less-than>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK2/alt0-name"/>
@@ -3785,6 +4033,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--TK2 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../TK2/alt1-name"/>
@@ -3795,6 +4044,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../TK2/alt2-name"/>
@@ -3805,6 +4055,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK2/alt1-name"/>
@@ -3818,6 +4069,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK2/alt2-name"/>
@@ -3830,10 +4082,6 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
-
-
-
-
 
   <TK3> <!--Group TK3 -->
     <group-name>TK3</group-name>
@@ -3858,6 +4106,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../TK3/group-name"/>
@@ -3868,6 +4117,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK3/group-name"/>
@@ -3875,6 +4125,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../TK3/group-name"/>
@@ -3885,6 +4136,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK3/group-name"/>
@@ -3892,6 +4144,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK3/group-name"/>
@@ -3902,6 +4155,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- TK3 Heading -->
     <type>rotate</type>
     <object-name alias="../../TK3/hdg-name"/>
@@ -3912,6 +4166,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../TK3/hdg-name"/>
@@ -3919,6 +4174,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--TK3 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../TK3/alt0-name"/>
@@ -3929,6 +4185,7 @@
       </less-than>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK3/alt0-name"/>
@@ -3941,6 +4198,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--TK3 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../TK3/alt1-name"/>
@@ -3951,6 +4209,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../TK3/alt2-name"/>
@@ -3961,6 +4220,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK3/alt1-name"/>
@@ -3974,6 +4234,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK3/alt2-name"/>
@@ -3986,11 +4247,6 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
-
-
-
-
-
 
   <TK4> <!--Group TK4 -->
     <group-name>TK4</group-name>
@@ -4015,6 +4271,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../TK4/group-name"/>
@@ -4025,6 +4282,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK4/group-name"/>
@@ -4032,6 +4290,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../TK4/group-name"/>
@@ -4042,6 +4301,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK4/group-name"/>
@@ -4049,6 +4309,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK4/group-name"/>
@@ -4059,6 +4320,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- TK4 Heading -->
     <type>rotate</type>
     <object-name alias="../../TK4/hdg-name"/>
@@ -4069,6 +4331,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../TK4/hdg-name"/>
@@ -4076,6 +4339,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--TK4 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../TK4/alt0-name"/>
@@ -4086,6 +4350,7 @@
       </less-than>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK4/alt0-name"/>
@@ -4098,6 +4363,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--TK4 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../TK4/alt1-name"/>
@@ -4108,6 +4374,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../TK4/alt2-name"/>
@@ -4118,6 +4385,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK4/alt1-name"/>
@@ -4131,6 +4399,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK4/alt2-name"/>
@@ -4143,7 +4412,6 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
-
 
   <TK5> <!--Group TK5 -->
     <group-name>TK5</group-name>
@@ -4168,6 +4436,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../TK5/group-name"/>
@@ -4178,6 +4447,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK5/group-name"/>
@@ -4185,6 +4455,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name alias="../../TK5/group-name"/>
@@ -4195,6 +4466,7 @@
     <factor>1</factor>
     <axis><z>1</z></axis>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK5/group-name"/>
@@ -4202,6 +4474,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name alias="../../TK5/group-name"/>
@@ -4212,6 +4485,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation> <!-- TK5 Heading -->
     <type>rotate</type>
     <object-name alias="../../TK5/hdg-name"/>
@@ -4222,6 +4496,7 @@
     <axis><x>-1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name alias="../../TK5/hdg-name"/>
@@ -4229,6 +4504,7 @@
     <axis><x>1</x></axis>
     <center><z-m>-0.0400</z-m></center>
   </animation>
+
   <animation><!--TK5 Altitude < 10000 ft-->
     <type>select</type>
     <object-name alias="../../TK5/alt0-name"/>
@@ -4239,6 +4515,7 @@
       </less-than>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK5/alt0-name"/>
@@ -4251,6 +4528,7 @@
     <step>1</step>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation> <!--TK5 Altitude > 10000 ft -->
     <type>select</type>
     <object-name alias="../../TK5/alt1-name"/>
@@ -4261,6 +4539,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name alias="../../TK5/alt2-name"/>
@@ -4271,6 +4550,7 @@
       </greater-than-equals>
     </condition>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK5/alt1-name"/>
@@ -4284,6 +4564,7 @@
     <scroll>0.5</scroll>
     <axis><y>-1</y></axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name alias="../../TK5/alt2-name"/>
@@ -4297,7 +4578,6 @@
     <axis><y>-1</y></axis>
   </animation>
 
-
   <!-- lighting--> 
   <animation>
     <object-name>radar-screen</object-name>
@@ -4309,7 +4589,5 @@
       <blue>0</blue>
     </emission>
   </animation>
-
-
 
 </PropertyList>

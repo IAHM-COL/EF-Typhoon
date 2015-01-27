@@ -31,6 +31,7 @@
       </binding>
     </action>
   </animation>
+
   <animation>
     <type>pick</type>
     <object-name>C3</object-name>
@@ -44,6 +45,7 @@
       </binding>
     </action>
   </animation>
+
   <animation>
     <type>pick</type>
     <object-name>C1</object-name>
@@ -71,4 +73,5 @@
       </binding>
     </action>
   </animation>
+
 </PropertyList>

@@ -10,10 +10,12 @@
       <tracking type="bool">1</tracking>
     </situana>
   </MFD>
+
   <MFD>
     <page-selected type="string">engman</page-selected>
     <menu-selected type="string">norm</menu-selected>
   </MFD>
+
   <MFD>
     <page-selected type="string">radar</page-selected>
     <menu-selected type="string">norm</menu-selected>
@@ -22,12 +24,12 @@
   <enav n="0">
     <selected type="int">3</selected>
   </enav>
+
   <radar>
     <range type="int" archive="y">20</range>
     <range-factor type="double" archive="n">0.001888</range-factor>
     <minimized type="bool" archive="y">false</minimized>
     <selected type="int">2</selected>
-
     <!-- inicio en pruebas -->
     <enabled type="bool">true</enabled>
     <az-field type="double">120</az-field>
@@ -40,7 +42,6 @@
       <rws type="bool">true</rws>
       <tws-auto type="bool">false</tws-auto>
     </mode>
-
   </radar>
 
   <radar2>
@@ -64,8 +65,8 @@
     <jat-light type="bool">false</jat-light>
     <irot-light type="bool">false</irot-light>
   </radar-awg-9>
-  <!--en pruebas fin -->
 
+  <!--en pruebas fin -->
   <magnetic-compass>
     <bookmark-heading-deg type="double">43.0</bookmark-heading-deg>
   </magnetic-compass>

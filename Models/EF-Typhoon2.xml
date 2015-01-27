@@ -1,11 +1,14 @@
 <?xml version="1.0"?>
 
-<!--    Working on gauges
-Haciendo palancas y botones básicos del panel
-Por hacer paracaídas y fijación trasera del hook, slat más depurado
-los agujeros de los pedales deberían ser más pequeños
-pequeños detalles de antenas y bengalas
-descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
+<!--
+     TODO:
+     Work on gauges
+     Preparing sticks and basic buttons on the pannel
+     parachutes and more accureate position of rear hook. Cleaner slats.
+     Pedal's holes should be smaller.
+     Little details such as antennae and flares
+     Discover why liveries and lights are not being transmitted in multiplayer mode
+-->
 
 <PropertyList> 
   <path>EF-Typhoon2.ac</path>
@@ -20,7 +23,6 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
   </nasal>
 
   <!-- Livery -->
-
   <animation>
     <type>material</type>
     <object-name>fsellogo</object-name>
@@ -83,6 +85,7 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       <pitch-deg>0.0</pitch-deg>
     </offsets>
   </model>	
+
   <model> 
     <path>Aircraft/EF-Typhoon/Models/Instruments/mfd2.xml</path>
     <offsets> 
@@ -92,6 +95,7 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       <pitch-deg>-13</pitch-deg>
     </offsets>
   </model>
+
   <model> 
     <path>Aircraft/EF-Typhoon/Models/Instruments/mfd3.xml</path>
     <offsets> 
@@ -101,16 +105,18 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       <pitch-deg>-13</pitch-deg>
     </offsets>
   </model>
+
   <model> 
     <path>Aircraft/EF-Typhoon/Models/Instruments/mfd1.xml</path>
     <offsets> 
       <x-m>3.495</x-m>
       <y-m>-0.0</y-m>
-      <z-m>0.85</z-m><!-- .83 aquí y 89 el resto: probamos +2 -->
+      <z-m>0.85</z-m><!-- 0.83 here and 89 everywhere else: we tested +2 -->
       <pitch-deg>-13</pitch-deg>
     </offsets>
   </model>
-  <!-- Pedals from A6E, only remain animations offsets -->
+
+  <!-- Pedals taken from A6E, only remain animations offsets -->
   <model> 
     <path>Aircraft/EF-Typhoon/Models/Instruments/pedals.xml</path>
     <offsets> 
@@ -122,7 +128,8 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       <type>noshadow</type>
     </animation>
   </model>
-  <!-- Stick from A6E, remain some structure -->
+
+  <!-- Stick taken from A6E, remain some structure -->
   <model>
     <path>Aircraft/EF-Typhoon/Models/Instruments/stick.xml</path>
     <offsets> 
@@ -143,27 +150,25 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
     </offsets>
   </model>	
 
-  <!-- from M_F1
+  <!--Taken from M_F1
+       <model>
+           <path>Aircraft/EF-Typhoon/Models/Instruments/hud.xml</path>
+	   <offsets>
+	   <x-m>2</x-m>
+	   <y-m>0</y-m>
+	   <z-m>1</z-m>
+	   <pitch-deg>0</pitch-deg>
+	   </offsets>
+	</model>
+  -->
 
-<model>
-<path>Aircraft/EF-Typhoon/Models/Instruments/hud.xml</path>
-<offsets>
-<x-m>2</x-m>
-<y-m>0</y-m>
-<z-m>1</z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-</model> -->
-
-  <!-- from f15c -->
-
+  <!-- Taken from f15c -->
   <animation>
     <type>noshadow</type>
     <object-name>ExternalFlame</object-name>
     <object-name>InternalFlame</object-name>
     <object-name>InternalFlame2</object-name>
   </animation>
-
   <animation>
     <type>select</type>
     <object-name>ExternalFlame</object-name>
@@ -176,19 +181,10 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
     </condition>
   </animation>
 
-  <!-- nose gear.	FIXME: group every gear on blender -->
-  
+  <!-- Nose gear -->
   <animation> 
     <type>rotate</type>
-    <object-name>nosegear.1</object-name>
-    <object-name>nosegear.2</object-name>
-    <object-name>nosegear3</object-name>
-    <object-name>nosegear4</object-name>
-    <object-name>nosewheel</object-name>
-    <object-name>nosewheel.1</object-name>
-    <object-name>nosewheel.2</object-name>
-    <object-name>nosewheel.3</object-name>
-    <object-name>nosewheel.4</object-name>
+    <object-name>Gear.nose</object-name>
     <property>surface-positions/rudder-pos-norm</property>
     <factor>20</factor>
     <center>
@@ -232,17 +228,10 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       <z>0.0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
-    <object-name>nosegear.1</object-name>
-    <object-name>nosegear.2</object-name>
-    <object-name>nosegear3</object-name>
-    <object-name>nosegear4</object-name>
-    <object-name>nosewheel</object-name>
-    <object-name>nosewheel.1</object-name>
-    <object-name>nosewheel.2</object-name>
-    <object-name>nosewheel.3</object-name>
-    <object-name>nosewheel.4</object-name>
+    <object-name>Gear.nose</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation> 
       <entry>
@@ -301,6 +290,7 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       <z>0.0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>geardoor2.L</object-name>
@@ -335,15 +325,11 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       <z>0.0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
-    <object-name>gear1.L</object-name>
-    <object-name>gear2.L</object-name>
-    <object-name>gear3.L</object-name>
-    <object-name>gear4.L</object-name>
-    <object-name>wheel1.L</object-name>
-    <object-name>wheel2.L</object-name>
-    <property>gear/gear[1]/position-norm</property>
+    <object-name>Gear.L</object-name>
+      <property>gear/gear[1]/position-norm</property>
     <interpolation> 
       <entry>
         <ind>0</ind>
@@ -431,14 +417,10 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       <z>0.0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
-    <object-name>gear1.R</object-name>
-    <object-name>gear2.R</object-name>
-    <object-name>gear3.R</object-name>
-    <object-name>gear4.R</object-name>
-    <object-name>wheel1.R</object-name>
-    <object-name>wheel2.R</object-name>
+    <object-name>Gear.R</object-name>
     <property>gear/gear[2]/position-norm</property>
     <interpolation> 
       <entry>
@@ -467,7 +449,6 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
   </animation>
 
   <!-- control surfaces -->
-
   <!-- elevator -->
   <animation> 
     <type>rotate</type>
@@ -525,7 +506,8 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
     </axis>
   </animation>
 
-  <!--animation>
+  <!--
+  <animation>
       <type>rotate</type>
       <object-name>flaperon.R</object-name>
       <property>surface-positions/flap-pos-norm</property>
@@ -540,26 +522,28 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       <y>1</y>
       <z>0</z>
       </axis>
-      </animation>
+    </animation>
 
-<animation>
-<type>rotate</type>
-<object-name>flaperon.L</object-name>
-<property>surface-positions/flap-pos-norm</property>
-<factor>30</factor>
-<center>
-<x-m>12.17965</x-m>
-<y-m>-4.3328</y-m>
-<z-m>-0.229975</z-m>
-</center>
-<axis>
-<x>0</x>
-<y>1</y>
-<z>0</z>
-</axis>
-</animation-->
+    <animation>
+       <type>rotate</type>
+       <object-name>flaperon.L</object-name>
+       <property>surface-positions/flap-pos-norm</property>
+       <factor>30</factor>
+       <center>
+          <x-m>12.17965</x-m>
+	  <y-m>-4.3328</y-m>
+	  <z-m>-0.229975</z-m>
+       </center>
+       <axis>
+          <x>0</x>
+	  <y>1</y>
+	  <z>0</z>
+       </axis>
+       </animation>
+  -->
 
-  <!-- Slats +++++++++++++++++++++
+  <!--
+      Slats +++++++++++++++++++++
   -->
   <animation>
     <type>translate</type>
@@ -573,7 +557,7 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
     </axis>
   </animation>
   
-  <animation><!-- todo best axis -->
+  <animation><!-- TODO: Improve axis -->
     <type>translate</type>
     <object-name>Slat.R</object-name>
     <property>surface-positions/slats-pos-norm</property>
@@ -600,16 +584,18 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       <y>3.193271</y>
       <z>-0.094035</z>
     </axis>
-    <!--center>
+    <!-- 
+    <center>
 	<x-m>8.289596</x-m>
 	<y-m>2.712104</y-m>
 	<z-m>-0.2150268</z-m>
-	</center>
-	<axis>
-	<x>3.5942395</x>
+     </center>
+     <axis>
+        <x>3.5942395</x>
 	<y>3.0206382</y>
 	<z>0.09</z>
-	</axis-->
+     </axis>
+    -->
   </animation>
 
   <animation>
@@ -640,39 +626,39 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
   </animation>
 
   <!--
-      <animation>
+   <animation>
       <type>rotate</type>
       <object-name>Slat2L.b</object-name>
       <property>surface-positions/slats-pos-norm</property>
       <factor>12</factor>
       <center>
-      <x-m>8.28240</x-m>
-      <y-m>-2,74063</y-m>
-      <z-m>-0.25312</z-m>
+         <x-m>8.28240</x-m>
+	 <y-m>-2,74063</y-m>
+	 <z-m>-0.25312</z-m>
       </center>
       <axis>
-      <x>3.5</x>
-      <y>-3</y>
-      <z>0</z>
+         <x>3.5</x>
+	 <y>-3</y>
+	 <z>0</z>
       </axis>
-      </animation>
+    </animation>
 
-<animation>
-<type>rotate</type>
-<object-name>Slat2R.b</object-name>
-<property>surface-positions/slats-pos-norm</property>
-<factor>-12</factor>
-<center>
-<x-m>8.28240</x-m>
-<y-m>2,74063</y-m>
-<z-m>-0.25312</z-m>
-</center>
-<axis>
-<x>3.5</x>
-<y>3</y>
-<z>0</z>
-</axis>
-</animation>
+    <animation>
+       <type>rotate</type>
+       <object-name>Slat2R.b</object-name>
+       <property>surface-positions/slats-pos-norm</property>
+       <factor>-12</factor>
+       <center>
+          <x-m>8.28240</x-m>
+          <y-m>2,74063</y-m>
+          <z-m>-0.25312</z-m>
+       </center>
+       <axis>
+          <x>3.5</x>
+          <y>3</y>
+          <z>0</z>
+       </axis>
+     </animation>
   -->
 
   <!--Rudder-->
@@ -698,7 +684,6 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
   </animation>
 
   <!-- Speedbrake -->
-
   <animation> 
     <type>rotate</type>
     <object-name>speedbrake</object-name>
@@ -717,7 +702,6 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
   </animation>
 
   <!-- External loas and transparent -glass cockpit- -->
-
   <model>
     <name>external loads</name>
     <nopreview/>
@@ -741,7 +725,6 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
   </model>	
 
   <!-- Hook -->
-
   <animation>
     <type>rotate</type>
     <object-name>Hook.001</object-name>
@@ -756,7 +739,6 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
   </animation>
 
   <!-- Canopy -->
-
   <animation>
     <type>rotate</type>
     <object-name>canopyglass</object-name>
@@ -777,8 +759,8 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
 
   <!-- Lights 
        <model>
-       <name>Navigation Lights</name>
-       <path>Aircraft/EF-Typhoon/Models/nav-lights.xml</path>
+          <name>Navigation Lights</name>
+	  <path>Aircraft/EF-Typhoon/Models/nav-lights.xml</path>
        </model> 
        sim/multiplay/generic/float[4]="systems/electrical/outputs/beacon/state"
        sim/multiplay/generic/float[5]="systems/electrical/outputs/strobe/state"
@@ -786,9 +768,7 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
        sim/multiplay/generic/float[7]="systems/electrical/outputs/landing-lights/state"
   -->
 
-  
   <!-- Landing Lights -->
-
   <animation>
     <type>noshadow</type>
     <object-name>gearlight.R</object-name>
@@ -809,7 +789,7 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       <!--greater-than>
 	  <property>sim/time/sun-angle-rad</property>
 	  <value>1.32</value>
-	  </greater-than-->
+	 </greater-than-->
       <and>
         <greater-than>
           <property>/sim/multiplay/generic/float[7]</property>
@@ -850,12 +830,14 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
     <object-name>Light.R</object-name>
     <object-name>Light.rear</object-name>
   </animation>
+
   <animation>
     <type>noshadow</type>
     <object-name>Light.beacup</object-name>
     <object-name>Light.beacon.d.L</object-name>
     <object-name>Light.beacon.d.R</object-name>
   </animation>
+
   <animation>
     <type>noshadow</type>
     <object-name>Light.strobeup</object-name>
@@ -870,6 +852,7 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
     <object-name>Light.rear</object-name>
     <alpha-factor>0.01</alpha-factor>
   </animation>
+
   <animation>
     <type>alpha-test</type>
     <object-name>Light.beacup</object-name>
@@ -877,6 +860,7 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
     <object-name>Light.beacon.d.R</object-name>
     <alpha-factor>0.01</alpha-factor>
   </animation>
+
   <animation>
     <type>alpha-test</type>
     <object-name>Light.strobeup</object-name>
@@ -886,7 +870,6 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
   </animation>
 
   <!-- Flash Lights -->
-
   <animation>
     <type>select</type>
     <object-name>Light.beacon.d.R</object-name>
@@ -1035,7 +1018,6 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
     </condition>
   </animation>
 
-
   <animation>
     <type>select</type>
     <object-name>Light.beacup</object-name>
@@ -1071,7 +1053,6 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
   </animation>
 
   <!-- Nav Lights-->
-
   <animation>
     <type>select</type>
     <object-name>Light.L</object-name>
@@ -1154,33 +1135,30 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
     </emission>
   </animation>
 
-
   <!-- layout selection f16 model
        dragchute animation
+       <animation>
+          <type>select</type>
+	  <object-name>USAF_Tailroot</object-name>
+	  <condition>
+	  <not>
+	  <property>sim/model/f16/dragchute</property>
+	  </not>
+	  </condition>
+	</animation>
 
-<animation>
-<type>select</type>
-<object-name>USAF_Tailroot</object-name>
-<condition>
-<not>
-<property>sim/model/f16/dragchute</property>
-</not>
-</condition>
-</animation>
-
-<animation>
-<type>select</type>
-<object-name>RNLAF_Tailroot</object-name>
-<condition>
-<property>sim/model/f16/dragchute</property>
-</condition>
-</animation>
+        <animation>
+	  <type>select</type>
+	  <object-name>RNLAF_Tailroot</object-name>
+	  <condition>
+	  <property>sim/model/f16/dragchute</property>
+	  </condition>
+	</animation>
   -->
 
   <!-- Gears light cone (original form F106 - disabled due to rendering problemas with 2.0
        solved with a half cone!
   -->
-
   <model>
     <name>ConeLeft</name>
     <path>Aircraft/EF-Typhoon/Models/light-cone.xml</path>
@@ -1228,6 +1206,7 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
       </and>
     </condition>
   </animation>
+
   <animation>
     <type>noshadow</type>
     <object-name>ConeLeft</object-name>
@@ -1240,6 +1219,5 @@ descubrir por qué no van las liveries en multijugador ni tampoco las luces -->
     <object-name>ConeRight</object-name>
     <alpha-factor>0.01</alpha-factor>
   </animation>
-
 
 </PropertyList>

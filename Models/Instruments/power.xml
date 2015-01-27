@@ -73,38 +73,43 @@
     </axis>
   </animation>
 
-  <!--animation>
-      <type>translate</type>
-      <object-name>throttle.R</object-name>
-      <property>/controls/engines/engine[0]/reverser</property>
-      <factor>0.01</factor>
-      <axis>
-      <x>0.01</x>
-      <y>0</y>
-      <z>0</z>
-      </axis>
+  <!--
+      <animation>
+         <type>translate</type>
+         <object-name>throttle.R</object-name>
+	 <property>/controls/engines/engine[0]/reverser</property>
+	 <factor>0.01</factor>
+	 <axis>
+	    <x>0.01</x>
+	    <y>0</y>
+	    <z>0</z>
+	 </axis>
       </animation>
 
-<animation>
-<type>translate</type>
-<object-name>throttle.L</object-name>
-<property>/controls/engines/engine[1]/reverser</property>
-<factor>0.01</factor>
-<axis>
-<x>0.01</x>
-<y>0</y>
-<z>0</z>
-</axis>
-</animation>
-<animation>
-<object-name>throttles</object-name>
-<type>noshadow</type>
-</animation-->
+      <animation>
+         <type>translate</type>
+	 <object-name>throttle.L</object-name>
+	 <property>/controls/engines/engine[1]/reverser</property>
+	 <factor>0.01</factor>
+	 <axis>
+	     <x>0.01</x>
+	     <y>0</y>
+	     <z>0</z>
+	 </axis>
+       </animation>
+
+      <animation>
+         <object-name>throttles</object-name>
+	 <type>noshadow</type>
+      </animation
+  -->
 
   <animation>
     <type>translate</type>
     <object-name>Parking</object-name>
-    <!--property>controls/gear/brake-left</property-->
+    <!--
+	<property>controls/gear/brake-left</property
+    -->
     <property>controls/gear/brake-parking</property>
     <factor>0.1105</factor><!-- 0.2210 / 2 -->
     <axis>
@@ -113,7 +118,5 @@
       <z>0</z>
     </axis>
   </animation>
-
-
 
 </PropertyList>

@@ -226,6 +226,3 @@ var APdialog = gui.Dialog.new("/sim/gui/dialogs/ap-dialog/dialog", "Aircraft/EF-
 #	setprop("/autopilot/locks/heading", "true-heading-hold");
 #	setprop("/autopilot/locks/altitude", "altitude-hold");
 # };
-
-
-

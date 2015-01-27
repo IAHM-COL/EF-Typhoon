@@ -1,7 +1,7 @@
-\<?xml version="1.0"?>
+<?xml version="1.0"?>
 
 <PropertyList>
-    <!-- Until do cockpits buttons -->
+    <!-- Until cockpits buttons are done -->
     <name>menuluces</name>
     <modal>false</modal>
     <draggable>true</draggable>
@@ -28,7 +28,6 @@
                 <command>dialog-close</command>
             </binding>
         </button>
-
     </group>
 
     <hrule/>
@@ -43,14 +42,9 @@
         <text>
             <label>State </label>
         </text>
-
     </group>
 
     <hrule/>
-
-
-<!-- -->
-
 
     <group>
          <layout>table</layout>
@@ -64,10 +58,9 @@
         <checkbox>
             <row>0</row>
             <col>1</col>
-		<!-- todo best property select-->
+		<!-- TODO best property select-->
             <property>/systems/electrical/outputs/nav-lights/state</property>
         </checkbox>
-
 
         <text>
             <row>1</row>
@@ -104,7 +97,7 @@
         <checkbox>
             <row>3</row>
             <col>1</col>
-		<!-- todo best property select-->
+		<!-- TODO best property select-->
             <property>/systems/electrical/outputs/landing-lights/state</property>
         </checkbox>
 
@@ -119,8 +112,6 @@
             <col>1</col>
             <property>sim/model/livery/RAFlights</property>
         </checkbox>
-
-
     </group>
 
     <hrule/>
@@ -149,7 +140,6 @@
         <command>dialog-close</command>
       </binding>
     </button>
-
     </group>
 
 </PropertyList>

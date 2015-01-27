@@ -13,6 +13,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>locked</object-name>
@@ -23,6 +24,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>Menu</object-name>
@@ -33,6 +35,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>boreBG</object-name>
@@ -43,6 +46,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>searchBG</object-name>
@@ -53,6 +57,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>airToAirBG</object-name>
@@ -63,6 +68,7 @@
       </equals>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>airToSurfBG</object-name>
@@ -92,6 +98,7 @@
       </and>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>s20_1</object-name>
@@ -109,6 +116,7 @@
       </and>
     </condition>
   </animation>
+
   <!-- air to air and air to surf range numbers -->
   <animation>
     <type>select</type>
@@ -133,6 +141,7 @@
       </and>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>a10_1</object-name>
@@ -157,6 +166,7 @@
     </condition>
   </animation>
   <!--++++++++++++ target0 air to air ++++++++++-->
+
   <animation>
     <type>select</type>
     <object-name>target0</object-name>
@@ -184,6 +194,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>target0</object-name>
@@ -194,6 +205,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>target0</object-name>
@@ -209,6 +221,7 @@
       <z-m>0.003</z-m>
     </center>
   </animation>
+
   <!--++++++++++++ target1 air to air ++++++++++-->
   <animation>
     <type>select</type>
@@ -238,6 +251,7 @@
     </axis>
     <factor>.001888</factor>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>target1</object-name>
@@ -249,6 +263,7 @@
     </axis>
     <factor>.001888</factor>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>target1</object-name>
@@ -264,6 +279,7 @@
       <z-m>0.003</z-m>
     </center>
   </animation>
+
   <!--++++++++++++ target2 air to air ++++++++++-->
   <animation>
     <type>select</type>
@@ -292,6 +308,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>target2</object-name>
@@ -302,6 +319,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>target2</object-name>
@@ -317,6 +335,7 @@
       <z-m>0.003</z-m>
     </center>
   </animation>
+
   <!--++++++++++++ target3 air to air ++++++++++-->
   <animation>
     <type>select</type>
@@ -345,6 +364,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>target3</object-name>
@@ -355,6 +375,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>target3</object-name>
@@ -370,6 +391,7 @@
       <z-m>0.003</z-m>
     </center>
   </animation>
+
   <!--++++++++++++ target4 air to air ++++++++++-->
   <animation>
     <type>select</type>
@@ -398,6 +420,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>target4</object-name>
@@ -408,6 +431,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>target4</object-name>
@@ -423,6 +447,7 @@
       <z-m>0.003</z-m>
     </center>
   </animation>
+
   <!--++++++++++++ target5 air to air ++++++++++-->
   <animation>
     <type>select</type>
@@ -451,6 +476,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>target5</object-name>
@@ -461,6 +487,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>target5</object-name>
@@ -476,6 +503,7 @@
       <z-m>0.003</z-m>
     </center>
   </animation>
+
   <!--++++++++++++ target6 air to air ++++++++++-->
   <animation>
     <type>select</type>
@@ -504,6 +532,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>target6</object-name> 
@@ -514,6 +543,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>target6</object-name> 
@@ -529,6 +559,7 @@
       <z-m>0.003</z-m>
     </center>
   </animation>
+
   <!--++++++++++++ target7 air to air ++++++++++-->
   <animation>
     <type>select</type>
@@ -557,6 +588,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>target7</object-name>
@@ -567,6 +599,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>target7</object-name>
@@ -582,6 +615,7 @@
       <z-m>0.003</z-m>
     </center>
   </animation>
+
   <!--++++++++++++ ship0 air to surf ++++++++++-->
   <animation>
     <type>select</type>
@@ -610,6 +644,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>ship0</object-name>
@@ -620,6 +655,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>ship0</object-name>
@@ -635,6 +671,7 @@
       <z-m>0.003</z-m>
     </center>
   </animation>
+
   <!--++++++++++++ ship1 air to surf ++++++++++-->
   <animation>
     <type>select</type>
@@ -663,6 +700,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>ship1</object-name>
@@ -673,6 +711,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>ship1</object-name>
@@ -735,6 +774,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <!--++++++++++++ sTarget1 search ++++++++++-->
   <animation>
     <type>select</type>
@@ -818,6 +858,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>sTarget2</object-name>
@@ -865,6 +906,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>sTarget3</object-name>
@@ -912,6 +954,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>sTarget4</object-name>
@@ -959,6 +1002,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>sTarget5</object-name>
@@ -1006,6 +1050,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>sTarget6</object-name> 
@@ -1053,6 +1098,7 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>sTarget7</object-name>
@@ -1075,9 +1121,5 @@
       <blue>0.0</blue>
     </emission>
   </animation>
-
-
   
 </PropertyList>
-
-

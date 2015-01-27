@@ -28,12 +28,14 @@
       <property>instrumentation/radar2/hud/target-clamped-blinker/state</property>
     </condition>
   </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>lock-1</object-name>
     <property>instrumentation/radar2/hud/target-total-angle</property>
     <axis><x>-1</x></axis>
   </animation>
+
   <animation>
     <type>translate</type>
     <object-name>lock-1</object-name>
@@ -43,16 +45,12 @@
       <z>1</z>
     </axis>
   </animation>
+
   <animation><!-- post-rotate in inverse direction to keep the diamond vertical -->
     <type>rotate</type>
     <object-name>lock-1</object-name>
     <property>instrumentation/radar2/hud/target-total-angle</property>
     <axis><x>1</x></axis>
   </animation>
-
-
-
-
-
 
 </PropertyList>

@@ -15,6 +15,7 @@
       </binding>
     </action>
   </animation>
+
   <animation>
     <type>pick</type>
     <object-name>L2</object-name>
@@ -27,6 +28,7 @@
       </binding>
     </action>
   </animation>
+
   <animation>
     <type>pick</type>
     <object-name>L4</object-name>
@@ -67,6 +69,7 @@
       </binding>
     </action>
   </animation>
+
   <animation>
     <type>pick</type>
     <object-name>C3</object-name>
@@ -80,6 +83,7 @@
       </binding>
     </action>
   </animation>
+
   <!--
       <animation>
       <type>pick</type>
@@ -95,4 +99,5 @@
       </action>
       </animation>
   -->
+
 </PropertyList>

@@ -216,5 +216,3 @@ var Threat = {
 	},
 	list : [],
 };
-
-

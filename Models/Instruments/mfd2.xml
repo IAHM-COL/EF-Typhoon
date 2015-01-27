@@ -13,6 +13,7 @@
       <z-m>0.006</z-m>
     </offsets>
   </model>
+
   <model>
     <name>Enav Buttons</name>
     <path>Aircraft/EF-Typhoon/Models/Instruments/enav1-btn.xml</path>
@@ -22,7 +23,6 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
-
 
   <animation>
     <type>select</type>
@@ -36,7 +36,6 @@
     </condition>
   </animation>
 
-
   <!-- Engine Management page -->
   <model>
     <name>Engine Status</name>
@@ -47,6 +46,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <model>
     <name>Engine Status Buttons</name>
     <path>Aircraft/EF-Typhoon/Models/Instruments/eng-status1-btn.xml</path>
@@ -56,6 +56,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <animation>
     <type>select</type>
     <object-name>Engine Status</object-name>    
@@ -94,6 +95,7 @@
       <z-m>0.0</z-m>
     </center>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>radar</object-name>      
@@ -115,6 +117,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <model>
     <name>Hydraulic Buttons</name>
     <path>Aircraft/EF-Typhoon/Models/Instruments/hydraulic1-btn.xml</path>
@@ -124,6 +127,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <animation>
     <type>select</type>
     <object-name>Hydraulic</object-name>    
@@ -146,6 +150,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <model>
     <name>Fuel Buttons</name>
     <path>Aircraft/EF-Typhoon/Models/Instruments/fuel1-btn.xml</path>
@@ -155,6 +160,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <animation>
     <type>select</type>
     <object-name>Fuel</object-name>    
@@ -167,20 +173,19 @@
     </condition>
   </animation>
 
-
   <!--
       <animation>
-      <type>pick</type>
-      <object-name>L1</object-name>
-      <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-      <command>property-assign</command>
-      <property>instrumentation/MFD[0]/page-selected</property>
-      <value>L1</value>
-      </binding>
-      </action>
-      </animation>
+         <type>pick</type>
+	 <object-name>L1</object-name>
+	 <action>
+	 <button>0</button>
+	 <repeatable>false</repeatable>
+	 <binding>
+	 <command>property-assign</command>
+	 <property>instrumentation/MFD[0]/page-selected</property>
+	 <value>L1</value>
+	 </binding>
+	 <!-- </action> -->
+       </animation>
   -->
 </PropertyList>

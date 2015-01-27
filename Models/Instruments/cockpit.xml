@@ -9,7 +9,6 @@
     <path>Aircraft/EF-Typhoon/Models/Instruments/mids-panel.xml</path>
   </model>
 
-
   <!-- ASI - VII  --> 
   <model>
     <name>Vertical Speed Indicator</name>
@@ -156,7 +155,6 @@
       </equals>
     </condition>
   </animation>
-
 
   <animation>
     <type>pick</type>
@@ -437,7 +435,6 @@
     </condition>
   </animation>
 
-
   <!--animation>
       <type>pick</type>
       <object-name>ulpButns.clm</object-name>
@@ -450,7 +447,6 @@
       </action>
       </animation-->
   
-
 
   <!-- Universal adi-->
   <animation>
@@ -480,6 +476,7 @@
       </axis>
     </transform>
   </animation>
+
   <animation>
     <type>texrotate</type>
     <object-name>asi.2</object-name>
@@ -513,6 +510,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>wpt1</object-name>
@@ -528,6 +526,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>wpt2</object-name>
@@ -543,6 +542,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>wpt3</object-name>
@@ -613,7 +613,6 @@
 
   <!-- ASI end -->
 
-
   <model>
     <name>mid-tL</name>
     <path>Aircraft/EF-Typhoon/Models/Instruments/mid-tL.xml</path>
@@ -636,7 +635,6 @@
     </offsets>
   </model>	
 
-
   <!-- TODO: new order fuel front, rear, total on .AC !!! file (with simple rename) -->
 
   <!-- total fuel -->
@@ -652,6 +650,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>fueltot.1</object-name>
@@ -703,6 +702,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>fuelf.1</object-name>
@@ -754,6 +754,7 @@
       <z>0</z>
     </axis>
   </animation>
+
   <animation>
     <type>textranslate</type>
     <object-name>fuelr.1</object-name>
@@ -819,9 +820,7 @@
       </axis>
       </animation-->
 
-
   <!-- SWITCHES ************************************************** -->
-
 
   <!-- Ilumination for first switches -->
   <animation>
@@ -866,14 +865,12 @@
     </emission>
   </animation>
 
-
   <!-- Fire warning (still unused) -->
 
   <animation>
     <type>select</type>
     <object-name>Fire.R.on</object-name>
   </animation>
-
 
   <animation>
     <type>select</type>
@@ -908,7 +905,6 @@
       <factor-prop>/controls/canopy/position-norm</factor-prop>
     </emission>
   </animation>
-
 
   <animation>
     <type>select</type>
@@ -1027,7 +1023,6 @@
   </animation>
   
 
-
   <!-- tailwheel-lock status -->
   <animation>
     <type>select</type>
@@ -1038,6 +1033,7 @@
       <value>0</value>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>Gear.stick.on.1</object-name>
@@ -1059,7 +1055,6 @@
       Gear.lock.out (casi debería llamarse base, en vez de out)
   -->
 
-
   <animation>
     <type>select</type>
     <object-name>Gear.status.off.N</object-name>
@@ -1070,6 +1065,7 @@
       </less-than>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>Gear.status.off.R</object-name>
@@ -1080,6 +1076,7 @@
       </less-than>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>Gear.status.off.L</object-name>
@@ -1090,6 +1087,7 @@
       </less-than>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>Gear.status.on.N</object-name>
@@ -1098,6 +1096,7 @@
       <value>1</value>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>Gear.status.on.R</object-name>
@@ -1106,6 +1105,7 @@
       <value>1</value>
     </condition>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>Gear.status.on.L</object-name>

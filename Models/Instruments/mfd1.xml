@@ -23,7 +23,6 @@
     </offsets>
   </model>
 
-
   <animation>
     <type>select</type>
     <object-name>enav</object-name>
@@ -36,7 +35,6 @@
     </condition>
   </animation>
 
-
   <!-- Engine Management page -->
   <model>
     <name>Engine Status</name>
@@ -47,6 +45,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <model>
     <name>Engine Status Buttons</name>
     <path>Aircraft/EF-Typhoon/Models/Instruments/eng-status0-btn.xml</path>
@@ -56,6 +55,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <animation>
     <type>select</type>
     <object-name>Engine Status</object-name>    
@@ -94,6 +94,7 @@
       <z-m>0.0</z-m>
     </center>
   </animation>
+
   <animation>
     <type>select</type>
     <object-name>radar</object-name>      
@@ -115,6 +116,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <model>
     <name>Hydraulic Buttons</name>
     <path>Aircraft/EF-Typhoon/Models/Instruments/hydraulic0-btn.xml</path>
@@ -124,6 +126,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <animation>
     <type>select</type>
     <object-name>Hydraulic</object-name>    
@@ -146,6 +149,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <model>
     <name>Fuel Buttons</name>
     <path>Aircraft/EF-Typhoon/Models/Instruments/fuel0-btn.xml</path>
@@ -155,6 +159,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <animation>
     <type>select</type>
     <object-name>Fuel</object-name>    
@@ -166,7 +171,6 @@
       </equals>
     </condition>
   </animation>
-
 
   <!--
       <animation>
@@ -194,6 +198,7 @@
       <z-m>0.0</z-m>
     </offsets>
   </model>
+
   <model>
     <name>Situana Buttons</name>
     <path>Aircraft/EF-Typhoon/Models/Instruments/situana0-btn.xml</path>
