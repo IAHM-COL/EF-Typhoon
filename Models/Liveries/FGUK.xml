@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-  <sim>
+<sim>
     <model>
-      <livery>
-        <name type="string">FGUK</name>
-        <index type="int">6</index>
-        <texture>Liveries/FGUK.png</texture>
-        <rudder>
-  	  <texture>../EF-Typhoon-2.png</texture>
-        </rudder>
-	<RAFlights type="bool">true</RAFlights> <!-- RAF alternate beacon -->
-	<beacon type="bool">false</beacon> <!-- red -->
-	<strobe type="bool">true</strobe> <!-- white -->
-      </livery>
+        <livery>
+            <name type="string">FGUK</name>
+            <index type="int">6</index>
+            <texture>Liveries/FGUK.png</texture>
+            <rudder>
+  		<texture>typhoon-2.png</texture>
+            </rudder>
+	    <RAFlights type="bool">true</RAFlights> <!-- RAF alternate beacon -->
+	    <beacon type="bool">false</beacon> <!-- red -->
+	    <strobe type="bool">true</strobe> <!-- white -->
+        </livery>
     </model>
-  </sim>
+</sim>
 </PropertyList>

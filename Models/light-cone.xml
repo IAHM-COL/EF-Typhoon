@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <!-- example taken from 106-dart with a "fix" for display on 2.0 git -->
+	<!-- example fron 106-dart with a "fix" for display on 2.Git -->
   <path>light-cone2.ac</path>
 
   <effect>
@@ -10,4 +10,4 @@
     <object-name>Cone</object-name>
   </effect>
   
-</PropertyList>
+ </PropertyList>
