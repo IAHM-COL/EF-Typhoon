@@ -3,6 +3,7 @@
 
 <!-- This part should be the same for any 3D panel.  Customize the actions section -->
 <PropertyList>
+
   <name>MFD Hotspots</name>
   <background>Aircraft/EF-Typhoon/Models/Instruments/transparent-bg.png</background>
   <w>512</w>
