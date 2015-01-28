@@ -5,7 +5,7 @@
   
   <animation>
     <type>select</type>
-    <object-name>EngEstatus</object-name>
+    <object-name>Circle</object-name>
     <condition>   
       <equals>
 	<property>controls/HSD/on-off</property>
