@@ -18,6 +18,7 @@ CHANGELOG
 * All paths have been fixed to the new folder name
 * The Aircraft has been isolated: This is, it contains no dependencies to foreign Aircraft. Previously it had dependencies to the sabre and the mosquito, outcommented in the xml files. The files required had been imported and renamed, in spite of being outcommented in the configuration
 * The Filename paths had been changed from typhoon to EF-Typhoon, and all file calls had been fixed recursively
+* Hud had been moved to Systems/hud directory
 * All RGB textures had been migrated to PNG textures, and filenames had been standardized to English
 
 
