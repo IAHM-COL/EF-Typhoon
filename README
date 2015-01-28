@@ -20,7 +20,9 @@ CHANGELOG
 * The Filename paths had been changed from typhoon to EF-Typhoon, and all file calls had been fixed recursively
 * Hud had been moved to Systems/hud directory
 * All RGB textures had been migrated to PNG textures, and filenames had been standardized to English
-
+* Stereo Sound Files had been remasterized to Mono
+* Autopilot V5 installed and tested to work on FG 2.12 and FG 3.20. Improved maneuverability and correct Vertical Mode Management
+* Fixes on FDM for the Yasim version
 
 ===================================================================
 ORIGINAL README
@@ -79,6 +81,8 @@ Release 1.5 (In progress)
 * Project renamed to EF-Typhoon
 * Dependency to other Aircraft Fixed
 * All textures transferred to PNG
+* Autopilot V5 installed (USA TOUR READY VERSION)
+* Yasim fixes included
 
 Release 1.4
 

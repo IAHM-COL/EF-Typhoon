@@ -35,39 +35,28 @@
 
     <systems>
       <electrical>
-         <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-electrical.xml</path>
+        <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-electrical.xml</path>
       </electrical>
       <!-- Autopilot  --> 
       <autopilot>
-          <path>Aircraft/EF-Typhoon/Systems/autopilot5.xml</path>
+	<!--
+	    Systems/EF-Typhoon-autopilotv5.xml has been prepared by JWOCKY.
+	    It improves the stability of the vertical modes, among other fixes
+	    and it is tested to work with FGFS 3.x
+	-->
+        <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv5.xml</path>
       </autopilot>
-      <!-- Autopilot for use on development FGFS 2.Git
+      <!-- Autopilot alternatives
 	   <autopilot>
+	      ORIGINAL for use with FGFS 2.x :: Vertical Speed Modes are broken!
+              <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot200.xml</path>
+	      Autopilot for use with FGFS 2.x :: Untested
               <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot201.xml</path>
-	   </autopilot>  --> 
-      <!-- Autopilot for older FGFS 1.9.1
-	   <autopilot>
+	      Autopilot for older FGFS 1.9.1 :: Untested
               <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot191.xml</path>
 	   </autopilot>
-      -->
-      <!--ORIGINAL
-	   <autopilot>
-              <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot200.xml</path>
-	   </autopilot>
-	    
 	-->
     </systems> 
-    
-    <!--
-	<systems>
-	   <electrical>
-              <path>Aircraft/Generic/generic-electrical.xml</path>
-	   </electrical>
-	   <autopilot>
-              <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot.xml</path>
-	   </autopilot>
-	</systems?
-    --> 
     
     <virtual-cockpit archive="y">true</virtual-cockpit>
     <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
@@ -854,7 +843,7 @@
         <binding> 
           <command>property-adjust</command>
           <property>/controls/flight/speedbrake</property>
-          <step type="double">-0.2</step><!-- with +.33 and -.2 do QNAN -->
+          <step type="double">-0.2</step><!-- with +0.33 and -0.2 do QNAN -->
           <min type="double">0</min>
           <max type="double">1</max>
         </binding>
