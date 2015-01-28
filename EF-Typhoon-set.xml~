@@ -39,8 +39,7 @@
       </electrical>
       <!-- Autopilot  --> 
       <autopilot>
-        <!-- path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot200.xml</path -->
-        <path>Aircraft/EF-Typhoon/Systems/autopilot5.xml</path>
+        <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot200.xml</path>
       </autopilot>
       <!-- Autopilot for use on development FGFS 2.Git
 	   <autopilot>
