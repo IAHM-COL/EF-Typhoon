@@ -185,7 +185,6 @@
 	 <property>instrumentation/MFD[0]/page-selected</property>
 	 <value>L1</value>
 	 </binding>
-	 <!-- </action> -->
-       </animation>
+        </animation>
   -->
 </PropertyList>
