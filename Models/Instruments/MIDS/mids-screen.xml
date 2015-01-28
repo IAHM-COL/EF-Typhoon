@@ -2,7 +2,7 @@
 
 <PropertyList>
  <name>MIDS Screen</name>
- <background>Aircraft/eurofighter/Models/Instruments/MIDS/mids-screen.png</background>
+ <background>Aircraft/EF-Typhoon/Models/Instruments/MIDS/mids-screen.png</background>
  <w>1100</w>
  <h>600</h>
 
@@ -10,14 +10,13 @@
  
  <instrument>
   <name>Com1 Display</name>
-  <background>Aircraft/eurofighter/Models/Instruments/MIDS/transparent.png</background>
+  <background>Aircraft/EF-Typhoon/Models/Instruments/MIDS/transparent.png</background>
   <w-base>1000</w-base>            <!-- required width spec-->
   <h-base>350</h-base>            <!-- required height spec-->
    <x>0</x>                 <!-- required horizontal placement -->
    <y>420</y>                 <!-- required vertical placement -->
-   
+
    <layers>
-    
 	<layer>                               <!-- switch layer -->
     <name>Com1 Selected Freq</name>
     <type>text</type>
@@ -80,7 +79,7 @@
  
  <instrument>
   <name>Com2 Display</name>
-  <background>Aircraft/eurofighter/Models/Instruments/MIDS/transparent.png</background>
+  <background>Aircraft/EF-Typhoon/Models/Instruments/MIDS/transparent.png</background>
   <w-base>1100</w-base>            <!-- required width spec-->
   <h-base>350</h-base>            <!-- required height spec-->
    <x>620</x>                 <!-- required horizontal placement -->
@@ -153,7 +152,7 @@
   
   <instrument>
   <name>Multi-Information Display</name>
-  <background>Aircraft/eurofighter/Models/Instruments/MIDS/transparent.png</background>
+  <background>Aircraft/EF-Typhoon/Models/Instruments/MIDS/transparent.png</background>
   <w-base>2000</w-base>            <!-- required width spec-->
   <h-base>400</h-base>            <!-- required height spec-->
    <x>80</x>                 <!-- required horizontal placement -->
@@ -262,10 +261,7 @@
    </layer>  
    
    </layers>
-  
   </instrument>
-  
-  
  </instruments>
  
 </PropertyList>

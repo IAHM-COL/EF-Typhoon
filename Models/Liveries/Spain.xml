@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-<sim>
+  <sim>
     <model>
-        <livery>
-            <name type="string">C-16 Ejercito del Aire</name>
-            <index type="int">3</index>
-            <texture>Liveries/spain.png</texture>
-            <rudder>
-               <texture>Liveries/moron.png</texture>
-            </rudder>
-	    <RAFlights type="bool">false</RAFlights> <!-- RAF alternate beacon -->
-	    <beacon type="bool">true</beacon> <!-- red -->
-	    <strobe type="bool">false</strobe> <!-- white -->
-        </livery>
+      <livery>
+        <name type="string">C-16 Ejercito del Aire</name>
+        <index type="int">3</index>
+        <texture>Liveries/spain.png</texture>
+        <rudder>
+          <texture>Liveries/moron.png</texture>
+        </rudder>
+	<RAFlights type="bool">false</RAFlights> <!-- RAF alternate beacon -->
+	<beacon type="bool">true</beacon> <!-- red -->
+	<strobe type="bool">false</strobe> <!-- white -->
+      </livery>
     </model>
-</sim>
+  </sim>
 </PropertyList>
