@@ -14,7 +14,7 @@ OBJECT poly
 name "CPT-L-pedal1_0.001"
 data 8
 Mesh.005
-texture "gris03.png"
+texture "gray03.png"
 texrep 1 1
 crease 67.000000
 numvert 18
@@ -194,7 +194,7 @@ OBJECT poly
 name "pedal1.L"
 data 8
 Mesh.003
-texture "pedals.rgb"
+texture "pedals.png"
 texrep 1 1
 crease 67.000000
 numvert 62
@@ -648,7 +648,7 @@ OBJECT poly
 name "CPT-R-pedal1_0"
 data 8
 Mesh.006
-texture "gris03.png"
+texture "gray03.png"
 texrep 1 1
 crease 67.000000
 numvert 18
@@ -828,7 +828,7 @@ OBJECT poly
 name "pedal1.R"
 data 8
 Mesh.002
-texture "pedals.rgb"
+texture "pedals.png"
 texrep 1 1
 crease 67.000000
 numvert 62

@@ -720,7 +720,7 @@ OBJECT poly
 name "Mesh3"
 data 17
 Mesh3 Group2 Mode
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 48
@@ -946,7 +946,7 @@ OBJECT poly
 name "Mesh309"
 data 17
 Mesh309 Model_met
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -972,7 +972,7 @@ OBJECT poly
 name "Mesh5"
 data 17
 Mesh5 Group7 Grou
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 52
@@ -1370,7 +1370,7 @@ OBJECT poly
 name "Mesh8"
 data 17
 Mesh8 Group5 Grou
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -6430,7 +6430,7 @@ OBJECT poly
 name "Eject_0"
 data 17
 Mesh1 Group1 Mode
-texture "amarillo.png"
+texture "yellow.png"
 texrep 1 1
 crease 30.000000
 numvert 388
@@ -9742,7 +9742,7 @@ OBJECT poly
 name "Apu.eng.0"
 data 21
 Mesh267 Model_Mat.001
-texture "gris03.png"
+texture "gray03.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -9768,7 +9768,7 @@ OBJECT poly
 name "Apu.eng.1"
 data 21
 Mesh262 Model_Mat.001
-texture "gris03.png"
+texture "gray03.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -10063,7 +10063,7 @@ OBJECT poly
 name "Base.Panel.Up"
 data 21
 Mesh153 Model_out.010
-texture "gris03.png"
+texture "gray03.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -10712,7 +10712,7 @@ OBJECT poly
 name "Seat.3"
 data 21
 Mesh269 Model_Mat.001
-texture "amarillo.png"
+texture "yellow.png"
 texrep 1 1
 crease 30.000000
 numvert 21
@@ -10923,7 +10923,7 @@ OBJECT poly
 name "Seat1"
 data 21
 Mesh202 Model_Mat.001
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 38
@@ -11221,7 +11221,7 @@ OBJECT poly
 name "Seat2"
 data 21
 Mesh202 Model_Mat.003
-texture "gris03.png"
+texture "gray03.png"
 texrep 1 1
 crease 30.000000
 numvert 82
@@ -12019,7 +12019,7 @@ OBJECT poly
 name "Seat4"
 data 21
 Mesh270 Model_Mat.001
-texture "amarillo.png"
+texture "yellow.png"
 texrep 1 1
 crease 30.000000
 numvert 21
@@ -12230,7 +12230,7 @@ OBJECT poly
 name "Seat5"
 data 21
 Mesh271 Model_Mat.001
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 28
@@ -12436,7 +12436,7 @@ OBJECT poly
 name "Seat6"
 data 21
 Mesh274 Model_Mat.001
-texture "amarillo.png"
+texture "yellow.png"
 texrep 1 1
 crease 30.000000
 numvert 21
@@ -12647,7 +12647,7 @@ OBJECT poly
 name "Seat7"
 data 21
 Mesh276 Model_Mat.001
-texture "amarillo.png"
+texture "yellow.png"
 texrep 1 1
 crease 30.000000
 numvert 21
@@ -12858,7 +12858,7 @@ OBJECT poly
 name "Seat8"
 data 21
 Mesh279 Model_Mat.001
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 28
@@ -17890,7 +17890,7 @@ OBJECT poly
 name "fuselage.001_0_0"
 data 21
 Mesh153 Model_out.012
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 128
@@ -19117,7 +19117,7 @@ OBJECT poly
 name "rearcockpit"
 data 8
 Mesh.014
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 10
@@ -22325,7 +22325,7 @@ OBJECT poly
 name "gear1.L"
 data 21
 Mesh13 Group11 Mo.001
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 72
@@ -23127,7 +23127,7 @@ OBJECT poly
 name "gear2.L"
 data 21
 Mesh13 Group11 Mo.009
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 344
@@ -26927,7 +26927,7 @@ OBJECT poly
 name "gear3.L"
 data 21
 Mesh17 Group11 Mo.001
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 96
@@ -27897,7 +27897,7 @@ OBJECT poly
 name "gear4.L"
 data 21
 Mesh15 Group11 Mo.001
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 602
@@ -34183,7 +34183,7 @@ OBJECT poly
 name "wheel1.L"
 data 21
 Mesh13 Group11 Mo.011
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 628
@@ -40163,7 +40163,7 @@ OBJECT poly
 name "wheel2.L"
 data 21
 Mesh13 Group11 Mo.013
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 152
@@ -41524,7 +41524,7 @@ OBJECT poly
 name "gear1.R"
 data 21
 Mesh13 Group11 Mo.006
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 72
@@ -42326,7 +42326,7 @@ OBJECT poly
 name "gear2.R"
 data 21
 Mesh13 Group11 Mo.010
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 344
@@ -46126,7 +46126,7 @@ OBJECT poly
 name "gear3.R"
 data 21
 Mesh17 Group11 Mo.002
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 96
@@ -47096,7 +47096,7 @@ OBJECT poly
 name "gear4.R"
 data 21
 Mesh15 Group11 Mo.005
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 602
@@ -53382,7 +53382,7 @@ OBJECT poly
 name "wheel1.R"
 data 21
 Mesh13 Group11 Mo.012
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 628
@@ -59362,7 +59362,7 @@ OBJECT poly
 name "wheel2.R"
 data 21
 Mesh13 Group11 Mo.014
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 152
@@ -60723,7 +60723,7 @@ OBJECT poly
 name "nosegear.1"
 data 21
 Mesh23 Group13 Mo.004
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 342
@@ -64605,7 +64605,7 @@ OBJECT poly
 name "nosegear.2"
 data 21
 Mesh23 Group13 Mo.007
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 109
@@ -65360,7 +65360,7 @@ OBJECT poly
 name "nosegear3"
 data 21
 Mesh15 Group11 Mo.006
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 1204
@@ -77922,7 +77922,7 @@ OBJECT poly
 name "nosegear4"
 data 21
 Mesh15 Group11 Mo.007
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 4940
@@ -128264,7 +128264,7 @@ OBJECT poly
 name "nosewheel"
 data 21
 Mesh23 Group13 Mo.008
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 338
@@ -131822,7 +131822,7 @@ OBJECT poly
 name "nosewheel.2"
 data 21
 Mesh23 Group13 Mo.009
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 144
@@ -132900,7 +132900,7 @@ OBJECT poly
 name "nosewheel.3"
 data 21
 Mesh23 Group13 Mo.010
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 48
@@ -133042,7 +133042,7 @@ OBJECT poly
 name "nosewheel.4"
 data 21
 Mesh23 Group13 Mo.011
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 119
@@ -134966,7 +134966,7 @@ OBJECT poly
 name "Mesh153.024"
 data 21
 Mesh153 Model_rot.001
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -134992,7 +134992,7 @@ OBJECT poly
 name "Mesh162"
 data 17
 Mesh162 Model_out
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 14
@@ -135876,7 +135876,7 @@ OBJECT poly
 name "nosegeardoor"
 data 21
 Mesh153 Model_out.014
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 26
@@ -136125,7 +136125,7 @@ OBJECT poly
 name "Light.beacon.d.L"
 data 8
 Mesh.030
-texture "lights.rgb"
+texture "lights.png"
 texrep 1 1
 crease 45.000000
 numvert 12
@@ -136168,7 +136168,7 @@ OBJECT poly
 name "Light.strobe.d.L"
 data 8
 Mesh.029
-texture "lights.rgb"
+texture "lights.png"
 texrep 1 1
 crease 45.000000
 numvert 12
@@ -139688,7 +139688,7 @@ OBJECT poly
 name "Light.beacon.d.R"
 data 8
 Mesh.032
-texture "lights.rgb"
+texture "lights.png"
 texrep 1 1
 crease 45.000000
 numvert 12
@@ -139731,7 +139731,7 @@ OBJECT poly
 name "Light.strobe.d.R"
 data 8
 Mesh.031
-texture "lights.rgb"
+texture "lights.png"
 texrep 1 1
 crease 45.000000
 numvert 12
@@ -143251,7 +143251,7 @@ OBJECT poly
 name "Light.beacup"
 data 4
 Mesh
-texture "lights.rgb"
+texture "lights.png"
 texrep 1 1
 crease 45.000000
 numvert 13
@@ -143306,7 +143306,7 @@ OBJECT poly
 name "Light.strobeup"
 data 8
 Mesh.001
-texture "lights.rgb"
+texture "lights.png"
 texrep 1 1
 crease 45.000000
 numvert 13
@@ -146835,7 +146835,7 @@ OBJECT poly
 name "Light.L"
 data 8
 Mesh.008
-texture "lights.rgb"
+texture "lights.png"
 texrep 1 1
 crease 45.000000
 numvert 12
@@ -146878,7 +146878,7 @@ OBJECT poly
 name "Light.R"
 data 8
 Mesh.009
-texture "lights.rgb"
+texture "lights.png"
 texrep 1 1
 crease 45.000000
 numvert 12
@@ -146921,7 +146921,7 @@ OBJECT poly
 name "Light.rear"
 data 8
 Mesh.010
-texture "lights.rgb"
+texture "lights.png"
 texrep 1 1
 crease 45.000000
 numvert 12
@@ -146964,7 +146964,7 @@ OBJECT poly
 name "blah.L01"
 data 8
 Mesh.012
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 145
@@ -147977,7 +147977,7 @@ OBJECT poly
 name "blah.L02"
 data 8
 Mesh.016
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 127
@@ -149500,7 +149500,7 @@ OBJECT poly
 name "blah.R01"
 data 8
 Mesh.018
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 145
@@ -150513,7 +150513,7 @@ OBJECT poly
 name "blah.R02"
 data 8
 Mesh.027
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 127
@@ -152036,7 +152036,7 @@ OBJECT poly
 name "blah.rear"
 data 8
 Mesh.028
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 52.000000
 numvert 72
@@ -152826,7 +152826,7 @@ OBJECT poly
 name "lens.L"
 data 8
 red-lens
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 80.000000
 numvert 61
@@ -153491,7 +153491,7 @@ OBJECT poly
 name "lens.R"
 data 8
 lens.001
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 80.000000
 numvert 61
@@ -154156,7 +154156,7 @@ OBJECT poly
 name "lens.rear"
 data 10
 lens-white
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 52.000000
 numvert 48
@@ -154637,7 +154637,7 @@ OBJECT poly
 name "Mesh171"
 data 17
 Mesh171 Model_Mat
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -154677,7 +154677,7 @@ OBJECT poly
 name "Mesh171.001"
 data 17
 Mesh171 Model_rot
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 30
@@ -154957,7 +154957,7 @@ OBJECT poly
 name "Mesh172"
 data 17
 Mesh172 Model_Fro
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 13
@@ -155029,7 +155029,7 @@ OBJECT poly
 name "Mesh172.001"
 data 17
 Mesh172 Model_Mat
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 11
@@ -155122,7 +155122,7 @@ OBJECT poly
 name "Mesh172.002"
 data 17
 Mesh172 Model_veh
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 7
@@ -155164,7 +155164,7 @@ OBJECT poly
 name "Mesh174"
 data 17
 Mesh174 Model_Mat
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -155204,7 +155204,7 @@ OBJECT poly
 name "Mesh174.001"
 data 17
 Mesh174 Model_rot
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 30
@@ -155484,7 +155484,7 @@ OBJECT poly
 name "Mesh175"
 data 17
 Mesh175 Model_Fro
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -155554,7 +155554,7 @@ OBJECT poly
 name "Mesh175.001"
 data 17
 Mesh175 Model_Mat
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 11
@@ -155647,7 +155647,7 @@ OBJECT poly
 name "Mesh175.002"
 data 17
 Mesh175 Model_veh
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 6
@@ -175127,7 +175127,7 @@ OBJECT poly
 name "airint.L"
 data 8
 Cube.002
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 18
@@ -175307,7 +175307,7 @@ OBJECT poly
 name "airint.R"
 data 8
 Cube.001
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 18

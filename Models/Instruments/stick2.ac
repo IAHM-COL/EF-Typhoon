@@ -4801,7 +4801,7 @@ OBJECT poly
 name "stick-handle_0_1"
 data 8
 Mesh.004
-texture "gris-2.png"
+texture "gray-2.png"
 texrep 1 1
 crease 45.000000
 numvert 7
@@ -4906,7 +4906,7 @@ OBJECT poly
 name "stick-handle_1_1_1"
 data 8
 Mesh.001
-texture "gris01.png"
+texture "gray01.png"
 texrep 1 1
 crease 45.000000
 numvert 116

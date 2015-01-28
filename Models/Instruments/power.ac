@@ -14,7 +14,7 @@ OBJECT poly
 name "base.l.001_0"
 data 8
 Mesh.001
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 69.000000
 numvert 30
@@ -194,7 +194,7 @@ OBJECT poly
 name "base.l.001_1"
 data 8
 Mesh.001
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 69.000000
 numvert 6
@@ -227,7 +227,7 @@ OBJECT poly
 name "man.l.001_0"
 data 4
 Mesh
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 52.000000
 numvert 172
@@ -2231,7 +2231,7 @@ OBJECT poly
 name "man.l.001_1"
 data 4
 Mesh
-texture "amarillo.png"
+texture "yellow.png"
 texrep 1 1
 crease 52.000000
 numvert 26
@@ -2346,7 +2346,7 @@ OBJECT poly
 name "base.l"
 data 8
 Mesh.010
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 69.000000
 numvert 30
@@ -2526,7 +2526,7 @@ OBJECT poly
 name "man.l"
 data 8
 Mesh.011
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 52.000000
 numvert 172
@@ -4606,7 +4606,7 @@ OBJECT poly
 name "base.r"
 data 8
 Mesh.003
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 69.000000
 numvert 30
@@ -4786,7 +4786,7 @@ OBJECT poly
 name "man.r"
 data 8
 Mesh.002
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 52.000000
 numvert 172

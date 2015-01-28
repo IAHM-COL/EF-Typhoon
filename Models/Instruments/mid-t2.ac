@@ -296,7 +296,7 @@ OBJECT poly
 name "LedAB1"
 data 8
 Mesh.004
-texture "mid-verde.png"
+texture "mid-green.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -317,7 +317,7 @@ OBJECT poly
 name "LedAB2"
 data 8
 Mesh.003
-texture "mid-rojo.png"
+texture "mid-red.png"
 texrep 1 1
 crease 30.000000
 numvert 4

@@ -28,7 +28,7 @@ OBJECT poly
 name "Cube.010_1_0"
 data 8
 Mesh.009
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -49,7 +49,7 @@ OBJECT poly
 name "Cube.010_1_1"
 data 8
 Mesh.015
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -94,7 +94,7 @@ OBJECT poly
 name "Cube.010_1.001"
 data 8
 Mesh.016
-texture "gris03.png"
+texture "gray03.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -177,7 +177,7 @@ OBJECT poly
 name "base.HOTAS_1"
 data 21
 Mesh153 Model_out.094
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 44
@@ -544,7 +544,7 @@ OBJECT poly
 name "base.L.01_1"
 data 21
 Mesh153 Model_out.096
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -626,7 +626,7 @@ OBJECT poly
 name "Cube.008_0"
 data 8
 Cube.010
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 56
@@ -1014,7 +1014,7 @@ OBJECT poly
 name "Cube.008_1"
 data 8
 Cube.038
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1046,7 +1046,7 @@ OBJECT poly
 name "Cube.007"
 data 8
 Cube.039
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1067,7 +1067,7 @@ OBJECT poly
 name "Cube.022"
 data 8
 Mesh.017
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 11
@@ -1133,7 +1133,7 @@ OBJECT poly
 name "fuselage.001_0.012"
 data 8
 Mesh.018
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 486
@@ -6103,7 +6103,7 @@ OBJECT poly
 name "DragChute_0"
 data 8
 Cube.040
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -6329,7 +6329,7 @@ OBJECT poly
 name "FCScont_1_0"
 data 8
 Cube.044
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -6396,7 +6396,7 @@ OBJECT poly
 name "FCScont_0"
 data 8
 Cube.042
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -6498,7 +6498,7 @@ OBJECT poly
 name "FCScont_2.001"
 data 8
 Cube.002
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -6553,7 +6553,7 @@ OBJECT poly
 name "Fire.L_1_0"
 data 8
 Cube.047
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -6620,7 +6620,7 @@ OBJECT poly
 name "Fire.L_0"
 data 8
 Cube.046
-texture "gris-rayas.png"
+texture "gray-stripes.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -6722,7 +6722,7 @@ OBJECT poly
 name "Fire.L_2.001"
 data 8
 Cube.003
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -6777,7 +6777,7 @@ OBJECT poly
 name "Fire.R_1_0"
 data 8
 Cube.051
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -6844,7 +6844,7 @@ OBJECT poly
 name "Fire.R_0"
 data 8
 Cube.050
-texture "gris-rayas.png"
+texture "gray-stripes.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -6946,7 +6946,7 @@ OBJECT poly
 name "Fire.R_2.001"
 data 8
 Cube.005
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -6998,7 +6998,7 @@ OBJECT poly
 name "Gear.stick.1"
 data 8
 Cube.054
-texture "gris03.png"
+texture "gray03.png"
 texrep 1 1
 crease 30.000000
 numvert 28
@@ -7283,7 +7283,7 @@ OBJECT poly
 name "Gear.stick.2"
 data 8
 Cube.055
-texture "gris-1.png"
+texture "gray-1.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -8093,7 +8093,7 @@ OBJECT poly
 name "Gear.lens.base"
 data 8
 Cube.056
-texture "gris03.png"
+texture "gray03.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -8210,7 +8210,7 @@ OBJECT poly
 name "Gear.lock.in"
 data 8
 Mesh.024
-texture "gris03.png"
+texture "gray03.png"
 texrep 1 1
 crease 45.000000
 numvert 50
@@ -8582,7 +8582,7 @@ OBJECT poly
 name "Gear.lock.out"
 data 8
 Mesh.026
-texture "gris03.png"
+texture "gray03.png"
 texrep 1 1
 crease 45.000000
 numvert 25
@@ -9928,7 +9928,7 @@ OBJECT poly
 name "Hook_1_0"
 data 8
 Cube.059
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -9995,7 +9995,7 @@ OBJECT poly
 name "Hook_0"
 data 8
 Cube.057
-texture "gris-rayas.png"
+texture "gray-stripes.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -10097,7 +10097,7 @@ OBJECT poly
 name "Hook_2.001"
 data 8
 Cube.007
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -10152,7 +10152,7 @@ OBJECT poly
 name "Ladder_1_0"
 data 8
 Cube.062
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -10219,7 +10219,7 @@ OBJECT poly
 name "Ladder_0"
 data 8
 Cube.061
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -10321,7 +10321,7 @@ OBJECT poly
 name "Ladder_2.001"
 data 8
 Cube.009
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -10373,7 +10373,7 @@ OBJECT poly
 name "Caja.R_0"
 data 8
 Cube.065
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 119
@@ -11297,7 +11297,7 @@ OBJECT poly
 name "Caja.R_1"
 data 8
 Cube.066
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -11318,7 +11318,7 @@ OBJECT poly
 name "Sup.R"
 data 8
 Cube.067
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -11350,7 +11350,7 @@ OBJECT poly
 name "Barra.R"
 data 8
 Cube.068
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 41
@@ -11531,7 +11531,7 @@ OBJECT poly
 name "Midm.base"
 data 8
 Cube.069
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 185
@@ -12854,7 +12854,7 @@ OBJECT poly
 name "Pant.L"
 data 8
 Cube.070
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -12875,7 +12875,7 @@ OBJECT poly
 name "Sup.L"
 data 8
 Cube.071
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -12935,7 +12935,7 @@ OBJECT poly
 name "Teclas.L"
 data 8
 Cube.072
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 80
@@ -18109,7 +18109,7 @@ OBJECT poly
 name "MIDS.base"
 data 8
 Mesh.232
-texture "gris-1.png"
+texture "gray-1.png"
 texrep 1 1
 crease 30.000000
 numvert 264
@@ -20504,7 +20504,7 @@ OBJECT poly
 name "MIDS.upper"
 data 21
 Mesh153 Model_out.183
-texture "azul.png"
+texture "blue.png"
 texrep 1 1
 crease 30.000000
 numvert 18

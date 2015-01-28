@@ -18,6 +18,8 @@ CHANGELOG
 * All paths have been fixed to the new folder name
 * The Aircraft has been isolated: This is, it contains no dependencies to foreign Aircraft. Previously it had dependencies to the sabre and the mosquito, outcommented in the xml files. The files required had been imported and renamed, in spite of being outcommented in the configuration
 * The Filename paths had been changed from typhoon to EF-Typhoon, and all file calls had been fixed recursively
+* All RGB textures had been migrated to PNG textures, and filenames had been standardized to English
+
 
 ===================================================================
 ORIGINAL README
@@ -75,6 +77,7 @@ Release 1.5 (In progress)
 * Project forked by the USA TOUR READY CONSORTIUM
 * Project renamed to EF-Typhoon
 * Dependency to other Aircraft Fixed
+* All textures transferred to PNG
 
 Release 1.4
 

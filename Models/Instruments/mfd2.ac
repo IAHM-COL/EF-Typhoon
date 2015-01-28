@@ -57,7 +57,7 @@ OBJECT poly
 name "Circle"
 data 10
 Circle.007
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -661,7 +661,7 @@ OBJECT poly
 name "Circle.001"
 data 10
 Circle.008
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -1265,7 +1265,7 @@ OBJECT poly
 name "Circle.005"
 data 10
 Circle.009
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -1501,7 +1501,7 @@ OBJECT poly
 name "Cube.014"
 data 8
 Mesh.006
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1554,7 +1554,7 @@ OBJECT poly
 name "Cube.015"
 data 8
 Mesh.007
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 172
@@ -2982,7 +2982,7 @@ OBJECT poly
 name "Cube.017"
 data 8
 Cube.005
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -3208,7 +3208,7 @@ OBJECT poly
 name "Circle.006"
 data 10
 Circle.014
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -3444,7 +3444,7 @@ OBJECT poly
 name "Circle.007"
 data 10
 Circle.015
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -4048,7 +4048,7 @@ OBJECT poly
 name "Circle.008"
 data 10
 Circle.016
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -4652,7 +4652,7 @@ OBJECT poly
 name "Cube.018"
 data 8
 Cube.006
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -4870,7 +4870,7 @@ OBJECT poly
 name "Cube.020"
 data 8
 Mesh.008
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 172
@@ -6240,7 +6240,7 @@ OBJECT poly
 name "Cube.021"
 data 8
 Mesh.009
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -6359,7 +6359,7 @@ OBJECT poly
 name "Circle.002"
 data 10
 Circle.002
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -6595,7 +6595,7 @@ OBJECT poly
 name "Circle.003"
 data 10
 Circle.003
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -7199,7 +7199,7 @@ OBJECT poly
 name "Circle.004"
 data 10
 Circle.004
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -7803,7 +7803,7 @@ OBJECT poly
 name "Cube.001"
 data 4
 Cube
-texture "gris-claro.png"
+texture "lightgray.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -8021,7 +8021,7 @@ OBJECT poly
 name "Cube.004"
 data 8
 Mesh.004
-texture "gris.png"
+texture "gray.png"
 texrep 1 1
 crease 30.000000
 numvert 172
@@ -9391,7 +9391,7 @@ OBJECT poly
 name "Cube.013"
 data 8
 Mesh.005
-texture "gris02.png"
+texture "gray02.png"
 texrep 1 1
 crease 30.000000
 numvert 8
