@@ -227,7 +227,7 @@
     </view>
 
     <hud>
-      <path n="1">Aircraft/EF-Typhoon/Hud/Hud.xml</path>
+      <path n="1">Aircraft/EF-Typhoon/Systems/hud/hud.xml</path>
       <ladder n="1">
 	<enable-target-markers type="bool">false</enable-target-markers>
       </ladder>
