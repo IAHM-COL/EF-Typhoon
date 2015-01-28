@@ -16,7 +16,7 @@
 
   <sim>
 
-    <description>EFA Typhoon: AP 2.0 compatible</description>
+    <description>EFA Typhoon: USA TOUR READY</description>
     <author>USA TOUR READY CONSORTIUM</author>
     <status>development</status>
     <aircraft-version>1.5</aircraft-version>
@@ -35,12 +35,11 @@
 
     <systems>
       <electrical>
-        <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-electrical.xml</path>
+         <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-electrical.xml</path>
       </electrical>
       <!-- Autopilot  --> 
       <autopilot>
-        <!-- path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot200.xml</path -->
-        <path>Aircraft/EF-Typhoon/Systems/autopilot5.xml</path>
+          <path>Aircraft/EF-Typhoon/Systems/autopilot5.xml</path>
       </autopilot>
       <!-- Autopilot for use on development FGFS 2.Git
 	   <autopilot>
@@ -50,7 +49,13 @@
 	   <autopilot>
               <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot191.xml</path>
 	   </autopilot>
-      --> 
+      -->
+      <!--ORIGINAL
+	   <autopilot>
+              <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot200.xml</path>
+	   </autopilot>
+	    
+	-->
     </systems> 
     
     <!--
