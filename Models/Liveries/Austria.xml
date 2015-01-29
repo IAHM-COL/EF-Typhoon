@@ -6,7 +6,7 @@
       <livery>
         <name type="string">Bundesheer</name>
         <index type="int">2</index>
-        <texture>Liveries/aus.png</texture>
+        <texture>Austria.png</texture>
         <rudder>
   	  <texture>../EF-Typhoon-2.png</texture>
         </rudder>
