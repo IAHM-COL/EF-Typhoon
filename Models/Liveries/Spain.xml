@@ -6,9 +6,9 @@
       <livery>
         <name type="string">C-16 Ejercito del Aire</name>
         <index type="int">3</index>
-        <texture>Spain.png</texture>
+        <texture>Liveries/Spain.png</texture>
         <rudder>
-          <texture>SpainRudder.png</texture>
+          <texture>Liveries/SpainRudder.png</texture>
         </rudder>
 	<RAFlights type="bool">false</RAFlights> <!-- RAF alternate beacon -->
 	<beacon type="bool">true</beacon> <!-- red -->

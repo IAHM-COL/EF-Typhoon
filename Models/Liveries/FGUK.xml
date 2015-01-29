@@ -6,9 +6,9 @@
       <livery>
         <name type="string">FGUK</name>
         <index type="int">6</index>
-        <texture>FGUK.png</texture>
+        <texture>Liveries/FGUK.png</texture>
         <rudder>
-  	  <texture>../EF-Typhoon-2.png</texture>
+  	  <texture>EF-Typhoon-2.png</texture>
         </rudder>
 	<RAFlights type="bool">true</RAFlights> <!-- RAF alternate beacon -->
 	<beacon type="bool">false</beacon> <!-- red -->
