@@ -4,6 +4,7 @@
 
    ===============================================
    Eurofighter Typhoon simulation config.
+   With 'G' Limitations (Alternative A.P.)
    
    By MaverickAlex, D. Faber, AlMurSi & Algernon
 
@@ -16,22 +17,16 @@
 
   <sim>
 
-    <description>EFA Typhoon: Alternative AP</description>
+    <description>EFA Typhoon: With 'G' Limitations (Alternative A.P.)</description>
     <author>USA TOUR READY CONSORTIUM</author>
     <status>development</status>
     <aircraft-version>1.5</aircraft-version>
     
     <flight-model>yasim</flight-model>
-    <!-- Stable version with G-limitatios:
-	 <aero>EF-Typhoon-yasim</aero>
-    -->
-    <!-- Stable version without G-limitatios: -->
+    <!-- Stable version with G-limitatios: -->
     <aero>EF-Typhoon-yasim</aero>
     <!-- Testing version with G-limitatios:
 	 <aero>EF-Typhoon-yasim-test</aero>
-    -->
-    <!-- Testing version without G-limitaitons:
-	 <aero>EF-Typhoon-yasim-test-nog</aero>
     -->
     <fuel-fraction>0.4</fuel-fraction>
 
@@ -43,39 +38,29 @@
       <electrical>
         <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-electrical.xml</path>
       </electrical>
-      <!-- Autopilot --> 
+     <!-- Autopilot  --> 
+     <autopilot>
+       <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv2.xml</path>        
+     </autopilot>
+      <!-- Autopilot alternatives
       <autopilot>
-        <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv2.xml</path>
+	VERTICAL MODES fixed
+	  <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv5.xml</path>
+	Autopilot for use with FGFS 2.x :: Untested
+          <path>Aircraft/EF-Typhoon/Systems/AP-Legacy/EF-Typhoon-autopilot200v2.xml</path>
+	Autopilot for older FGFS 1.9.1 :: Untested
+          <path>Aircraft/EF-Typhoon/Systems/AP-Legacy/EF-Typhoon-autopilot191.xml</path>
       </autopilot>
-      <!-- Autopilot for stable FGFS 2.0
-	   <autopilot>
-               <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot200v2.xml</path>
-           </autopilot>
-      --> 
-      <!-- Autopilot for older FGFS 1.9.1
-	   <autopilot>
-               <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot191.xml</path>
-	   </autopilot>
-      --> 
+      -->
     </systems> 
-    
-    <!--
-	<systems>
-	   <electrical>
-              <path>Aircraft/Generic/generic-electrical.xml</path>
-	   </electrical>
-	   <autopilot>
-              <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot.xml</path>
-	   </autopilot>
-	</systems?
-    --> 
-    
+
     <virtual-cockpit archive="y">true</virtual-cockpit>
     <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
 
     <sound>
       <path>Aircraft/EF-Typhoon/Sounds/EF-Typhoon-sound.xml</path>
     </sound>
+    
     <!--
 	<submodels> 
 	   <serviceable type="bool">true</serviceable>
@@ -146,14 +131,13 @@
 	<beacon type="bool"/>
 	<strobe type="bool"/>
 	<!--
-            <texture>Liveries/spain.png</texture>
-            <rudder>
-               <texture>Liveries/moron.png</texture>
-            </rudder>
-	    <RAFlights type="bool">false</RAFlights>
-	    <beacon type="bool">true</beacon>
-	    <strobe type="bool">false</strobe>
-	    </livery>
+        <texture>Liveries/spain.png</texture>
+        <rudder>
+          <texture>Liveries/moron.png</texture>
+        </rudder>
+	<RAFlights type="bool">false</RAFlights>
+	<beacon type="bool">true</beacon>
+	<strobe type="bool">false</strobe>
 	-->
       </livery>
       <typhoon>
@@ -163,9 +147,9 @@
 	    Here we can include these, but all property names are changed!!!:
 	    controls hud instrumentation lighting modeling systems
 	--> 
-      </typhoon>
-      
-    </model> 
+      </typhoon>      
+    </model>
+    
     <multiplay>
       <generic>
 	<float n="1">0.0</float> <!-- loads? -->
@@ -574,35 +558,35 @@
 
   <!--params for compatibility -->
   <!--
-      <autopilot>
-         <params>
-	    <magnetic-heading>orientation/heading-magnetic-deg</magnetic-heading>
-	    <track>orientation/track-deg</track>
-	    <heading-bug>autopilot/settings/heading-bug-deg</heading-bug>
-	    <track-deg>autopilot/settings/true-heading-deg</track-deg>
-	    <pitch>orientation/pitch-deg</pitch>
-	    <roll>orientation/roll-deg</roll>
-	    <altitude>position/altitude-feet</altitude>
-	    <req-altitude>/autopilot/settings/target-altitude-ft</req-altitude>
-	    <req-pitch>/autopilot/settings/target-pitch-deg</req-pitch>
-	    <req-roll>/autopilot/settings/target-roll-deg</req-roll>
-	    <agl>position/altitude-agl-feet</agl>
-	    <locks>
-	      <roll>autopilot/locks/heading</roll>
-	      <pitch>autopilot/locks/altitude</pitch>
-	      <speed>autopilot/locks/speed</speed>
-	    </locks>
-	    <target-heading>autopilot/internal/target-heading-deg</target-heading>
-	    <target-altitude>autopilot/internal/target-altitude-ft</target-altitude>
-	    <target-pitch>autopilot/internal/target-pitch-deg</target-pitch>
-	    <target-roll>autopilot/internal/target-roll-deg</target-roll>
-	    <heading-offset>autopilot/internal/heading-offset</heading-offset>
-	    <track-offset>autopilot/internal/track-offset</track-offset>
-	    <elevator-cmd>controls/flight/elevator</elevator-cmd>
-	    <aileron-cmd>controls/flight/aileron</aileron-cmd>
-	    <rudder-cmd>controls/flight/rudder</rudder-cmd>
-	 </params>
-	 </autopilot>
+  <autopilot>
+    <params>
+      <magnetic-heading>orientation/heading-magnetic-deg</magnetic-heading>
+      <track>orientation/track-deg</track>
+      <heading-bug>autopilot/settings/heading-bug-deg</heading-bug>
+      <track-deg>autopilot/settings/true-heading-deg</track-deg>
+      <pitch>orientation/pitch-deg</pitch>
+      <roll>orientation/roll-deg</roll>
+      <altitude>position/altitude-feet</altitude>
+      <req-altitude>/autopilot/settings/target-altitude-ft</req-altitude>
+      <req-pitch>/autopilot/settings/target-pitch-deg</req-pitch>
+      <req-roll>/autopilot/settings/target-roll-deg</req-roll>
+      <agl>position/altitude-agl-feet</agl>
+      <locks>
+	<roll>autopilot/locks/heading</roll>
+	<pitch>autopilot/locks/altitude</pitch>
+	<speed>autopilot/locks/speed</speed>
+      </locks>
+      <target-heading>autopilot/internal/target-heading-deg</target-heading>
+      <target-altitude>autopilot/internal/target-altitude-ft</target-altitude>
+      <target-pitch>autopilot/internal/target-pitch-deg</target-pitch>
+      <target-roll>autopilot/internal/target-roll-deg</target-roll>
+      <heading-offset>autopilot/internal/heading-offset</heading-offset>
+      <track-offset>autopilot/internal/track-offset</track-offset>
+      <elevator-cmd>controls/flight/elevator</elevator-cmd>
+      <aileron-cmd>controls/flight/aileron</aileron-cmd>
+      <rudder-cmd>controls/flight/rudder</rudder-cmd>
+    </params>
+  </autopilot>
   -->
 
   <instrumentation include="Models/Instruments/instrumentation.xml">
@@ -678,6 +662,10 @@
 
   <!-- set up control properties for YASim -->
   <controls>
+    <lighting>
+      <instruments-norm type="float">0.4</instruments-norm>
+    </lighting>
+
     <testing>
       <None type="string"></None>
     </testing>
@@ -792,16 +780,14 @@
     </tailhook>
 
     <!--
-	<canopy>
-	   <position-norm type="float">1.0</position-norm>
-	</canopy-->
-    
-    <!--
-	<SAS>
-	   <pitch type="bool">true</pitch>
-	   <roll type="bool">true</roll>
-	   <yaw type="bool">true</yaw>
-	   </SAS>
+    <canopy>
+      <position-norm type="float">1.0</position-norm>
+    </canopy>
+    <SAS>
+      <pitch type="bool">true</pitch>
+      <roll type="bool">true</roll>
+      <yaw type="bool">true</yaw>
+    </SAS>
     -->
 
     <buttons>
@@ -926,7 +912,6 @@
           <property>controls/engines/engine[1]/reverser</property>
         </binding>
       </key>
-
     </keyboard>
   </input>
 
@@ -958,25 +943,25 @@
     </gearbox>
 
     <!--IN DEVELOPMENT
-	<radar2>
-	  <file>Aircraft/EF-Typhoon/Nasal/radar2.nas</file>
-	</radar2>
+    <radar2>
+      <file>Aircraft/EF-Typhoon/Nasal/radar2.nas</file>
+    </radar2>
 
-        <rwr>
-	   <file>Aircraft/EF-Typhoon/Nasal/rwr.nas</file>
-	</rwr>
-	   
-	<radardist>
-	    <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
-	</radardist>
-	    
-	<radar2>
-	    <file>Aircraft/EF-Typhoon/Models/Instruments/radar2.nas</file>
-	</radar2>
-	
-	<radardist>
-	    <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
-	</radardist>
+    <rwr>
+      <file>Aircraft/EF-Typhoon/Nasal/rwr.nas</file>
+    </rwr>
+
+    <radardist>
+      <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+    </radardist>
+
+    <radar2>
+      <file>Aircraft/EF-Typhoon/Models/Instruments/radar2.nas</file>
+    </radar2>
+
+    <radardist>
+      <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+    </radardist>
     -->
   </nasal>
 

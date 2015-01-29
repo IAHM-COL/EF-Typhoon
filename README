@@ -39,12 +39,10 @@ LIVERIES:
 	Livery Spain from Moron Ala 11
 	Livery Italy from ITAF EF2000 12 Squadron
 COMPATIBILITY:
-	EF-Typhoon load autopilot 2.0 compatible
-	EF-Typhoonb load 1.9.1 compatible
-	EF-Typhoon2 load 1.9.1 compatible
-	EF-Typhoon-2 load autopilot 2.git compatible
-	EF-Typhoon2-2 load 2.0 only compatible
-
+	EF-Typhoon with 'G' Limitations: FG 3.x compatible  (EF-Typhoon)
+	EF-Typhoon without 'G' Limitation: FG 3.x compatible (EF-Typhoon-noG)
+	EF-Typhoon with 'G' Limitations (Alternative A.P): FG 2.12 Compatible (EF-Typhoon-2)
+	Additional Autopilots available in Systems/AP-Legacy, Untested
 
 =================================================================
 OPERATION
@@ -53,12 +51,12 @@ OPERATION
 This Aircraft provides two FDM, one with and one without G-limitations
 
 Afterburners engage when throttle moves past 95%
-"N" expends Speedbrake
-"n" retracts Speedbrake
-"L" launchbar on carrier
-"C" catapult on carrier
+"N" Extend Speedbrake
+"n" Retract Speedbrake
+"L" Launchbar on carrier
+"C" Catapult on carrier
 "O" Extend/retract hook
-"f" / "d" Extend/retract slats
+"f" / "d" Extend/Retract slats
 "Delete" Toggle thrust reversers (max. 40% power)
 "Ctrl + d" Toggle canopy
 

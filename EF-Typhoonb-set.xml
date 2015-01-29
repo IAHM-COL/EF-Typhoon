@@ -4,6 +4,7 @@
 
    ===============================================
    Eurofighter Typhoon simulation config.
+   No 'G' Limitations Modelling
    
    By MaverickAlex, D. Faber, AlMurSi & Algernon
 
@@ -16,18 +17,14 @@
 
   <sim>
 
-    <description>EFA Typhoon: No 'G' Limitations</description>
+    <description>E.F.A Typhoon: No 'G' Limitations</description>
     <author>USA TOUR READY CONSORTIUM</author>
     <status>development</status>
     <aircraft-version>1.5</aircraft-version>
     
     <flight-model>yasim</flight-model>
-    <!-- Stable version with G-limitatios:
-	 <aero>EF-Typhoon-yasim</aero> -->
     <!-- Stable version without G-limitatios: -->
     <aero>EF-Typhoon-yasim-nog</aero>
-    <!-- Testing version with G-limitatios:
-	 <aero>EF-Typhoon-yasim-test</aero> -->
     <!-- Testing version without G-limitaitons:
 	 <aero>EF-Typhoon-yasim-test-nog</aero> -->
     <fuel-fraction>0.4</fuel-fraction>
@@ -40,31 +37,26 @@
       <electrical>
         <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-electrical.xml</path>
       </electrical>
-      <!-- Autopilot for older FGFS 1.9.1 -->
+     <!-- Autopilot  --> 
       <autopilot>
-        <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot191.xml</path>
-      </autopilot> 
-      <!-- Autopilot for stable FGFS 2.0 
-	   <autopilot>
-              <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot200v2.xml</path>
-	   </autopilot> -->
-      <!-- Autopilot for use on development FGFS 2.Git
-	   <autopilot>
-              <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv2.xml</path>
-	   </autopilot>
-      --> 
+	<!--
+	    Systems/EF-Typhoon-autopilotv5.xml has been prepared by JWOCKY.
+	    It improves the stability of the vertical modes, among other fixes
+	    and it is tested to work with FGFS 3.x
+	-->
+        <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv5.xml</path>
+      </autopilot>
+      <!-- Autopilot alternatives
+      <autopilot>
+	Autopilot for older FGFS 1.9.1 :: Untested
+          <path>Aircraft/EF-Typhoon/Systems/AP-Legacy/EF-Typhoon-autopilot191.xml</path>
+	ORIGINAL for use with FGFS 2.x :: Untested
+          <path>Aircraft/EF-Typhoon/Systems/AP-Legacy/EF-Typhoon-autopilot200v2.xml</path>
+	Autopilot for use with FGFS 2.x :: Untested
+          <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv2.xml</path>
+      </autopilot>
+      -->
     </systems> 
-    
-    <!--
-	<systems>
-	   <electrical>
-              <path>Aircraft/Generic/generic-electrical.xml</path>
-	   </electrical>
-	   <autopilot>
-              <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilot.xml</path>
-	   </autopilot>
-	   </systems>
-    --> 
     
     <virtual-cockpit archive="y">true</virtual-cockpit>
     <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
@@ -143,14 +135,13 @@
 	<beacon type="bool"/>
 	<strobe type="bool"/>
 	<!--
-            <texture>Liveries/spain.png</texture>
-            <rudder>
-                <texture>Liveries/moron.png</texture>
-            </rudder>
-	    <RAFlights type="bool">false</RAFlights>
-	    <beacon type="bool">true</beacon>
-	    <strobe type="bool">false</strobe>
-	    </livery>
+        <texture>Liveries/spain.png</texture>
+        <rudder>
+          <texture>Liveries/moron.png</texture>
+        </rudder>
+	<RAFlights type="bool">false</RAFlights>
+	<beacon type="bool">true</beacon>
+	<strobe type="bool">false</strobe>
 	-->
       </livery>
       <typhoon>
@@ -161,8 +152,8 @@
 	    controls hud instrumentation lighting modeling systems
 	--> 
       </typhoon>
-      
-    </model> 
+    </model>
+    
     <multiplay>
       <generic>
 	<float n="1">0.0</float> <!-- loads? -->
@@ -178,18 +169,18 @@
     </multiplay>
 
     <!--
-	<autopilot>
-	   <config>
-	      <min-climb-speed-kt type="float">170.0</min-climb-speed-kt>
-	      <best-climb-speed-kt type="float">300.0</best-climb-speed-kt>
-	      <target-climb-rate-fpm type="float">1500.0</target-climb-rate-fpm>
-	      <target-descent-rate-fpm type="float">2000.0</target-descent-rate-fpm>
-	      <elevator-adj-factor type="float">4000.0</elevator-adj-factor>
-	      <integral-contribution type="float">0.0001</integral-contribution>
-	      <zero-pitch-throttle type="float">0.45</zero-pitch-throttle>
-	      <zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle>
-	   </config>
-	</autopilot>
+    <autopilot>
+      <config>
+	<min-climb-speed-kt type="float">170.0</min-climb-speed-kt>
+	<best-climb-speed-kt type="float">300.0</best-climb-speed-kt>
+	<target-climb-rate-fpm type="float">1500.0</target-climb-rate-fpm>
+	<target-descent-rate-fpm type="float">2000.0</target-descent-rate-fpm>
+	<elevator-adj-factor type="float">4000.0</elevator-adj-factor>
+	<integral-contribution type="float">0.0001</integral-contribution>
+	<zero-pitch-throttle type="float">0.45</zero-pitch-throttle>
+	<zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle>
+      </config>
+    </autopilot>
     -->
 
     <view n="0">
@@ -252,7 +243,6 @@
 	<brightness type="float">1.0</brightness>
 	<alpha type="float">0.70</alpha>
       </color>
-
       <palette>
 	<color n="0">
 	  <red type="float">0.50</red>
@@ -577,6 +567,9 @@
     <stall-warning type="bool">true</stall-warning>
   </sim>
 
+  <instrumentation include="Models/Instruments/instrumentation.xml">
+  </instrumentation>
+  
   <consumables>
     <fuel>
       <tank n="0">
@@ -645,11 +638,13 @@
     </engine>
   </engines>
 
-  <instrumentation include="Models/Instruments/instrumentation.xml">
-  </instrumentation>
 
   <!-- set up control properties for YASim -->
   <controls>
+    <lighting>
+      <instruments-norm type="float">0.4</instruments-norm>
+    </lighting>
+
     <testing>
       <None type="string"></None>
     </testing>
@@ -752,19 +747,24 @@
     </tailhook>
 
     <!--
-	<canopy>
-	    <position-norm type="float">1.0</position-norm>
-        </canopy>
+    <canopy>
+      <position-norm type="float">1.0</position-norm>
+    </canopy>
+    <SAS>
+      <pitch type="bool">true</pitch>
+      <roll type="bool">true</roll>
+      <yaw type="bool">true</yaw>
+    </SAS>
     -->
     
-    <!--
-	<SAS>
-	   <pitch type="bool">true</pitch>
-	   <roll type="bool">true</roll>
-	   <yaw type="bool">true</yaw>
-        </SAS>
-    -->
+    <buttons>
+      <FCS-override type="bool">true</FCS-override>
+    </buttons>
 
+    <radar>
+      <on type="bool">true</on>
+    </radar>
+    
     <switches>
       <voice type="bool">true</voice>
     </switches>
@@ -903,25 +903,25 @@
     </autopilot>
 
     <!--IN DEVELOPMENT
-	<radar2>
-	   <file>Aircraft/EF-Typhoon/Nasal/radar2.nas</file>
-	   </radar2>
-	   
-	<rwr>
-	   <file>Aircraft/EF-Typhoon/Nasal/rwr.nas</file>
-	   </rwr>
-	   
-	<radardist>
-	   <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
-	</radardist>
+    <radar2>
+      <file>Aircraft/EF-Typhoon/Nasal/radar2.nas</file>
+    </radar2>
+    
+    <rwr>
+      <file>Aircraft/EF-Typhoon/Nasal/rwr.nas</file>
+    </rwr>
+    
+    <radardist>
+      <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+    </radardist>
 
-        <radar2>
-	   <file>Aircraft/EF-Typhoon/Models/Instruments/radar2.nas</file>
-	</radar2>
-	
-	<radardist>
-   	   <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
-	</radardist>
+    <radar2>
+      <file>Aircraft/EF-Typhoon/Models/Instruments/radar2.nas</file>
+    </radar2>
+    
+    <radardist>
+      <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+    </radardist>
     -->
   </nasal>
 
