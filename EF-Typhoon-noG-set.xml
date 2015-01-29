@@ -24,9 +24,9 @@
     
     <flight-model>yasim</flight-model>
     <!-- Stable version without G-limitatios: -->
-    <aero>EF-Typhoon-yasim-nog</aero>
+    <aero>EF-Typhoon-yasim-noG</aero>
     <!-- Testing version without G-limitaitons:
-	 <aero>EF-Typhoon-yasim-test-nog</aero> -->
+	 <aero>EF-Typhoon-yasim-test-noG</aero> -->
     <fuel-fraction>0.4</fuel-fraction>
 
     <startup>
