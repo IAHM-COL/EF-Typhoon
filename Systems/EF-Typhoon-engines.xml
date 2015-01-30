@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+==============================================
+EFA Typhoon: Menu Bar
+Original by Maverick Alex and Others
+Edited by USA TOUR READY CONSORTIUM; Jan 2015
+==============================================
+-->
+<PropertyList>
+      <engine n="0">
+      <!--rpm type="double">700</rpm-->
+      <running>true</running>
+    </engine>
+
+    <engine n="1">
+      <!--rpm type="double">700</rpm-->
+      <running>true</running>
+    </engine>
+
+    <engine n="2">
+      <!--rpm type="double">700</rpm-->
+      <n2 type="double">0.0</n2>
+    </engine>
+</PropertyList>

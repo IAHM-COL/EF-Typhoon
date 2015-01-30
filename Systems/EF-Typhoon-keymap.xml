@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!--
+==============================================
+EFA Typhoon: Key Map
+Original by Maverick Alex and Others
+Edited by USA TOUR READY CONSORTIUM; Jan 2015
+==============================================
+-->
+<PropertyList>
+  <keyboard>
+    <!-- Carrier ops: Taken from Seahawk --> 
+    <key n="76"> 
+      <name>L</name>
+      <desc>Engage launch-bar</desc>
+      <binding> 
+        <command>property-toggle</command>
+        <property>/controls/gear/launchbar</property>
+      </binding>
+    </key>
+
+    <key n="79"> 
+      <name>O</name>
+      <desc>Hook down</desc>
+      <binding>
+        <command>nasal</command>
+	<script>typhoon.setHook();</script>
+        <!-- <command>property-assign</command>
+             <property>/controls/gear/tailhook</property>
+             <value type="double">1.0</value> -->
+      </binding> 
+    </key>
+
+    <key n="67"> 
+      <name>C</name>
+      <desc>Catapult launch command</desc>
+      <binding> 
+        <command>property-toggle</command>
+        <property>/controls/gear/catapult-launch-cmd</property>
+      </binding>
+    </key>
+
+    <key n="4">
+      <name>Ctrl-d</name>
+      <desc>Toggle canopy</desc>
+      <binding> 
+	<command>nasal</command>
+	<script>typhoon.canopy.toggle();</script>
+      </binding>
+    </key>
+
+    <key n="78"> 
+      <name>N</name>
+      <desc>Extend speedbrakes</desc>
+      <binding> 
+        <command>property-adjust</command>
+        <property>/controls/flight/speedbrake</property>
+        <step type="double">0.2</step>
+        <min type="double">0</min>
+        <max type="double">1</max>
+      </binding>
+    </key>
+
+    <key n="110"> 
+      <name>n</name>
+      <desc>Retract speedbrakes</desc>
+      <binding> 
+        <command>property-adjust</command>
+        <property>/controls/flight/speedbrake</property>
+        <step type="double">-0.2</step><!-- with +0.33 and -0.2 do QNAN -->
+        <min type="double">0</min>
+        <max type="double">1</max>
+      </binding>
+    </key>
+
+    <key n="100">
+      <name>d</name>
+      <desc>Retract slats</desc>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/slats</property>
+        <step type="double">-0.2</step>
+        <min type="double">0</min>
+        <max type="double">1</max>
+      </binding>
+    </key>
+
+    <key n="102">
+      <name>f</name>
+      <desc>Extend slats</desc>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/slats</property>
+        <step type="double">0.2</step>
+        <min type="double">0</min>
+        <max type="double">1</max>
+      </binding>
+    </key>
+
+    <key n="127">
+      <name>Delete</name>
+      <desc>Toggle reversers</desc>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/engines/engine[0]/reverser</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/engines/engine[1]/reverser</property>
+      </binding>
+    </key>
+  </keyboard>
+</PropertyList>

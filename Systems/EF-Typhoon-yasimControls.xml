@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!--
+==============================================
+EFA Typhoon: Yasim Controls
+Original by Maverick Alex and Others
+Edited by USA TOUR READY CONSORTIUM; Jan 2015
+==============================================
+-->
+<PropertyList>
+  <lighting>
+    <instruments-norm type="float">0.4</instruments-norm>
+  </lighting>
+
+  <testing>
+    <None type="string"></None>
+  </testing>
+
+  <ULP>
+    <brightness type="double">1</brightness>
+    <on-off type="bool">0</on-off>
+  </ULP>
+
+  <HSD>
+    <brightness type="double">1</brightness>
+    <on-off type="bool">0</on-off>
+  </HSD>
+
+  <pilots-displays>
+    <mode>
+      <to-bt type="bool">false</to-bt>
+      <cruise-bt type="bool">true</cruise-bt>
+      <aa-bt type="bool">false</aa-bt>
+      <ag-bt type="bool">false</ag-bt>
+      <ldg-bt type="bool">false</ldg-bt>
+    </mode>
+    
+    <steer>
+      <man-bt type="bool">false</man-bt>
+      <tacan-bt type="bool">true</tacan-bt>
+      <awl-bt type="bool">false</awl-bt>
+      <dest-bt type="bool">false</dest-bt>
+      <vec-bt type="bool">false</vec-bt>
+    </steer>
+
+    <hsd-mode-nav type="int">1</hsd-mode-nav><!-- 1=NAV, 0=TID, -1=ECM -->
+  </pilots-displays>
+
+  <radar-awg-9>
+    <on-off type="bool">false</on-off>
+    <brightness type="double">1</brightness>
+  </radar-awg-9>
+
+  <VDI>
+    <brightness type="double">1</brightness>
+    <contrast type="double">0.6</contrast>
+    <on-off type="bool">0</on-off>
+  </VDI>
+
+  <TID>
+    <on-off type="bool">false</on-off>
+    <brightness type="double">1</brightness>
+  </TID>
+
+  <armament>
+    <station n="0">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="1">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="2">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="3">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="4">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="5">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="6">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="7">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="8">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="9">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="10">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="11">
+      <release type="bool">false</release>
+    </station>
+
+    <station n="12">
+      <release type="bool">false</release>
+    </station>
+  </armament>
+
+  <gear>
+    <brake-parking>1</brake-parking>
+    <tailwheel-lock type="bool">false</tailwheel-lock>
+  </gear>
+
+  <tailhook>
+    <position-norm type="double">0</position-norm>
+  </tailhook>
+
+ <!--
+ <canopy>
+   <position-norm type="float">1.0</position-norm>
+ </canopy>
+ 
+ <SAS>
+   <pitch type="bool">true</pitch>
+   <roll type="bool">true</roll>
+   <yaw type="bool">true</yaw>
+ </SAS>
+ -->
+  
+  <buttons>
+    <FCS-override type="bool">true</FCS-override>
+  </buttons>
+
+  <radar>
+    <on type="bool">true</on>
+  </radar>
+  
+  <switches>
+    <voice type="bool">true</voice>
+  </switches>
+</PropertyList>

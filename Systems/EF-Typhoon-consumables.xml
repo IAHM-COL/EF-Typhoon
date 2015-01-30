@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+==============================================
+EFA Typhoon: Consumables :: Fuel Tanks
+Original by Maverick Alex and Others
+Edited by USA TOUR READY CONSORTIUM; Jan 2015
+==============================================
+-->
+<PropertyList>
+  <fuel>
+    <tank n="0">
+      <name>forward fuselage Tank</name>
+      <selected type="bool">true</selected>
+      <kill-when-empty type="bool">false</kill-when-empty>
+      <level-gal_us archive="y">500</level-gal_us>
+    </tank>
+
+    <tank n="1">
+      <name>rear fuselage Tank</name>
+      <selected type="bool">true</selected>
+    </tank>
+
+    <tank n="2">
+      <name>forward left wing Tank</name>
+      <selected type="bool">true</selected>
+    </tank>
+
+    <tank n="3">
+      <name>rear left wing Tank</name>
+      <selected type="bool">true</selected>
+    </tank>
+
+    <tank n="4">
+      <name>forward right wing Tank</name>
+      <selected type="bool">true</selected>
+    </tank>
+
+    <tank n="5">
+      <name>rear right wing Tank</name>
+      <selected type="bool">true</selected>
+    </tank>
+
+    <tank n="6">
+      <name>left wing Droptank</name>
+      <selected type="bool">false</selected>
+    </tank>
+
+    <tank n="7">
+      <name>right wing Droptank</name>
+      <selected type="bool">false</selected>
+    </tank>
+
+    <tank n="8">
+      <name>centerline Droptank</name>
+      <selected type="bool">false</selected>
+    </tank>
+  </fuel>
+</PropertyList>

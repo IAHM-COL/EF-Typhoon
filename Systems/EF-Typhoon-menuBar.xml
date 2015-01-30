@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+==============================================
+EFA Typhoon: Menu Bar
+Original by Maverick Alex and Others
+Edited by USA TOUR READY CONSORTIUM; Jan 2015
+==============================================
+-->
+<PropertyList>
+  <default>
+    <menu n="10">
+      <label>Extras</label>
+      <enabled type="bool">true</enabled>
+      <item>
+	<label>Select Livery</label>
+	<binding>
+	  <command>nasal</command>
+	  <script>aircraft.livery.dialog.toggle()</script>
+	</binding>
+      </item>
+
+      <item>
+	<label>Nav Lights</label>
+	<binding>
+	  <command>nasal</command>
+	  <script>typhoon.Luces.open()</script>
+	</binding>
+      </item>
+
+      <item>
+	<label>Other options</label>
+	<binding>
+	  <command>nasal</command>
+	  <script>typhoon.RadarStop.open()</script>
+	</binding>
+      </item>
+
+      <item>
+	<label>Typhoon Autopilot</label>
+	<binding>
+	  <command>nasal</command>
+	  <script>typhoon.APdialog.open()</script>
+	</binding>
+      </item>
+    </menu>
+  </default>
+</PropertyList>
