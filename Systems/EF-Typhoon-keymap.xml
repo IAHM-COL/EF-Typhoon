@@ -108,5 +108,14 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
         <property>controls/engines/engine[1]/reverser</property>
       </binding>
     </key>
+
+    <key n="267">
+      <name>F11</name>
+      <desc>Typhoon Autopilot dialog</desc>
+      <binding>
+        <command>nasal</command>
+        <script>typhoon.APdialog.open()</script>
+      </binding>
+    </key>
   </keyboard>
 </PropertyList>

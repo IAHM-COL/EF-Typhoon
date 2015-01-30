@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--
+==============================================
+EFA Typhoon: Autopilot Dialog
+Original by Maverick Alex and Others
+Edited by USA TOUR READY CONSORTIUM; Jan 2015
+==============================================
+-->
+
 <PropertyList>
   <name>ap-dialog</name>
   <modal>false</modal>
@@ -15,143 +23,143 @@
     <label>Autopilot Control</label>
   </text>  
   
-  <frame> <!-- Lateral Modes -->
+  <!-- Lateral Modes -->
+  <frame>
     <layout>hbox</layout>
     
-    <group> <!-- Heading Bug -->
-      <padding>10</padding>
-      <layout>vbox</layout>
-      <halign>left</halign>
-      <x>0</x>
-      <y>0</y>
-      
-      <input>
-	<row>0</row>
-	<col>5</col>
-	<rowspan>2</rowspan>
-	<property>/autopilot/settings/heading-bug-deg</property>
-	<live>true</live>
-	<binding>
-	  <command>dialog-apply</command>
-	</binding>
-      </input>
-      
-      <button>
-	<x>0</x>
-	<y>0</y>
-	<legend>HDG</legend>
-	<binding>
-	  <command>property-cycle</command>
-	  <property>/autopilot/locks/heading</property>
-	  <value type="string">dg-heading-hold</value>
-	  <value/>
-	</binding>
-      </button>
-      
-      <button>
-	<x>0</x>
-	<y>0</y>
-	<legend>TACAN</legend>
-	<binding>
-	  <command>property-cycle</command>
-	  <property>/autopilot/locks/heading</property>
-	  <value type="string">tacan-hold</value>
-	  <value/>
-	</binding>
-      </button>
-      
-    </group>
-
-    <group> <!-- Track -->
-      <padding>10</padding>
-      <layout>vbox</layout>
-      <halign>left</halign>
-      <x>-50</x>
-      <y>0</y>
-      
-      <text>
-	<halign>center</halign>
-	<label>-99.99</label> <!-- placeholder for width -->
-	<property>autopilot/settings/target-roll-deg</property>
-	<live>true</live>
-      </text>
-      
-      <slider>
-	<vertical>false</vertical>
-	<x>0</x>
-	<y>0</y>
-	<width>70</width>
-	<property>/autopilot/settings/target-roll-deg</property>
-	<live>true</live>
-	<binding>
-	  <command>dialog-apply</command>
-	</binding>
-	<min>-90</min>
-	<max>90</max>
-	<step>1.0</step>
-      </slider>
-      
-      <button>
-	<x>0</x>
-	<y>0</y>
-	<legend>Roll Hold</legend>
-	<binding>
-	  <command>property-cycle</command>
-	  <property>/autopilot/locks/heading</property>
-	  <value>roll-hold</value>
-	  <value/>
-	</binding>
-      </button>
-      
-    </group>
-    
+    <!-- Heading Bug -->  
     <group>
       <padding>10</padding>
       <layout>vbox</layout>
       <halign>left</halign>
       <x>0</x>
-      <y>0</y>
-      
-      <input>
-	<row>0</row>
-	<col>5</col>
-	<rowspan>2</rowspan>
-	<property>/autopilot/settings/true-heading-deg</property>
-	<live>true</live>
-	<binding>
-	  <command>dialog-apply</command>
-	</binding>
-      </input>  
-      
-      <button>
-	<x>0</x>
-	<y>0</y>
-	<legend>TRK/GAL</legend>
-	<binding>
-	  <command>property-cycle</command>
-	  <property>/autopilot/locks/heading</property>
-	  <value type="string">true-heading-hold</value>
-	  <value/>
-	</binding>
-      </button>
-      
-      <button>
-	<x>0</x>
-	<y>0</y>
-	<legend>NAV1</legend>
-	<binding>
-	  <command>property-cycle</command>
-	  <property>/autopilot/locks/heading</property>
-	  <value type="string">nav-hold</value>
-	  <value/>
-	</binding>
-      </button>
-      
-    </group>
+    <y>0</y>
     
+    <input>
+      <row>0</row>
+      <col>5</col>
+      <rowspan>2</rowspan>
+      <property>/autopilot/settings/heading-bug-deg</property>
+      <live>true</live>
+      <binding>
+	<command>dialog-apply</command>
+      </binding>
+    </input>
+    
+    <button>
+      <x>0</x>
+      <y>0</y>
+      <legend>HDG</legend>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/heading</property>
+	<value type="string">dg-heading-hold</value>
+	<value/>
+      </binding>
+    </button>
+    
+    <button>
+      <x>0</x>
+      <y>0</y>
+      <legend>TACAN</legend>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/heading</property>
+	<value type="string">tacan-hold</value>
+	<value/>
+      </binding>
+    </button>
+  </group>
+
+  <!-- Track -->
+  <group>
+    <padding>10</padding>
+    <layout>vbox</layout>
+    <halign>left</halign>
+    <x>-50</x>
+    <y>0</y>
+    
+    <text> 
+      <halign>center</halign>
+      <label>-99.99</label> <!-- placeholder for width -->
+      <property>autopilot/settings/target-roll-deg</property>
+      <live>true</live>
+    </text>
+    
+    <slider>
+      <vertical>false</vertical>
+      <x>0</x>
+      <y>0</y>
+      <width>70</width>
+      <property>/autopilot/settings/target-roll-deg</property>
+      <live>true</live>
+      <binding>
+	<command>dialog-apply</command>
+      </binding>
+      <min>-90</min>
+      <max>90</max>
+      <step>1.0</step>
+    </slider>
+    
+    <button>
+      <x>0</x>
+      <y>0</y>
+      <legend>Roll Hold</legend>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/heading</property>
+	<value>roll-hold</value>
+	<value/>
+      </binding>
+    </button>
+  </group>
+  
+  <group>
+    <padding>10</padding>
+    <layout>vbox</layout>
+    <halign>left</halign>
+    <x>0</x>
+    <y>0</y>
+    
+    <input>
+      <row>0</row>
+      <col>5</col>
+      <rowspan>2</rowspan>
+      <property>/autopilot/settings/true-heading-deg</property>
+      <live>true</live>
+      <binding>
+	<command>dialog-apply</command>
+      </binding>
+    </input>  
+    
+    <button>
+      <x>0</x>
+      <y>0</y>
+      <legend>TRK/GAL</legend>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/heading</property>
+	<value type="string">true-heading-hold</value>
+	<value/>
+      </binding>
+    </button>
+    
+    <button>
+      <x>0</x>
+      <y>0</y>
+      <legend>NAV1</legend>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/heading</property>
+	<value type="string">nav-hold</value>
+	<value/>
+      </binding>
+    </button>
+  </group>
   </frame>
   
-  <frame> <!-- Vertical Modes -->
+  <!-- Vertical Modes -->
+  <frame>
     <layout>hbox</layout>
     
     <group>
@@ -159,138 +167,137 @@
       <layout>vbox</layout>
       <halign>center</halign>
       <width>70</width>
-      <x>0</x>
-      <y>0</y>
-      
-      <input>
-	<property>/autopilot/settings/ind-target-altitude-ft</property>
-	<live>true</live>
-	<width>70</width>
-	<binding>
-	  <command>dialog-apply</command>
-	</binding>
-      </input>
-      
-      <button>
-	<x>0</x>
-	<y>0</y>
-	<width>100</width>
-	<legend>ALT Hold</legend>
-	<binding>
-	  <command>property-cycle</command>
-	  <property>/autopilot/locks/altitude</property>
-	  <value type="string">altitude-hold</value>
-	  <value/>
-	</binding>
-      </button>
-      
-      <button>
-	<x>0</x>
-	<y>0</y>
-	<width>100</width>
-	<legend>GS Arm</legend>
-	<binding>
-	  <command>dialog-apply</command>
-	</binding>
-      </button>
-      
-    </group>
+    <x>0</x>
+    <y>0</y>
     
-    <group>
-      <padding>10</padding>
-      <layout>vbox</layout>
-      <halign>center</halign>
+    <input>
+      <property>/autopilot/settings/target-altitude-ft</property>
+      <live>true</live>
       <width>70</width>
-      <x>0</x>
-      <y>0</y>
-      
-      <text>
-	<halign>center</halign>
-	<label>-99.99</label> <!-- placeholder for width -->
-	<property>autopilot/settings/target-pitch-deg</property>
-	<live>true</live>
-      </text>
-      
-      <slider>
-	<vertical>true</vertical>
-	<x>0</x>
-	<y>0</y>
-	<height>80</height>
-	<width>70</width>
-	<property>/autopilot/settings/target-pitch-deg</property>
-	<live>true</live>
-	<binding>
-	  <command>dialog-apply</command>
-	</binding>
-	<min>-70</min>
-	<max>70</max>
-	<step>5.0</step>
-      </slider>
-      
-      <button>
-	<x>0</x>
-	<y>0</y>
-	<width>100</width>
-	<legend>Pitch Hold</legend>
-	<binding>
-	  <command>property-cycle</command>
-	  <property>/autopilot/locks/altitude</property>
-	  <value type="string">pitch-hold</value>
-	  <value/>
-	</binding>
-      </button>
-      
-    </group>
-
-
-    <group>
-      <padding>10</padding>
-      <layout>vbox</layout>
-      <halign>center</halign>
-      <width>70</width>
-      <x>0</x>
-      <y>0</y>
-      
-      <input>
-	<property>/autopilot/settings/target-agl-ft</property>
-	<live>true</live>
-	<width>70</width>
-	<binding>
-	  <command>dialog-apply</command>
-	</binding>
-      </input>
-      
-      <button>
-	<x>0</x>
-	<y>0</y>
-	<width>100</width>
-	<legend>TFR Hold</legend>
-	<binding>
-	  <command>property-cycle</command>
-	  <property>/autopilot/locks/altitude</property>
-	  <value type="string">agl-hold</value>
-	  <value/>
-	</binding>
-      </button>
-      
-      <button>
-	<x>0</x>
-	<y>0</y>
-	<width>100</width>
-	<legend>VNAV</legend>
-	<binding>
-	  <command>property-cycle</command>
-	  <property>/autopilot/locks/altitude</property>
-	  <value type="string">nav-hold</value>
-	  <value/>
-	</binding>
-      </button>
-      
-    </group>
+      <binding>
+	<command>dialog-apply</command>
+      </binding>
+    </input>
     
-  </frame>
+    <button>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <legend>ALT Hold</legend>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/altitude</property>
+	<value type="string">altitude-hold</value>
+	<value/>
+      </binding>
+    </button>
+    
+    <button>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <legend>GS Arm</legend>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/altitude</property>
+	<value type="string">gs1-hold</value>
+	<value/>
+      </binding>
+    </button>
+  </group>
   
-  <frame> <!-- Speed Modes -->
+  <group>
+    <padding>10</padding>
+    <layout>vbox</layout>
+    <halign>center</halign>
+    <width>70</width>
+    <x>0</x>
+    <y>0</y>
+    
+    <text>
+      <halign>center</halign>
+      <label>-99.99</label> <!-- placeholder for width -->
+      <property>autopilot/settings/target-pitch-deg</property>
+      <live>true</live>
+    </text>
+    
+    <slider>
+      <vertical>true</vertical>
+      <x>0</x>
+      <y>0</y>
+      <height>80</height>
+      <width>70</width>
+      <property>/autopilot/settings/target-pitch-deg</property>
+      <live>true</live>
+      <binding>
+	<command>dialog-apply</command>
+      </binding>
+      <min>-70</min>
+      <max>70</max>
+      <step>5.0</step>
+    </slider>
+    
+    <button>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <legend>Pitch Hold</legend>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/altitude</property>
+	<value type="string">pitch-hold</value>
+	<value/>
+      </binding>
+    </button>
+  </group>
+
+  <group>
+    <padding>10</padding>
+    <layout>vbox</layout>
+    <halign>center</halign>
+    <width>70</width>
+    <x>0</x>
+    <y>0</y>
+    
+    <input>
+      <property>/autopilot/settings/target-agl-ft</property>
+      <live>true</live>
+      <width>70</width>
+      <binding>
+	<command>dialog-apply</command>
+      </binding>
+    </input>
+    
+    <button>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <legend>AGL Hold</legend>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/altitude</property>
+	<value type="string">agl-hold</value>
+	<value/>
+      </binding>
+    </button>
+    
+    <button>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <legend>VNAV</legend>
+      <binding>
+	<command>property-cycle</command>
+	<property>/autopilot/locks/altitude</property>
+	<value type="string">nav-hold</value>
+	<value/>
+      </binding>
+    </button>
+  </group>
+  </frame>
+
+  <!-- Speed Modes -->
+  <frame> 
     <layout>hbox</layout>
     
     <group>
@@ -318,7 +325,6 @@
 	  <script>autopilot.ATselKts();</script>
 	</binding>
       </button>
-      
     </group>
     
     <group>
@@ -346,7 +352,6 @@
 	  <value/>
 	</binding>
       </button>
-      
     </group>
     
     <group>
@@ -374,57 +379,52 @@
 	  <script>autopilot.ATselMach();</script>
 	</binding>
       </button>
-      
     </group>
-    
   </frame>
   
-  <!-- Modes Currently Not Functioning >
-       
-       <frame>
-       <layout>vbox</layout>
-       
-       <group>
-       <layout>hbox</layout>
-       <padding>10</padding>
-       
-       <button>
-       <x>0</x>
-       <y>0</y>
-       <width>70</width>
-       <legend>Auto Climb</legend>
-       <binding>
-       <command>dialog-apply</command>
-       </binding>
-       </button>
-       
-       <button>
-       <x>0</x>
-       <y>0</y>
-       <width>70</width>
-       <legend>Auto Attack</legend>
-       <binding>
-       <command>dialog-apply</command>
-       </binding>
-       </button>
-       
-       <button>
-       <x>0</x>
-       <y>0</y>
-       <width>70</width>
-       <legend>Auto Approach</legend>
-       <binding>
-       <command>dialog-apply</command>
-       </binding>
-       </button>
-
-</group>
-
-</frame -->
+  <!-- Modes Currently Not Functioning 
+  <frame>
+    <layout>vbox</layout>
+    
+    <group>
+      <layout>hbox</layout>
+      <padding>10</padding>
+      
+      <button>
+	<x>0</x>
+	<y>0</y>
+	<width>70</width>
+	<legend>Auto Climb</legend>
+	<binding>
+	  <command>dialog-apply</command>
+	</binding>
+      </button>
+      
+      <button>
+	<x>0</x>
+	<y>0</y>
+	<width>70</width>
+	<legend>Auto Attack</legend>
+	<binding>
+	  <command>dialog-apply</command>
+	</binding>
+      </button>
+      
+      <button>
+	<x>0</x>
+	<y>0</y>
+	<width>70</width>
+	<legend>Auto Approach</legend>
+	<binding>
+	  <command>dialog-apply</command>
+	</binding>
+      </button>
+    </group>
+  </frame>
+  -->
   
   <frame>
     <layout>hbox</layout>
-    
     <group>
       <layout>hbox</layout>
       <padding>10</padding>
@@ -448,9 +448,6 @@
 	  <command>dialog-close</command>
 	</binding>
       </button>
-      
     </group>
-
   </frame>
-
 </PropertyList>
