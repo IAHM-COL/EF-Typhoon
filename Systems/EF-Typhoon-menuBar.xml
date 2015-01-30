@@ -8,17 +8,6 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
 -->
 <PropertyList>
   <default>
-    <menu n="4">
-      <item>
-	<key>F11</key>
-	<name>autopilot-settings</name>
-	<binding>
-	  <command>nasal</command>
-	  <script>typhoon.APdialog.open()</script>
-	</binding>
-      </item>
-    </menu>
-
     <menu n="10">
       <label>Extras</label>
       <enabled type="bool">true</enabled>
@@ -46,14 +35,6 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
 	</binding>
       </item>
 
-      <item>
-	<key>F11</key>
-	<label>Typhoon Autopilot</label>
-	<binding>
-	  <command>nasal</command>
-	  <script>typhoon.APdialog.open()</script>
-	</binding>
-      </item>
     </menu>
   </default>
 </PropertyList>

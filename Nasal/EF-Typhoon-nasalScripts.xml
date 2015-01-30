@@ -12,6 +12,10 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
     <!--file>Aircraft/EF-Typhoon/Nasal/SAS.nas</file-->
   </typhoon>
 
+  <dialogs>
+    <file>Aircraft/EF-Typhoon/Nasal/dialogs.nas</file>
+  </dialogs>
+  
   <enav>
     <file>Aircraft/EF-Typhoon/Nasal/enav.nas</file>
   </enav>
