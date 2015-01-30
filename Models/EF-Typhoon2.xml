@@ -13,6 +13,7 @@
 <PropertyList> 
   <path>EF-Typhoon2.ac</path>
 
+  <!-- Livery System : Updated IH-COL Jan 2015 -->
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/EF-Typhoon/Models/Liveries", 10);
@@ -21,22 +22,46 @@
       livery_update.stop();
     </unload>
   </nasal>
+  
+  <animation>
+    <name>bodyWork</name>
+    <object-name>fuselage.001_1</object-name>
+    <object-name>canopyframe</object-name>
+    <object-name>fueldoor.001</object-name>
+    <object-name>fueldoor.002</object-name>
+    <object-name>Slat.R_1</object-name>
+    <object-name>Slat.L_1</object-name>
+    <object-name>pod.L</object-name>
+    <object-name>Hook.001</object-name>
+    <object-name>flaperon.L</object-name>
+    <object-name>flaperon1.L</object-name>
+    <object-name>flaperon.R</object-name>
+    <object-name>flaperon1.R</object-name>
+    <object-name>Mesh156</object-name>
+    <object-name>Mesh206</object-name>
+    <object-name>elevator.L</object-name>
+    <object-name>elevator.R</object-name>
+    <object-name>rudder</object-name>
+    <object-name>speedbrake</object-name>
+    <object-name>vertstab</object-name>
+    <object-name>wing.01L</object-name>
+    <object-name>wing.01R</object-name>
+  </animation>
 
-  <!-- Livery -->
   <animation>
     <type>material</type>
-    <object-name>fsellogo</object-name>
-    <property-base>sim/model/livery</property-base>
+    <object-name>bodyWork</object-name>
+    <property-base>sim/model/livery/bodyWork</property-base>
     <texture-prop>texture</texture-prop>
     <texture>Liveries/Spain.png</texture>
   </animation>
 
   <animation>
     <type>material</type>
-    <object-name>rudder</object-name>
-    <property-base>sim/model/livery/rudder</property-base>
+    <object-name>fsellogo</object-name>
+    <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>Liveries/SpainRudder.png</texture>
+    <texture>Liveries/SpainLogos.png</texture>
   </animation>
 
   <!-- Air intake -->

@@ -4,11 +4,11 @@
   <sim>
     <model>
       <livery>
-        <name type="string">Royal Air Force</name>
-        <index type="int">5</index>
-        <texture>Liveries/RAFLogos.png</texture>
+        <name type="string">RAF Red Arrows</name>
+        <index type="int">7</index>
+        <texture>Liveries/RAFRedArrowsLogos.png</texture>
         <bodyWork>
-  	  <texture>EF-Typhoon-2.png</texture>
+          <texture>Liveries/RAFRedArrows.png</texture>
         </bodyWork>
 	<RAFlights type="bool">true</RAFlights> <!-- RAF alternate beacon -->
 	<beacon type="bool">false</beacon> <!-- red -->

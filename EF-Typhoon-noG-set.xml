@@ -30,7 +30,7 @@
     <fuel-fraction>0.4</fuel-fraction>
 
     <startup>
-      <splash-texture>Aircraft/EF-Typhoon/Splash1.4.3.jpg</splash-texture>
+      <splash-texture>Aircraft/EF-Typhoon/Splash1.5.0.jpg</splash-texture>
     </startup>
 
     <systems>
