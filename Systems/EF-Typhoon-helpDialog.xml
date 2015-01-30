@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+==============================================
+EFA Typhoon: Help Menu Dialog
+Original by Maverick Alex and Others
+Edited by USA TOUR READY CONSORTIUM; Jan 2015
+==============================================
+-->
+<PropertyList>
+  <title>EFA Typhoon</title>
+  <key>
+    <name>N - n</name>
+    <desc>Extends/Retracts speedbrakes</desc>
+  </key>
+  <key>
+    <name>L</name>
+    <desc>Engages launchbar</desc>
+  </key>
+  <key>
+    <name>C</name>
+    <desc>Releases catapult</desc>
+  </key>
+  <key>
+    <name>O</name>
+    <desc>Extends/Retracts hook</desc>
+  </key>
+  <key>
+    <name>f - d</name>
+    <desc>Extends/retracts slats (on working)</desc>
+  </key>
+  <key>
+    <name>Delete</name>
+    <desc>Toggles thrust reversers</desc>
+  </key>
+  <key>
+    <name>Ctrl + d</name>
+    <desc>Toggle canopy</desc>
+  </key>
+  <key>
+    <name>l</name>
+    <desc>Unlocks gear retraction</desc>
+  </key>
+  <line>The afterburners engage when throttle</line>
+  <line>passes 95% (a red led is then shown on the panel)</line>
+  <line>* Max speed:  Mach 2.0+ with reheat</line>
+  <line>              Mach 1.2  without reheat</line>
+  <line>* Min speed:  130 KTS (clean)</line>
+  <line>              Stable with 9 AoA</line>
+  <line>* Take off:   140-150 KTS</line>
+  <line>* Stall:      Around 90 KTS (clean)</line>
+</PropertyList>

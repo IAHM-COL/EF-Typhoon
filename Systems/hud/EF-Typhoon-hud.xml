@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+==============================================
+EFA Typhoon: On Cockpit HUD configuration
+Original by Maverick Alex and Others
+Edited by USA TOUR READY CONSORTIUM; Jan 2015
+==============================================
+-->
+<PropertyList>
+  <path n="1">Aircraft/EF-Typhoon/Systems/hud/hud2.xml</path>
+  <ladder n="1">
+    <enable-target-markers type="bool">false</enable-target-markers>
+  </ladder>
+  <visibility n="0" type="bool">false</visibility>
+  <visibility n="1" type="bool">true</visibility>
+  <current-color>0</current-color>
+  <color>
+    <transparent type="bool">true</transparent>
+    <antialiased type="bool">true</antialiased>
+    <brightness type="float">1.0</brightness>
+    <alpha type="float">0.70</alpha>
+  </color>
+  <palette>
+    <color n="0">
+      <red type="float">0.50</red>
+      <green type="float">1.0</green>
+      <blue type="float">0.00</blue>
+    </color>
+    <color n="1">
+      <red type="float">1.0</red>
+      <green type="float">0.0</green>
+      <blue type="float">0.0</blue>
+    </color>
+  </palette>
+</PropertyList>

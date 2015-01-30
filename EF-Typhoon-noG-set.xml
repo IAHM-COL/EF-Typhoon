@@ -23,9 +23,9 @@
     <aircraft-version>1.5</aircraft-version>
     
     <flight-model>yasim</flight-model>
-    <!-- Stable version without G-limitatios: -->
+    <!-- Stable version without G-limitations: -->
     <aero>EF-Typhoon-yasim-noG</aero>
-    <!-- Testing version without G-limitaitons:
+    <!-- Testing version without G-limitations:
 	 <aero>EF-Typhoon-yasim-test-noG</aero> -->
     <fuel-fraction>0.4</fuel-fraction>
 
@@ -72,52 +72,7 @@
 	</submodels>
     -->
 
-    <help>
-      <title>EFA Typhoon</title>
-      <key>
-	<name>N</name>
-	<desc>expends Speedbrake</desc>
-      </key>
-      <key>
-	<name>n</name>
-	<desc>retracts Speedbrake</desc>
-      </key>
-      <key>
-	<name>L</name>
-	<desc>engage launchbar</desc>
-      </key>
-      <key>
-	<name>C</name>
-	<desc>release catapult</desc>
-      </key>
-      <key>
-	<name>O</name>
-	<desc>Extend/retract hook</desc>
-      </key>
-      <key>
-	<name>f - d</name>
-	<desc>Extend/retract slats (on working)</desc>
-      </key>
-      <key>
-	<name>Delete</name>
-	<desc>toggle thrust reversers</desc>
-      </key>
-      <key>
-	<name>Ctrl + d</name>
-	<desc>toggle canopy</desc>
-      </key>
-      <key>
-	<name>l</name>
-	<desc>Unlock gear retract</desc>
-      </key>
-      <line>Afterburners engage when throttle</line>
-      <line>past 95% (red led on panel)</line>
-      <line>* Max speed Mach 2.0+ reheat</line>
-      <line>  ... Mach 1.2 without reheat</line>
-      <line>* Min speed: 130 Kt (clean)</line>
-      <line>  .........  stable with 9 AoA</line>
-      <line>* Take off: 140-150 Kt</line>
-      <line>* Stall: near 90 Kt (clean)</line>
+    <help include="Systems/EF-Typhoon-helpDialog.xml">
     </help>
 
     <!--
@@ -229,32 +184,7 @@
       </config>
     </view>
 
-    <hud>
-      <path n="1">Aircraft/EF-Typhoon/Systems/hud/hud.xml</path>
-      <ladder n="1">
-	<enable-target-markers type="bool">false</enable-target-markers>
-      </ladder>
-      <visibility n="0" type="bool">false</visibility>
-      <visibility n="1" type="bool">true</visibility>
-      <current-color>0</current-color>
-      <color>
-	<transparent type="bool">true</transparent>
-	<antialiased type="bool">true</antialiased>
-	<brightness type="float">1.0</brightness>
-	<alpha type="float">0.70</alpha>
-      </color>
-      <palette>
-	<color n="0">
-	  <red type="float">0.50</red>
-	  <green type="float">1.0</green>
-	  <blue type="float">0.00</blue>
-	</color>
-	<color n="1">
-	  <red type="float">1.0</red>
-	  <green type="float">0.0</green>
-	  <blue type="float">0.0</blue>
-	</color>
-      </palette>
+    <hud include="Systems/hud/EF-Typhoon-hud.xml">
     </hud>
 
     <weight n="0">
