@@ -12,10 +12,6 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
     <!--file>Aircraft/EF-Typhoon/Nasal/SAS.nas</file-->
   </typhoon>
 
-  <fcs>
-    <file>Aircraft/EF-Typhoon/Nasal/fcs.nas</file>
-  </fcs>
-
   <enav>
     <file>Aircraft/EF-Typhoon/Nasal/enav.nas</file>
   </enav>
@@ -28,11 +24,10 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
     <file>Aircraft/EF-Typhoon/Nasal/autopilot.nas</file>
   </autopilot>
 
-  <gearbox>
-    <file>Aircraft/EF-Typhoon/Nasal/gearbox.nas</file>
-  </gearbox>
+  <radardist>
+    <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+  </radardist>
 
-  <!-- IN DEVELOPMENT: VER 1.4.3
   <radar2>
     <file>Aircraft/EF-Typhoon/Nasal/radar2.nas</file>
   </radar2>
@@ -40,9 +35,14 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
   <rwr>
     <file>Aircraft/EF-Typhoon/Nasal/rwr.nas</file>
   </rwr>
+  
+  <!-- IN DEVELOPMENT: VER 1.4.3
+  <gearbox>
+    <file>Aircraft/EF-Typhoon/Nasal/gearbox.nas</file>
+  </gearbox>
 
-  <radardist>
-    <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
-  </radardist>
+  <fcs>
+    <file>Aircraft/EF-Typhoon/Nasal/fcs.nas</file>
+  </fcs>
   -->
 </PropertyList>
