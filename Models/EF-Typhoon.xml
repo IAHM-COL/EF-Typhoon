@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 
 <!--
-     TODO:
-     Work on gauges
-     Preparing sticks and basic buttons on the pannel
-     parachutes and more accureate position of rear hook. Cleaner slats.
-     Pedal's holes should be smaller.
-     Little details such as antennae and flares
-     Discover why liveries and lights are not being transmitted in multiplayer mode
+TODO:
+Work on gauges
+Preparing sticks and basic buttons on the pannel
+parachutes and more accureate position of rear hook. Cleaner slats.
+Pedal's holes should be smaller.
+Little details such as antennae and flares
+Discover why liveries and lights are not being transmitted in multiplayer mode
 -->
 
-<PropertyList> 
+<PropertyList>
   <path>EF-Typhoon.ac</path>
 
   <!-- Livery System : Updated IH-COL Jan 2015 -->
@@ -164,7 +164,7 @@
       <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
-
+  
   <!-- throttles, on work -->
   <model>
     <path>Aircraft/EF-Typhoon/Models/Instruments/power.xml</path>
@@ -176,19 +176,19 @@
     </offsets>
   </model>	
 
-  <!-- taken from M_F1
-       <model>
-       <path>Aircraft/EF-Typhoon/Models/Instruments/hud.xml</path>
-       <offsets>
-          <x-m>2</x-m>
-	  <y-m>0</y-m>
-	  <z-m>1</z-m>
-	  <pitch-deg>0</pitch-deg>
-       </offsets>
-       </model>
+  <!-- Taken from M_F1
+  <model>
+    <path>Aircraft/EF-Typhoon/Models/Instruments/hud.xml</path>
+    <offsets>
+      <x-m>2</x-m>
+      <y-m>0</y-m>
+      <z-m>1</z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
   -->
-
-  <!-- from f15c -->
+  
+  <!-- Taken from f15c -->
   <animation>
     <type>noshadow</type>
     <object-name>ExternalFlame</object-name>
@@ -232,16 +232,16 @@
     <property>gear/gear[0]/position-norm</property>
     <interpolation> 
       <entry>
-        <ind>1</ind>
-        <dep>90</dep>
+	<ind>1</ind>
+	<dep>90</dep>
       </entry>
       <entry>
-        <ind>0.7</ind>
-        <dep>90</dep>
+	<ind>0.7</ind>
+	<dep>90</dep>
       </entry>
       <entry>
-        <ind>0</ind>
-        <dep>0</dep>
+	<ind>0</ind>
+	<dep>0</dep>
       </entry>
     </interpolation>
     <center>
@@ -262,16 +262,16 @@
     <property>gear/gear[0]/position-norm</property>
     <interpolation> 
       <entry>
-        <ind>0</ind>
-        <dep>-110</dep>
+	<ind>0</ind>
+	<dep>-110</dep>
       </entry>
       <entry>
-        <ind>0.3</ind>
-        <dep>-110</dep>
+	<ind>0.3</ind>
+	<dep>-110</dep>
       </entry>
       <entry>
-        <ind>1</ind>
-        <dep>0</dep>
+	<ind>1</ind>
+	<dep>0</dep>
       </entry>
     </interpolation>
     <center>
@@ -294,16 +294,16 @@
     <property>gear/gear[1]/position-norm</property>
     <interpolation> 
       <entry>
-        <ind>1</ind>
-        <dep>93</dep>
+	<ind>1</ind>
+	<dep>93</dep>
       </entry>
       <entry>
-        <ind>0.2</ind>
-        <dep>0</dep>
+	<ind>0.2</ind>
+	<dep>0</dep>
       </entry>
       <entry>
-        <ind>0</ind>
-        <dep>0</dep>
+	<ind>0</ind>
+	<dep>0</dep>
       </entry>
     </interpolation>
     <center>
@@ -324,8 +324,8 @@
     <property>gear/gear[1]/position-norm</property>
     <interpolation> 
       <entry>
-        <ind>1</ind>
-        <dep>79</dep>   <x1-m>15.259</x1-m>
+	<ind>1</ind>
+	<dep>79</dep>   <x1-m>15.259</x1-m>
 	<y1-m>0.0</y1-m>
 	<z1-m>3.25</z1-m>
 	<x2-m>13.74</x2-m>
@@ -333,12 +333,12 @@
 	<z2-m>0.916</z2-m>
       </entry>
       <entry>
-        <ind>0.2</ind>
-        <dep>79</dep>
+	<ind>0.2</ind>
+	<dep>79</dep>
       </entry>
       <entry>
-        <ind>0</ind>
-        <dep>0</dep>
+	<ind>0</ind>
+	<dep>0</dep>
       </entry>
     </interpolation>
     <center>
@@ -356,19 +356,19 @@
   <animation>
     <type>rotate</type>
     <object-name>Gear.L</object-name>
-      <property>gear/gear[1]/position-norm</property>
+    <property>gear/gear[1]/position-norm</property>
     <interpolation> 
       <entry>
-        <ind>0</ind>
-        <dep>85</dep>
+	<ind>0</ind>
+	<dep>85</dep>
       </entry>
       <entry>
-        <ind>0.2</ind>
-        <dep>85</dep>
+	<ind>0.2</ind>
+	<dep>85</dep>
       </entry>
       <entry>
-        <ind>1</ind>
-        <dep>0</dep>
+	<ind>1</ind>
+	<dep>0</dep>
       </entry>
     </interpolation>
     <center>
@@ -391,16 +391,16 @@
     <property>gear/gear[2]/position-norm</property>
     <interpolation> 
       <entry>
-        <ind>1</ind>
-        <dep>93</dep>
+	<ind>1</ind>
+	<dep>93</dep>
       </entry>
       <entry>
-        <ind>0.2</ind>
-        <dep>0</dep>
+	<ind>0.2</ind>
+	<dep>0</dep>
       </entry>
       <entry>
-        <ind>0</ind>
-        <dep>0</dep>
+	<ind>0</ind>
+	<dep>0</dep>
       </entry>
     </interpolation>
     <center>
@@ -421,16 +421,16 @@
     <property>gear/gear[2]/position-norm</property>
     <interpolation> 
       <entry>
-        <ind>1</ind>
-        <dep>79</dep>
+	<ind>1</ind>
+	<dep>79</dep>
       </entry>
       <entry>
-        <ind>0.2</ind>
-        <dep>79</dep>
+	<ind>0.2</ind>
+	<dep>79</dep>
       </entry>
       <entry>
-        <ind>0</ind>
-        <dep>0</dep>
+	<ind>0</ind>
+	<dep>0</dep>
       </entry>
     </interpolation>
     <center>
@@ -451,16 +451,16 @@
     <property>gear/gear[2]/position-norm</property>
     <interpolation> 
       <entry>
-        <ind>0</ind>
-        <dep>85</dep>
+	<ind>0</ind>
+	<dep>85</dep>
       </entry>
       <entry>
-        <ind>0.2</ind>
-        <dep>85</dep>
+	<ind>0.2</ind>
+	<dep>85</dep>
       </entry>
       <entry>
-        <ind>1</ind>
-        <dep>0</dep>
+	<ind>1</ind>
+	<dep>0</dep>
       </entry>
     </interpolation>
     <center>
@@ -496,7 +496,7 @@
   </animation>
 
   <!--    Flap-aleron = flaperon.R flaperon1.R -> surface-positions/right-aileron-pos-norm
-       Flap-aleron = flaperon.L flaperon1.L -> surface-positions/left-aileron-pos-norm  -->
+  Flap-aleron = flaperon.L flaperon1.L -> surface-positions/left-aileron-pos-norm  -->
   <animation>
     <type>rotate</type>
     <object-name>flaperon.R</object-name>
@@ -534,44 +534,42 @@
   </animation>
 
   <!--
-      <animation>
-         <type>rotate</type>
-	 <object-name>flaperon.R</object-name>
-	 <property>surface-positions/flap-pos-norm</property>
-	 <factor>30</factor>
-	 <center>
-	    <x-m>12.17965</x-m>
-	    <y-m>4,3428</y-m>
-	    <z-m>-0.239975</z-m>
-	 </center>
-	 <axis>
-	    <x>0</x>
-	    <y>1</y>
-	    <z>0</z>
-	 </axis>
-      </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>flaperon.R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>30</factor>
+    <center>
+      <x-m>12.17965</x-m>
+      <y-m>4,3428</y-m>
+      <z-m>-0.239975</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
 
-      <animation>
-         <type>rotate</type>
-         <object-name>flaperon.L</object-name>
-	 <property>surface-positions/flap-pos-norm</property>
-	 <factor>30</factor>
-	 <center>
-	   <x-m>12.17965</x-m>
-	   <y-m>-4.3328</y-m>
-	   <z-m>-0.229975</z-m>
-	 </center>
-	 <axis>
-	   <x>0</x>
-	   <y>1</y>
-	   <z>0</z>
-	 </axis>
-      </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>flaperon.L</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>30</factor>
+    <center>
+      <x-m>12.17965</x-m>
+      <y-m>-4.3328</y-m>
+      <z-m>-0.229975</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
   -->
 
-  <!--
-      Slats +++++++++++++++++++++
-  -->
+  <!-- Slats -->
   <animation>
     <type>translate</type>
     <object-name>Slat.L</object-name>
@@ -583,17 +581,17 @@
       <z>-1.8</z>
     </axis>
   </animation>
-  
+
   <animation><!-- TODO: Improve axis -->
-    <type>translate</type>
-    <object-name>Slat.R</object-name>
-    <property>surface-positions/slats-pos-norm</property>
-    <factor>0.17</factor>
-    <axis>
-      <x>-2.5</x>
-      <y>0.1</y>
-      <z>-1.8</z>
-    </axis>
+  <type>translate</type>
+  <object-name>Slat.R</object-name>
+  <property>surface-positions/slats-pos-norm</property>
+  <factor>0.17</factor>
+  <axis>
+    <x>-2.5</x>
+    <y>0.1</y>
+    <z>-1.8</z>
+  </axis>
   </animation>
 
   <animation>
@@ -612,16 +610,16 @@
       <z>-0.094035</z>
     </axis>
     <!--
-	<center>
-	   <x-m>8.289596</x-m>
-	   <y-m>2.712104</y-m>
-	   <z-m>-0.2150268</z-m>
-	</center>
-	<axis>
-	   <x>3.5942395</x>
-	   <y>3.0206382</y>
-	   <z>0.09</z>
-	</axis>
+    <center>
+      <x-m>8.289596</x-m>
+      <y-m>2.712104</y-m>
+      <z-m>-0.2150268</z-m>
+    </center>
+    <axis>
+      <x>3.5942395</x>
+      <y>3.0206382</y>
+      <z>0.09</z>
+    </axis>
     -->
   </animation>
 
@@ -641,53 +639,53 @@
       <z>-0.094035</z>
     </axis>
     <!--
-	<center>
-	   <x-m>8.289596</x-m>
-	   <y-m>-2.712104</y-m>
-	   <z-m>-0.2150268</z-m>
-	</center>
-	<axis>
-	  <x>3.5942395</x>
-	  <y>-3.0206382</y>
-	  <z>0.09</z>
-	</axis>
+    <center>
+      <x-m>8.289596</x-m>
+      <y-m>-2.712104</y-m>
+      <z-m>-0.2150268</z-m>
+    </center>
+    <axis>
+      <x>3.5942395</x>
+      <y>-3.0206382</y>
+      <z>0.09</z>
+    </axis>
     -->
   </animation>
 
   <!--
-      <animation>
-         <type>rotate</type>
-	 <object-name>Slat2L.b</object-name>
-	 <property>surface-positions/slats-pos-norm</property>
-	 <factor>12</factor>
-	 <center>
-	    <x-m>8.28240</x-m>
-	    <y-m>-2,74063</y-m>
-	    <z-m>-0.25312</z-m>
-	 </center>
-	 <axis>
-	    <x>3.5</x>
-	    <y>-3</y>
-	    <z>0</z>
-	 </axis>
-      </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>Slat2L.b</object-name>
+    <property>surface-positions/slats-pos-norm</property>
+    <factor>12</factor>
+    <center>
+      <x-m>8.28240</x-m>
+      <y-m>-2,74063</y-m>
+      <z-m>-0.25312</z-m>
+    </center>
+    <axis>
+      <x>3.5</x>
+      <y>-3</y>
+      <z>0</z>
+    </axis>
+  </animation>
 
-       <animation>
-          <type>rotate</type>
-	  <object-name>Slat2R.b</object-name>
-	  <property>surface-positions/slats-pos-norm</property>
-	  <factor>-12</factor>
-	  <center>
-	     <x-m>8.28240</x-m>
-	     <y-m>2,74063</y-m>
-	     <z-m>-0.25312</z-m>
-	  </center>
-	  <axis>
-	     <x>3.5</x>
-	     <y>3</y>
-	     <z>0</z>
-	  </axis>
-       </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>Slat2R.b</object-name>
+    <property>surface-positions/slats-pos-norm</property>
+    <factor>-12</factor>
+    <center>
+      <x-m>8.28240</x-m>
+      <y-m>2,74063</y-m>
+      <z-m>-0.25312</z-m>
+    </center>
+    <axis>
+      <x>3.5</x>
+      <y>3</y>
+      <z>0</z>
+    </axis>
+  </animation>
   -->
 
   <!--Rudder-->
@@ -729,7 +727,7 @@
     </axis>
   </animation>
 
-  <!-- External loas and transparent (for livery marks) -->
+  <!-- External loads and transparent (glass) cockpit -->
   <model>
     <name>external loads</name>
     <nopreview/>
@@ -787,16 +785,16 @@
   </animation>
 
   <!-- Lights 
-       <model>
-          <name>Navigation Lights</name>
-	  <path>Aircraft/EF-Typhoon/Models/nav-lights.xml</path>
-       </model> 
-       sim/multiplay/generic/float[4]="systems/electrical/outputs/beacon/state"
-       sim/multiplay/generic/float[5]="systems/electrical/outputs/strobe/state"
-       sim/multiplay/generic/float[6]="systems/electrical/outputs/nav-lights/state"
-       sim/multiplay/generic/float[7]="systems/electrical/outputs/landing-lights/state"
+  <model>
+    <name>Navigation Lights</name>
+    <path>Aircraft/EF-Typhoon/Models/nav-lights.xml</path>
+  </model> 
+  sim/multiplay/generic/float[4]="systems/electrical/outputs/beacon/state"
+  sim/multiplay/generic/float[5]="systems/electrical/outputs/strobe/state"
+  sim/multiplay/generic/float[6]="systems/electrical/outputs/nav-lights/state"
+  sim/multiplay/generic/float[7]="systems/electrical/outputs/landing-lights/state"
   -->
-  
+
   <!-- Landing Lights -->
   <animation>
     <type>noshadow</type>
@@ -815,19 +813,21 @@
     <type>select</type>
     <object-name>gearlight.L</object-name>
     <condition>
-      <!--greater-than>
-	  <property>sim/time/sun-angle-rad</property>
-	  <value>1.32</value>
-	  </greater-than-->
+      <!--
+      <greater-than>
+	<property>sim/time/sun-angle-rad</property>
+	<value>1.32</value>
+      </greater-than>
+      -->
       <and>
-        <greater-than>
+	<greater-than>
           <property>/sim/multiplay/generic/float[7]</property>
           <value>0.2</value>
-        </greater-than>
-        <equals>
+	</greater-than>
+	<equals>
           <property>gear/gear/position-norm</property>
           <value>1</value>
-        </equals>
+	</equals>
       </and>
     </condition>
   </animation>
@@ -836,19 +836,21 @@
     <type>select</type>
     <object-name>gearlight.R</object-name>
     <condition>
-      <!--greater-than>
-	  <property>sim/time/sun-angle-rad</property>
-	  <value>1.32</value>
-	  </greater-than-->
+      <!--
+      <greater-than>
+	<property>sim/time/sun-angle-rad</property>
+	<value>1.32</value>
+      </greater-than>
+      -->
       <and>
-        <greater-than>
+	<greater-than>
           <property>/sim/multiplay/generic/float[7]</property>
           <value>0.2</value>
-        </greater-than>
-        <equals>
+	</greater-than>
+	<equals>
           <property>gear/gear/position-norm</property>
           <value>1</value>
-        </equals>
+	</equals>
       </and>
     </condition>
   </animation>
@@ -1072,7 +1074,7 @@
       <property>sim/model/livery/strobe</property>
     </condition>
   </animation>
-  
+
   <animation>
     <type>select</type>
     <object-name>beacon.up</object-name>
@@ -1100,7 +1102,7 @@
       </and>
     </condition>
   </animation>
-  
+
   <animation>
     <type>noshadow</type>
     <object-name>Light.L</object-name>
@@ -1164,31 +1166,27 @@
     </emission>
   </animation>
 
-  <!-- layout selection f16 model
-       dragchute animation
+  <!-- layout selection f16 model dragchute animation
+  <animation>
+    <type>select</type>
+    <object-name>USAF_Tailroot</object-name>
+    <condition>
+      <not>
+	<property>sim/model/f16/dragchute</property>
+      </not>
+    </condition>
+  </animation>
 
-       <animation>
-          <type>select</type>
-	  <object-name>USAF_Tailroot</object-name>
-	  <condition>
-	     <not>
-	        <property>sim/model/f16/dragchute</property>
-	     </not>
-	  </condition>
-       </animation>
-
-       <animation>
-          <type>select</type>
-	  <object-name>RNLAF_Tailroot</object-name>
-	  <condition>
-	     <property>sim/model/f16/dragchute</property>
-	  </condition>
-       </animation>
+  <animation>
+    <type>select</type>
+    <object-name>RNLAF_Tailroot</object-name>
+    <condition>
+      <property>sim/model/f16/dragchute</property>
+    </condition>
+  </animation>
   -->
-
-  <!-- Gears light cone (originally taken from F106 - disabled due to rendering problemas with 2.0 git
-       solved with a half cone!
-  -->
+  
+  <!-- Gears light cone original form F106 disabled. Solved with a half cone! -->
   <model>
     <name>ConeLeft</name>
     <path>Aircraft/EF-Typhoon/Models/light-cone.xml</path>
@@ -1219,10 +1217,10 @@
     <object-name>ConeRight</object-name>
     <condition>
       <and>
-        <greater-than>
+	<greater-than>
           <property>/sim/multiplay/generic/float[7]</property>
           <value>0.2</value>
-        </greater-than>
+	</greater-than>
 	<and>
 	  <equals>
 	    <property>gear/gear[0]/position-norm</property>
@@ -1236,6 +1234,7 @@
       </and>
     </condition>
   </animation>
+
   <animation>
     <type>noshadow</type>
     <object-name>ConeLeft</object-name>

@@ -73,7 +73,7 @@ OBJECT poly
 name "Air.out.001_1"
 data 10
 Circle.003
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -127,7 +127,7 @@ OBJECT poly
 name "Air.out.002_1"
 data 10
 Circle.005
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -165,7 +165,7 @@ OBJECT poly
 name "Mesh154.002_1"
 data 21
 Mesh154 Model_rot.005
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -263,7 +263,7 @@ OBJECT poly
 name "flaperon.L"
 data 21
 Mesh154 Model_rot.006
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 7
@@ -311,7 +311,7 @@ OBJECT poly
 name "flaperon.R"
 data 21
 Mesh154 Model_rot.007
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 7
@@ -359,7 +359,7 @@ OBJECT poly
 name "flaperon1.L"
 data 21
 Mesh154 Model_rot.008
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 7
@@ -407,7 +407,7 @@ OBJECT poly
 name "flaperon1.R"
 data 21
 Mesh154 Model_rot.009
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 7
@@ -455,7 +455,7 @@ OBJECT poly
 name "Mesh153.008"
 data 17
 Mesh153 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 3
@@ -474,7 +474,7 @@ OBJECT poly
 name "Mesh156"
 data 17
 Mesh156 Model_win
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 10
@@ -578,7 +578,7 @@ OBJECT poly
 name "Mesh206"
 data 17
 Mesh206 Model_win
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 10
@@ -682,7 +682,7 @@ OBJECT poly
 name "Mesh247"
 data 17
 Mesh247 Model_rot
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 3
@@ -701,7 +701,7 @@ OBJECT poly
 name "Mesh286"
 data 17
 Mesh286 Model_rot
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 3
@@ -1536,7 +1536,7 @@ OBJECT poly
 name "elevator.L"
 data 21
 Mesh153 Model_out.004
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 13
@@ -1619,7 +1619,7 @@ OBJECT poly
 name "elevator.R"
 data 21
 Mesh153 Model_out.005
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 13
@@ -1702,7 +1702,7 @@ OBJECT poly
 name "rudder"
 data 21
 Mesh153 Model_out.006
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -1804,7 +1804,7 @@ OBJECT poly
 name "speedbrake"
 data 21
 Mesh153 Model_out.007
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 60
@@ -2210,7 +2210,7 @@ OBJECT poly
 name "vertstab"
 data 21
 Mesh153 Model_out.008
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 106
@@ -3284,7 +3284,7 @@ OBJECT poly
 name "wing.01L"
 data 8
 Mesh.011
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 161
@@ -4732,7 +4732,7 @@ OBJECT poly
 name "wing.01R"
 data 8
 Mesh.013
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 198
@@ -8436,7 +8436,7 @@ OBJECT poly
 name "Eject_1"
 data 21
 Mesh1 Group1 Mode.001
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 288
@@ -9794,7 +9794,7 @@ OBJECT poly
 name "Apu.eng.2"
 data 21
 Mesh281 Model_Mat.001
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 14
@@ -9902,7 +9902,7 @@ OBJECT poly
 name "Apu.eng.3"
 data 21
 Mesh273 Model_Mat.001
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 14
@@ -10010,7 +10010,7 @@ OBJECT poly
 name "Apu.engine"
 data 17
 Mesh153 Model_Col
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -10173,7 +10173,7 @@ OBJECT poly
 name "Can.Rear.down"
 data 21
 Mesh153 Model_Mat.003
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -10284,7 +10284,7 @@ OBJECT poly
 name "GlassHud"
 data 17
 Mesh282 Model_hud
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -13064,7 +13064,7 @@ OBJECT poly
 name "Upper.cockpit"
 data 21
 Mesh153 Model_out.011
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 26
@@ -13244,7 +13244,7 @@ OBJECT poly
 name "canopyframe"
 data 21
 Mesh153 Model_out.009
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 130
@@ -19031,7 +19031,7 @@ OBJECT poly
 name "fuselage.001_0_1"
 data 21
 Mesh153 Model_out.013
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -19191,7 +19191,7 @@ OBJECT poly
 name "InternalFlame"
 data 8
 Mesh.015
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -19401,7 +19401,7 @@ OBJECT poly
 name "InternalFlame2"
 data 21
 Mesh153 Model__Ch.001
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 54
@@ -19777,7 +19777,7 @@ OBJECT poly
 name "ExternalFlame"
 data 8
 Mesh.017
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 92
@@ -20429,7 +20429,7 @@ OBJECT poly
 name "Mesh153.007"
 data 21
 Mesh153 Model_Mat.005
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 136
@@ -21643,7 +21643,7 @@ OBJECT poly
 name "Mesh212"
 data 17
 Mesh212 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21669,7 +21669,7 @@ OBJECT poly
 name "Mesh214"
 data 17
 Mesh214 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21695,7 +21695,7 @@ OBJECT poly
 name "Mesh215"
 data 17
 Mesh215 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21721,7 +21721,7 @@ OBJECT poly
 name "Mesh217"
 data 17
 Mesh217 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21747,7 +21747,7 @@ OBJECT poly
 name "Mesh218"
 data 17
 Mesh218 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21773,7 +21773,7 @@ OBJECT poly
 name "Mesh220"
 data 17
 Mesh220 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21799,7 +21799,7 @@ OBJECT poly
 name "Mesh221"
 data 17
 Mesh221 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21825,7 +21825,7 @@ OBJECT poly
 name "Mesh222"
 data 17
 Mesh222 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21851,7 +21851,7 @@ OBJECT poly
 name "Mesh224"
 data 17
 Mesh224 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21877,7 +21877,7 @@ OBJECT poly
 name "Mesh225"
 data 17
 Mesh225 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21903,7 +21903,7 @@ OBJECT poly
 name "Mesh226"
 data 17
 Mesh226 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21929,7 +21929,7 @@ OBJECT poly
 name "Mesh228"
 data 17
 Mesh228 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21955,7 +21955,7 @@ OBJECT poly
 name "Mesh229"
 data 17
 Mesh229 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -21981,7 +21981,7 @@ OBJECT poly
 name "Mesh231"
 data 17
 Mesh231 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22007,7 +22007,7 @@ OBJECT poly
 name "Mesh232"
 data 17
 Mesh232 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22033,7 +22033,7 @@ OBJECT poly
 name "Mesh233"
 data 17
 Mesh233 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22059,7 +22059,7 @@ OBJECT poly
 name "Mesh235"
 data 17
 Mesh235 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22085,7 +22085,7 @@ OBJECT poly
 name "Mesh236"
 data 17
 Mesh236 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22111,7 +22111,7 @@ OBJECT poly
 name "Mesh238"
 data 17
 Mesh238 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22137,7 +22137,7 @@ OBJECT poly
 name "Mesh239"
 data 17
 Mesh239 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22163,7 +22163,7 @@ OBJECT poly
 name "Mesh240"
 data 17
 Mesh240 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22189,7 +22189,7 @@ OBJECT poly
 name "Mesh241"
 data 17
 Mesh241 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22215,7 +22215,7 @@ OBJECT poly
 name "Mesh242"
 data 17
 Mesh242 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22241,7 +22241,7 @@ OBJECT poly
 name "Mesh243"
 data 17
 Mesh243 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22267,7 +22267,7 @@ OBJECT poly
 name "Mesh245"
 data 17
 Mesh245 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -22293,7 +22293,7 @@ OBJECT poly
 name "Mesh246"
 data 17
 Mesh246 Model_Mat
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -134855,7 +134855,7 @@ OBJECT poly
 name "Mesh153.021"
 data 17
 Mesh153 Model_win
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -135088,7 +135088,7 @@ OBJECT poly
 name "geardoor1.L"
 data 8
 Mesh.019
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -135241,7 +135241,7 @@ OBJECT poly
 name "geardoor1.R"
 data 8
 Mesh.020
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -135394,7 +135394,7 @@ OBJECT poly
 name "geardoor2.L"
 data 8
 Mesh.021
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 28
@@ -135614,7 +135614,7 @@ OBJECT poly
 name "geardoor2.R"
 data 8
 Mesh.022
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 28
@@ -155687,7 +155687,7 @@ OBJECT poly
 name "pod.L"
 data 21
 Mesh154 Model_rot.010
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 172
@@ -157841,7 +157841,7 @@ OBJECT poly
 name "Slat.L_0"
 data 8
 Mesh.006
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 80.000000
 numvert 42
@@ -158373,7 +158373,7 @@ OBJECT poly
 name "Slat.L_1"
 data 8
 Mesh.002
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -158416,7 +158416,7 @@ OBJECT poly
 name "Slat.R_0"
 data 8
 Mesh.003
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 80.000000
 numvert 42
@@ -158948,7 +158948,7 @@ OBJECT poly
 name "Slat.R_1"
 data 8
 Mesh.004
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 80.000000
 numvert 6
@@ -158991,7 +158991,7 @@ OBJECT poly
 name "APU.out"
 data 6
 Circle
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -159226,7 +159226,7 @@ OBJECT poly
 name "FLIR.base2"
 data 4
 Cone
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -159420,7 +159420,7 @@ OBJECT poly
 name "FLIR.base3"
 data 12
 Cylinder.001
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 30
@@ -159698,7 +159698,7 @@ OBJECT poly
 name "FLIR.lens2"
 data 6
 Sphere
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 418
@@ -163198,7 +163198,7 @@ OBJECT poly
 name "fueldoor.001"
 data 8
 Mesh.023
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -163394,7 +163394,7 @@ OBJECT poly
 name "fueldoor.002"
 data 8
 Mesh.024
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -163546,7 +163546,7 @@ OBJECT poly
 name "fuselage.001_1"
 data 8
 Mesh.025
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 942
@@ -173779,7 +173779,7 @@ OBJECT poly
 name "Air.in"
 data 10
 Circle.001
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -174014,7 +174014,7 @@ OBJECT poly
 name "Air.out"
 data 10
 Circle.002
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -174035,7 +174035,7 @@ OBJECT poly
 name "Air.out.003"
 data 10
 Circle.006
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -174056,7 +174056,7 @@ OBJECT poly
 name "Antena1"
 data 8
 Cube.003
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -174119,7 +174119,7 @@ OBJECT poly
 name "HookFairing_1"
 data 11
 HookFairing
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 44
@@ -174491,7 +174491,7 @@ OBJECT poly
 name "Hook.001"
 data 9
 Plane.001
-texture "EF-Typhoon-2.png"
+texture "EF-Typhoon.png"
 texrep 1 1
 crease 30.000000
 numvert 80

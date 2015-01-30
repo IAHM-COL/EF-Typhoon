@@ -8,7 +8,7 @@
         <index type="int">4</index>
         <texture>Liveries/LuftwaffeLogos.png</texture>
         <bodyWork>
-  	  <texture>EF-Typhoon-2.png</texture>
+  	  <texture>EF-Typhoon.png</texture>
         </bodyWork>
 	<RAFlights type="bool">false</RAFlights> <!-- RAF alternate beacon -->
 	<beacon n="0" type="bool">true</beacon> <!-- red -->
