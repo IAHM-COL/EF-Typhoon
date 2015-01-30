@@ -23,6 +23,9 @@ CHANGELOG
 * Stereo Sound Files had been remasterized to Mono
 * Autopilot V5 installed and tested to work on FG 2.12 and FG 3.20. Improved maneuverability and correct Vertical Mode Management
 * Fixes on FDM for the Yasim version
+* Livery system updated, and a Red Arrows Livery created
+* Paintkit developed
+
 
 ===================================================================
 ORIGINAL README
@@ -81,6 +84,7 @@ Release 1.5 (In progress)
 * All textures transferred to PNG
 * Autopilot V5 installed (USA TOUR READY VERSION)
 * Yasim fixes included
+* Livery system updated and a Paint Kit developed
 
 Release 1.4
 
