@@ -16,27 +16,27 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
     <file>Aircraft/EF-Typhoon/Nasal/enav.nas</file>
   </enav>
 
-  <radar>
-    <file>Aircraft/EF-Typhoon/Nasal/radar.nas</file>
-  </radar>
-
-  <autopilot>
-    <file>Aircraft/EF-Typhoon/Nasal/autopilot.nas</file>
-  </autopilot>
+  <radar2>
+    <file>Aircraft/EF-Typhoon/Nasal/radar2.nas</file>
+  </radar2>
 
   <radardist>
     <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
   </radardist>
 
-  <radar2>
-    <file>Aircraft/EF-Typhoon/Nasal/radar2.nas</file>
-  </radar2>
+  <autopilot>
+    <file>Aircraft/EF-Typhoon/Nasal/autopilot.nas</file>
+  </autopilot>
 
   <rwr>
     <file>Aircraft/EF-Typhoon/Nasal/rwr.nas</file>
   </rwr>
   
   <!-- IN DEVELOPMENT: VER 1.4.3
+  <radar>
+    <file>Aircraft/EF-Typhoon/Nasal/radar.nas</file>
+  </radar>
+
   <gearbox>
     <file>Aircraft/EF-Typhoon/Nasal/gearbox.nas</file>
   </gearbox>
