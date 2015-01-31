@@ -9,7 +9,7 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
 -->
 
 <PropertyList>
-  <name>Menu :: Autopilot</name>
+  <name>Menu::Autopilot</name>
   <modal>false</modal>
   <draggable>true</draggable>
   <layout>vbox</layout>
@@ -337,7 +337,12 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
 	<y>0</y>
 	<width>12</width>
 	<height>12</height>
-	<property>/autopilot/settings/allow-reheat</property>
+	<binding>
+	  <command>property-cycle</command>
+	  <property>/autopilot/settings/allow-reheat</property>
+	  <value type="bool">true</value>
+	  <value/>  
+	</binding>
       </checkbox>
       
       <button>
