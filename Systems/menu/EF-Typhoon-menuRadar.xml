@@ -3,7 +3,7 @@
 <PropertyList>
 
   <!-- Until cockpits buttons are done -->
-  <name>menuradar</name>
+  <name>Menu::Radar</name>
   <modal>false</modal>
   <draggable>true</draggable>
   <layout>vbox</layout>
@@ -16,7 +16,7 @@
 
     <text>
       <halign>left</halign>
-      <label>Radar StandBy, Hud markets and IDT frec</label>
+      <label>Radar Standby, Hud markers, and IDT freq</label>
     </text>
 
     <button>
@@ -37,11 +37,11 @@
     <layout>hbox</layout>
 
     <text>
-      <label>Name  </label>
+      <label>Name</label>
     </text>
 
     <text>
-      <label>State/IDT </label>
+      <label>State/IDT</label>
     </text>
   </group>
 
@@ -67,7 +67,7 @@
     <text>
       <row>1</row>
       <col>0</col>
-      <label>Radar StandBy</label>
+      <label>Radar Standby</label>
     </text>
 
     <checkbox>

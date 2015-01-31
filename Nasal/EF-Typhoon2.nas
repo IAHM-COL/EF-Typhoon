@@ -176,11 +176,11 @@ aircraft.light.new("systems/electrical/outputs/beacon", [0.025, 1.05], beacon_sw
 # aircraft.light.new("/sim/model/typhoon/beacon-bottom", [0.025, 1.5], beacon_switch);
 
 ## Menu dialog Nav Lights
-var Luces = gui.Dialog.new("/sim/gui/dialogs/luces/dialog", "Aircraft/EF-Typhoon/Systems/menu/menulights.xml");
+var Luces = gui.Dialog.new("/sim/gui/dialogs/luces/dialog", "Aircraft/EF-Typhoon/Systems/menu/EF-Typhoon-menuLights.xml");
 ## Menu dialog RadarStandBy, Hud (ToDo), IDT radios
-var RadarStop = gui.Dialog.new("/sim/gui/dialogs/radarstop/dialog", "Aircraft/EF-Typhoon/Systems/menu/menuradar.xml");
+var RadarStop = gui.Dialog.new("/sim/gui/dialogs/radarstop/dialog", "Aircraft/EF-Typhoon/Systems/menu/EF-Typhoon-menuRadar.xml");
 ## Menu Dialog Autopilot
-var APdialog = gui.Dialog.new("/sim/gui/dialogs/ap-dialog/dialog", "Aircraft/EF-Typhoon/Systems/EF-Typhoon-apdialog.xml");
+var APdialog = gui.Dialog.new("/sim/gui/dialogs/ap-dialog/dialog", "Aircraft/EF-Typhoon/Systems/menu/EF-Typhoon-autopilotDialog.xml");
 
 #var setTrHead = func() {
 	# property adjust fine

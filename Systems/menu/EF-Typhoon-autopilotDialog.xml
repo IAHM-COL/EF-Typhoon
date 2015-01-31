@@ -9,7 +9,7 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
 -->
 
 <PropertyList>
-  <name>ap-dialog</name>
+  <name>Menu :: Autopilot</name>
   <modal>false</modal>
   <draggable>true</draggable>
   <layout>vbox</layout>

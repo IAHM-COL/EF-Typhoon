@@ -2,7 +2,7 @@
 
 <PropertyList>
     <!-- Until cockpits buttons are done -->
-    <name>menuluces</name>
+    <name>Menu::Lights</name>
     <modal>false</modal>
     <draggable>true</draggable>
     <layout>vbox</layout>
