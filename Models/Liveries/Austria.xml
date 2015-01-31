@@ -6,9 +6,8 @@
       <livery>
         <name type="string">Bundesheer</name>
         <index type="int">2</index>
-        <texture>Liveries/AustriaLogos.png</texture>
         <bodyWork>
-  	  <texture>EF-Typhoon.png</texture>
+  	  <texture>Liveries/Austria.png</texture>
         </bodyWork>
 	<RAFlights type="bool">false</RAFlights> <!-- RAF alternate beacon -->
 	<beacon n="0" type="bool">true</beacon> <!-- red -->

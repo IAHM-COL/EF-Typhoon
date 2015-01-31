@@ -56,14 +56,6 @@ Discover why liveries and lights are not being transmitted in multiplayer mode
     <texture>Liveries/Spain.png</texture>
   </animation>
 
-  <animation>
-    <type>material</type>
-    <object-name>fsellogo</object-name>
-    <property-base>sim/model/livery</property-base>
-    <texture-prop>texture</texture-prop>
-    <texture>Liveries/SpainLogos.png</texture>
-  </animation>
-
   <!-- Air intake -->
   <animation>
     <type>rotate</type>

@@ -6,7 +6,6 @@
       <livery>
         <name type="string">C-16 Ejercito del Aire</name>
         <index type="int">3</index>
-        <texture>Liveries/SpainLogos.png</texture>
         <bodyWork>
           <texture>Liveries/Spain.png</texture>
         </bodyWork>

@@ -6,7 +6,6 @@
       <livery>
         <name type="string">RAF Red Arrows</name>
         <index type="int">7</index>
-        <texture>Liveries/RAFRedArrowsLogos.png</texture>
         <bodyWork>
           <texture>Liveries/RAFRedArrows.png</texture>
         </bodyWork>

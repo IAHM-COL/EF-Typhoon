@@ -7,7 +7,7 @@ OBJECT poly
 name "fsellogo"
 data 4
 Mesh
-texture "spain.png"
+texture "logosTransparent.png"
 texrep 1 1
 crease 30.000000
 numvert 72

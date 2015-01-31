@@ -6,9 +6,8 @@
       <livery>
         <name type="string">Royal Air Force</name>
         <index type="int">5</index>
-        <texture>Liveries/RAFLogos.png</texture>
         <bodyWork>
-  	  <texture>EF-Typhoon.png</texture>
+  	  <texture>Liveries/RAF.png</texture>
         </bodyWork>
 	<RAFlights type="bool">true</RAFlights> <!-- RAF alternate beacon -->
 	<beacon type="bool">false</beacon> <!-- red -->
