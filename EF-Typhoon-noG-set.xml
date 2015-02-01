@@ -40,11 +40,11 @@
      <!-- Autopilot  --> 
       <autopilot>
 	<!--
-	    Systems/EF-Typhoon-autopilotv5.xml has been prepared by JWOCKY.
+	    Systems/EF-Typhoon-autopilotv7.xml has been prepared by JWOCKY.
 	    It improves the stability of the vertical modes, among other fixes
 	    and it is tested to work with FGFS 3.x
 	-->
-        <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv5.xml</path>
+        <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv7.xml</path>
       </autopilot>
       <!-- Autopilot alternatives
       <autopilot>

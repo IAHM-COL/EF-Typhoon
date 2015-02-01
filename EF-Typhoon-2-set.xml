@@ -40,12 +40,12 @@
       </electrical>
      <!-- Autopilot  --> 
      <autopilot>
-       <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv2.xml</path>        
+       <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv2.xml</path>
      </autopilot>
       <!-- Autopilot alternatives
       <autopilot>
 	VERTICAL MODES fixed
-	  <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv5.xml</path>
+	  <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv7.xml</path>
 	Autopilot for use with FGFS 2.x :: Untested
           <path>Aircraft/EF-Typhoon/Systems/AP-Legacy/EF-Typhoon-autopilot200v2.xml</path>
 	Autopilot for older FGFS 1.9.1 :: Untested

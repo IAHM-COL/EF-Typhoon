@@ -41,14 +41,12 @@
       <!-- Autopilot  --> 
       <autopilot>
 	<!--
-	    Systems/EF-Typhoon-autopilotv5.xml has been prepared by JWOCKY.
+	    Systems/EF-Typhoon-autopilotv7.xml has been prepared by JWOCKY.
 	    It improves the stability of the vertical modes, among other fixes
 	    and it is tested to work with FGFS 3.x
 	-->
-        <!-- path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv5.xml</path -->
-        <path>Aircraft/EF-Typhoon/Systems/JWOCKY-SYS7-autopilot.xml</path>
-      </autopilot>
-      <!-- Autopilot alternatives
+        <path>Aircraft/EF-Typhoon/Systems/EF-Typhoon-autopilotv7.xml</path -->
+        <!-- Autopilot alternatives
 	   <autopilot>
 	      ORIGINAL for use with FGFS 2.x :: Vertical Speed Modes are broken!
                 <path>Aircraft/EF-Typhoon/Systems/AP-Legacy/EF-Typhoon-autopilot200.xml</path>
