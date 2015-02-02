@@ -26,10 +26,24 @@ CHANGELOG
 * Fixes on FDM for the Yasim version
 * Livery system updated, and a Red Arrows Livery created
 * Paintkit developed
-
+* Shaders (Reflection and ligthmap)
+* Normal map developed, currently disabled
 
 ===================================================================
-ORIGINAL README
+KNOWN BUGS
+===================================================================
+* ILS localizers do not engage
+* Aircraft is unable to load the Normal map in the combined deferred shaders configuration
+* Model loads behind the Runway threshold in Flightgear when started on a runway
+* NORM | FUEL | ENG| HYD | wPT | FREQ text shows outside of their bounding boxes in the EICAS instruments
+* Advance Autopilot modes, Like CLM and others still undeveloped, althught these were initially planned
+* Error Message in console indicates at lauching :
+<<Unknown top level section: comm-radio
+Failed to load instrumentation system model: Aircraft/Generic/generic-instrumentation.xml:Detected an internal inconsistency in the instrumentation
+system specification file.  See earlier errors for details>>
+
+===================================================================
+ORIGINAL README (Some modifications by IH-COL)
 ===================================================================
 
 LICENSE:
