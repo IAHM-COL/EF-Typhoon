@@ -60,7 +60,7 @@ Discover why liveries and lights are not being transmitted in multiplayer mode
   <effect>
     <inherits-from>Effects/EF-Typhoon-combShaders</inherits-from>
     <!-- Only bumpmap applied. It works. In Combined-Deferred, it does not!
-    <inherits-from>Effects/EF-Typhoon-bumpmap</inherits-from>
+	 <inherits-from>Effects/EF-Typhoon-bumpmap</inherits-from>
     -->
     <object-name>fuselage.001_1</object-name>
     <object-name>canopyframe</object-name>
