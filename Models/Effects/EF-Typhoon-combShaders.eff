@@ -12,6 +12,11 @@
       <wrap-s>clamp</wrap-s>
       <wrap-t>clamp</wrap-t>
     </texture>
+    <lightmap-enabled type="int">1</lightmap-enabled>
+    <lightmap-factor type="float"><use>gear/gear/position-norm</use></lightmap-factor>
+    <texture n="3">
+      <image>Effects/EF-Typhoon-lightmap.png</image>
+    </texture>    
     <reflection-enabled type="int">1</reflection-enabled>
     <reflection-dynamic type="int">1</reflection-dynamic>
     <reflect_map-enabled type="int">0</reflect_map-enabled>
