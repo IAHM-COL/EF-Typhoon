@@ -22,7 +22,7 @@ CHANGELOG
 * Hud had been moved to Systems/hud directory
 * All RGB textures had been migrated to PNG textures, and filenames had been standardized to English
 * Stereo Sound Files had been remasterized to Mono
-* Autopilot V5 installed and tested to work on FG 2.12 and FG 3.20. Improved maneuverability and correct Vertical Mode Management
+* Autopilot v7 installed and tested to work on FG 2.12 and FG 3.20. Improved maneuverability and correct Vertical Mode Management. Roll Hold and Mach Hold modes now working
 * Fixes on FDM for the Yasim version
 * Livery system updated, and a Red Arrows Livery created
 * Paintkit developed
@@ -35,7 +35,7 @@ KNOWN BUGS
 * ILS localizers do not engage
 * Aircraft is unable to load the Normal map in the combined deferred shaders configuration
 * Model loads behind the Runway threshold in Flightgear when started on a runway
-* Advance Autopilot modes, Like CLM and others still undeveloped, althught these were initially planned
+* Advance Autopilot modes, Like CLM and others still undeveloped, although these were initially planned
 * Error Message in console indicates at lauching :
 <<Unknown top level section: comm-radio
 Failed to load instrumentation system model: Aircraft/Generic/generic-instrumentation.xml:Detected an internal inconsistency in the instrumentation
@@ -90,13 +90,13 @@ Stall betwen 80-90 KIAS (clean)
 RELEASES
 =================================================================
 
-Release 1.5 (In progress)
+Release 1.5 (In progress; Will be released when Air Refueling mode is set)
 
 * Project forked by the USA TOUR READY CONSORTIUM
 * Project renamed to EF-Typhoon
 * Dependency to other Aircraft Fixed
 * All textures transferred to PNG
-* Autopilot V5 installed (USA TOUR READY VERSION)
+* Autopilot V7 installed (USA TOUR READY VERSION)
 * Yasim fixes included
 * Livery system updated and a Paint Kit developed
 * Normal map and Lightmap done <Normal map currently disabled>
