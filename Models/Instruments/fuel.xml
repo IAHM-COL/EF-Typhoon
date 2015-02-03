@@ -99,14 +99,14 @@
   <text>
     <name>norm</name>
     <font>lcd.txf</font>
-    <character-size type="double">0.013</character-size>
+    <character-size type="double">0.006</character-size>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <heading-deg>0</heading-deg>
       <roll-deg>90</roll-deg>
       <x-m>0.018</x-m>
-      <y-m>0.079</y-m>
-      <z-m>0.065</z-m>
+      <y-m>0.081</y-m>
+      <z-m>0.056</z-m>
     </offsets>
     <type type="string">literal</type>
     <text type="string">NORM</text>
@@ -115,14 +115,14 @@
   <text>
     <name>fuel</name>
     <font>lcd.txf</font>
-    <character-size type="double">0.013</character-size>
+    <character-size type="double">0.006</character-size>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <heading-deg>0</heading-deg>
       <roll-deg>90</roll-deg>
       <x-m>0.018</x-m>
       <y-m>-0.056</y-m>
-      <z-m>-0.078</z-m>
+      <z-m>-0.084</z-m>
     </offsets>
     <draw-boundingbox type="bool">true</draw-boundingbox>
     <type type="string">literal</type>
@@ -132,14 +132,14 @@
   <text>
     <name>engine</name>
     <font>lcd.txf</font>
-    <character-size type="double">0.013</character-size>
+    <character-size type="double">0.006</character-size>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <heading-deg>0</heading-deg>
       <roll-deg>90</roll-deg>
       <x-m>0.018</x-m>
       <y-m>-0.034</y-m>
-      <z-m>-0.078</z-m>
+      <z-m>-0.084</z-m>
     </offsets>
     <type type="string">literal</type>
     <text type="string">ENG</text>
@@ -148,14 +148,14 @@
   <text>
     <name>hydraulic</name>
     <font>lcd.txf</font>
-    <character-size type="double">0.013</character-size>
+    <character-size type="double">0.006</character-size>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <heading-deg>0</heading-deg>
       <roll-deg>90</roll-deg>
       <x-m>0.018</x-m>
       <y-m>-0.01</y-m>
-      <z-m>-0.078</z-m>
+      <z-m>-0.084</z-m>
     </offsets>
     <type type="string">literal</type>
     <text type="string">HYD</text>
@@ -164,14 +164,14 @@
   <text>
     <name>waypoint</name>
     <font>lcd.txf</font>
-    <character-size type="double">0.013</character-size>
+    <character-size type="double">0.006</character-size>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <heading-deg>0</heading-deg>
       <roll-deg>90</roll-deg>
       <x-m>0.018</x-m>
       <y-m>0.015</y-m>
-      <z-m>-0.078</z-m>
+      <z-m>-0.084</z-m>
     </offsets>
     <type type="string">literal</type>
     <text type="string">WPT</text>
@@ -180,14 +180,14 @@
   <text>
     <name>frequency</name>
     <font>lcd.txf</font>
-    <character-size type="double">0.013</character-size>
+    <character-size type="double">0.006</character-size>
     <offsets>
       <pitch-deg>90</pitch-deg>
       <heading-deg>0</heading-deg>
       <roll-deg>90</roll-deg>
       <x-m>0.018</x-m>
       <y-m>.039</y-m>
-      <z-m>-0.078</z-m>
+      <z-m>-0.084</z-m>
     </offsets>
     <type type="string">literal</type>
     <text type="string">FREQ</text>

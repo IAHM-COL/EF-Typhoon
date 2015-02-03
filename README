@@ -35,7 +35,6 @@ KNOWN BUGS
 * ILS localizers do not engage
 * Aircraft is unable to load the Normal map in the combined deferred shaders configuration
 * Model loads behind the Runway threshold in Flightgear when started on a runway
-* NORM | FUEL | ENG| HYD | wPT | FREQ text shows outside of their bounding boxes in the EICAS instruments
 * Advance Autopilot modes, Like CLM and others still undeveloped, althught these were initially planned
 * Error Message in console indicates at lauching :
 <<Unknown top level section: comm-radio
@@ -100,6 +99,7 @@ Release 1.5 (In progress)
 * Autopilot V5 installed (USA TOUR READY VERSION)
 * Yasim fixes included
 * Livery system updated and a Paint Kit developed
+* Normal map and Lightmap done <Normal map currently disabled>
 
 Release 1.4
 
