@@ -19,8 +19,14 @@
 
     <description>E.F.A Typhoon: Without 'G' Limitations</description>
     <author>USA TOUR READY CONSORTIUM</author>
-    <status>development</status>
+    <status>beta</status>
     <aircraft-version>1.5</aircraft-version>
+    <rating>
+      <FDM type="int">3</FDM>
+      <systems type="int">2</systems>
+      <cockpit type="int">2</cockpit>
+      <model type="int">3</model>
+    </rating>
     
     <flight-model>yasim</flight-model>
     <!-- Stable version without G-limitations: -->
