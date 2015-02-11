@@ -49,10 +49,4 @@ Edited by USA TOUR READY CONSORTIUM; Jan 2015
     <file>Aircraft/EF-Typhoon/Nasal/fcs.nas</file>
   </fcs>
   -->
-
-	<aar> 
-		<!-- file>Aircraft/Generic/aar.nas</file -->
-		<file>Common/aar/aar.nas</file>
-	</aar>
-
 </PropertyList>

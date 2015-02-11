@@ -63,6 +63,9 @@
                 <path>Aircraft/EF-Typhoon/Systems/AP-Legacy/EF-Typhoon-autopilot191.xml</path>
 	   </autopilot>
 	-->
+	<refuel>
+		<range>200</range>
+	</refuel>
     </systems> 
     
     <virtual-cockpit archive="y">true</virtual-cockpit>
@@ -490,13 +493,6 @@
   <!-- Keymap -->
   <input include="Systems/EF-Typhoon-keymap.xml">
   </input>
-
-<!-- some systems NEED to be root level -->
-<systems>
-	<refuel>
-		<range>200</range>
-	</refuel>
-</systems>
 
   <!-- Nasal files/scripts -->
   <nasal include="Nasal/EF-Typhoon-nasalScripts.xml">
