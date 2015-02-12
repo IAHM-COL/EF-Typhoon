@@ -491,12 +491,12 @@
   <input include="Systems/EF-Typhoon-keymap.xml">
   </input>
 
-<!-- some systems NEED to be root level -->
-<systems>
-	<refuel>
-		<range>200</range>
-	</refuel>
-</systems>
+  <!-- some systems NEED to be root level -->
+  <systems>
+    <refuel>
+      <range>200</range>
+    </refuel>
+  </systems>
 
   <!-- Nasal files/scripts -->
   <nasal include="Nasal/EF-Typhoon-nasalScripts.xml">

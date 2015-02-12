@@ -28,6 +28,7 @@ CHANGELOG
 * Paintkit developed
 * Shaders (Reflection and ligthmap)
 * Normal map developed, currently disabled
+* AirRefueling Systems Added
 
 ===================================================================
 KNOWN BUGS
@@ -100,6 +101,7 @@ Release 1.5 (In progress; Will be released when Air Refueling mode is set)
 * Yasim fixes included
 * Livery system updated and a Paint Kit developed
 * Normal map and Lightmap done <Normal map currently disabled>
+* Air-Refueling systems added
 
 Release 1.4
 
