@@ -26,7 +26,7 @@
      Origo at CG  5923.480, 0.000, 209226.156
 -->
 
-<airplane mass="24581" version="YASIM_VERSION_CURRENT">
+<airplane mass="24581" version="YASIM_VERSION_ORIGINAL">
 
   <!-- Approach configuration -->
   <approach speed="130" aoa="9">
