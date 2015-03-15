@@ -27,6 +27,7 @@
       <cockpit type="int">2</cockpit>
       <model type="int">3</model>
     </rating>
+    <variant-of>EF-Typhoon</variant-of>
     
     <flight-model>yasim</flight-model>
     <!-- Stable version with G-limitations: -->
